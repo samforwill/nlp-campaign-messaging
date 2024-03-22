@@ -1,16 +1,15 @@
- 
+  
 <h2 align="center">           </h2>
 <a name="readme-top"></a>
 <h2 align="center">Winning in Trump Country</h2>
-<h3 align="center">Examining the Messaging Strategies of Two Democratic Newcomers Who Overcame the Red Tide in the 2022 Midterms </h3>
 
 
-<!-- FIND AN IMAGE TO REPLACE THIS>
 <div align="center">
-  <a href="https://github.com/samforwill/District-Insights">
-    <img src="images/2022_Midterm_Results.png" alt="2022 midterm results map" style="width: 70%; max-width: 900px;">
+  <a href="https://github.com/samforwill/2024Strategies">
+    <img src="images/wasserman.png" alt="tweet from wasserman" style="width: 70%; max-width: 900px;">
   </a>
-  -->
+
+<h3 align="center">Examining the Twitter Messaging Strategies of Two Democratic Newcomers Who Overcame the Red Tide in the 2022 Midterms </h3>
 
 <div align= "left">  
 <!-- TABLE OF CONTENTS -->
