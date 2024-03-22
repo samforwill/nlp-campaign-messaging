@@ -6,7 +6,7 @@
 
 <div align="center">
   <a href="https://github.com/samforwill/2024Strategies">
-    <img src="images/wasserman.png" alt="tweet from wasserman" style="width: 70%; max-width: 900px;">
+    <img src="images/twitterpolitics.png" alt="tweeters chirping" style="width: 70%; max-width: 900px;">
   </a>
 
 <h3 align="center">Examining the Twitter Messaging Strategies of Two Democratic Newcomers Who Overcame the Red Tide in the 2022 Midterms </h3>
