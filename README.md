@@ -46,6 +46,7 @@
     <li><a href="#recommendations-and-conclusions">Recommendations and Conclusions</a></li>
     <li><a href="#future-work">Future Work</a></li>
   </ol>
+  <!--li><a href="#acknowledgments">Acknowledgments</a></li>
 <!--/details-->
 
 
@@ -92,7 +93,7 @@ I hope that my analysis and insights can help inform Democratic strategy to help
 2. 2022 Midterm Results were sourced from [The Daily Kos](https://www.dailykos.com/stories/2022/9/21/1742660/-The-ultimate-Daily-Kos-Elections-guide-to-all-of-our-data-sets).
 3. The campaign tweets from Marie Glusenkamp Perez and Chris Deluzio were hand-copied from their twitter accounts [@MGPforCongress](https://twitter.com/mgpforcongress) and [@ChrisforPA](https://twitter.com/chrisforPA)
 
-4. The 114th Congress tweets addended with characterization inputs was sourced from Crowdflower's Data For Everyone Library via Kaggle [Brennan Center for Justice](https://www.brennancenter.org/our-work/research-reports/who-controlled-redistricting-every-state).
+4. The 114th Congress tweets addended with characterization inputs was sourced from Crowdflower's Data For Everyone Library via [Kaggle] (https://www.kaggle.com/datasets/crowdflower/political-social-media-posts/data).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -110,6 +111,11 @@ That left me with 6 candidates to consider, all having overperformed their distr
 
 The following candidates greatly overperformed in their districts, but were eliminated from consideration for various reasons:
 ![Candidates](images/Candidates.png)
+While these candidates performed well in difficult races, they all shared varying degrees of CooCoo™ opponents, or their twitter accounts for the campaign were deleted after the midterms. Adam Frisch would have been interesting to analyze, but he didn't make it past the post to win in CO-03, and, frankly, he tweeted way too much (Elon Musk had newly ended free access to API pulls, so collecting tweets was hours of copy/pasting).
+
+
+
+
 
 
 <!--
