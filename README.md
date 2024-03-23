@@ -111,7 +111,12 @@ That left me with 6 candidates to consider, all having overperformed their distr
 
 The following candidates greatly overperformed in their districts, but were eliminated from consideration for various reasons:
 ![Candidates](images/Candidates.png)
-While these candidates performed well in difficult races, they all shared varying degrees of CooCoo™ opponents, or their twitter accounts for the campaign were deleted after the midterms. Adam Frisch would have been interesting to analyze, but he didn't make it past the post to win in CO-03, and, frankly, he tweeted way too much (Elon Musk had newly ended free access to API pulls, so collecting tweets was hours of copy/pasting).
+While these candidates performed well in difficult races, they all shared varying degrees of CooCoo™ opponents, or their twitter accounts for the campaign were deleted after the midterms. <br />
+
+Adam Frisch would have been interesting to analyze, but he didn't make it past the post to win in CO-03, and, frankly, he tweeted way too much (Elon Musk had newly ended free access to API pulls, so collecting tweets involved hours of copy/pasting). The next deepest red district to pull out the win was...
+
+![MGP](images/MGP.png)
+
 
 
 
