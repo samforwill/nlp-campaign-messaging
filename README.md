@@ -54,7 +54,7 @@
 
  This project applies Natural Language Processing (NLP) to analyze the twitter messaging strategies of Marie Glusenkamp Perez (WA-03) and Chris Deluzio (PA-17), Democratic newcomers competing in two of the most challenging districts for Democrats in 2022 midterm cycle.<br />
  
- Given the 2022 midterms were marked by the defeats of many election deniers and January 6th apologists, a secondary focus of this study is to assess the difference in our candidates' messaging strategies against distinct types of opponents— one faced Joe Kent in WA, a 'CooCoo' nominee who fully embraced the 2020 election conspiracies, and the other faced Jeremy Shaffer in PA, a mainstream Republican who acknowledged Joe Biden's 2020 victory. 
+ Given the 2022 midterms were marked by the defeats of many election deniers and January 6th apologists, a secondary focus of this study is to assess the difference in our candidates' messaging strategies against distinct types of opponents— one faced Joe Kent in WA, a 'Kooky' nominee who fully embraced the 2020 election conspiracies, and the other faced Jeremy Shaffer in PA, a mainstream Republican who acknowledged Joe Biden's 2020 victory. 
  
 ## Methodology
  
@@ -111,7 +111,7 @@ That left me with 6 candidates to consider, all having overperformed their distr
 
 The following candidates greatly overperformed in their districts, but were eliminated from consideration for various reasons:
 ![Candidates](images/Candidates.png)
-While these candidates performed well in difficult races, they all shared varying degrees of CooCoo™ opponents, or their twitter accounts for the campaign were deleted after the midterms. <br />
+While these candidates performed well in difficult races, they all shared varying degrees of Kooky opponents, or their twitter accounts for the campaign were deleted after the midterms. <br />
 
 Adam Frisch would have been interesting to analyze, but he didn't make it past the post to win in CO-03, and, frankly, he tweeted way too much (Elon Musk had newly ended free access to API pulls, so collecting tweets involved hours of copy/pasting). The next deepest red district to pull out the win was...
 
