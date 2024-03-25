@@ -131,8 +131,42 @@ As mentioned before, the termination of free API access meant manually compiling
 
 ## 114th Congress Tweet Sentiment Classification
 
+So the first thing I notice in observing this tweetset of 5000 tweets from 114th Congressmembers, is that, while each tweet is labeled with "partisan" or "neutral", these is no indication of WHICH party the member belongs to. It literally has the following format:
+
+| label | 
+| :----------- | 
+| From: Mitch McConnell (Senator from Kentucky) |
+| From: Kurt Schrader (Representative from Oregon) |
+| From: Michael Crapo (Senator from Idaho) |
+
+So in order to assign each tweet with the political affiliation of each tweeter, I copied all of the text on this [C-span Summary Page including pictures](https://www.c-span.org/congress/members/?chamber=house&congress=114&all) of every member of the 114th Congress, and then developed some code to parse through every member, delete suffixes, and deal with duplicated member last names (like Rob Bishop UT-01, and Mike Bishop MI-08) and assign their political party. 
 
 
+The dataset of 5000 tweets from 114th Congress members immediately presented a challenge: each tweet was tagged as "partisan" or "neutral," but provided no information on the political party of the tweeter. The data was presented like this:
+
+| label |
+| :----------- |
+| From: Mitch McConnell (Senator from Kentucky) |
+| From: Kurt Schrader (Representative from Oregon) |
+| From: Michael Crapo (Senator from Idaho) |
+
+To address this, I used this comprehensive member list from the [C-span 114th Summary Page](https://www.c-span.org/congress/members/?chamber=house&congress=114&all), including images, to match members' names and extract their partisan affiliation. The parsing code developed involved removal of name suffixes and resolving ambiguities in cases of shared last names, such as distinguishing between Rob Bishop (UT-01) and Mike Bishop (MI-08).<br />
+
+
+After the data was addended to include each tweeter's political affilitation, several machine learning models were trained to classify tweets based on partisanship and content. This process encorporated Natural Language Processing (NLP) techniques, including TF-IDF vectorization for feature extraction and the application of multiple classifiers such as RandomForest, Naive Bayes, SVM, and Neural Networks within a pipeline structure optimized through GridSearchCV for hyperparameter tuning.<br />
+
+Accuracy was significantly improved after integrating Word2Vec embeddings, enhancing the models' ability to capture semantic nuances within the text data. The final models were decent at discerning party affiliation, distinguishing between neutral and partisan messages, and categorizing the underlying message themes.<br />
+
+
+The optimal models for each classification target—Party, Bias, and Message—were determined based on F1 scores and accuracy. Below are the best-performing models for each category, along with their respective confusion matrices:
+
+- **Bias Prediction**: The Gaussian Naive Bayes Model emerged as the top performer for distinguishing between partisan and neutral tweets.
+- **Party Affiliation Prediction**: The Multi-Layer Perceptron Classifier, a type of basic feedforward artificial neural network, was most effective in identifying the political party.
+- **Message Category Prediction**: Gaussian Naive Bayes also proved to be the best model for categorizing the content of the tweets.
+
+![bias_and_party](images/bias_and_party.png)
+
+![message](images/message.png)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
