@@ -64,27 +64,6 @@
 
 Finally, I used unsupervised Topic Modeling to determine and compare the predominant themes in the candidates’ tweetsets. The topic model analyzed the collection of peak campaign season tweets for MGP and Deluzio to find patterns based on word frequency, order, distance, and meaning and then group various items into relevant categories. 
 
-
-
-
-<!--
-Initial analysis involved unsupervised learning Topic Modeling on a corpus of our candidates' tweets from the six month period leading up to election day on November 8, 2022, and the predominant campaign themes were assessed and compared between the two candidates. <br />
-
-Subsequently, classification models were trained on a dataset of 5000 tweets and Facebook posts from the 114th Congress, annotated with each message's bias (neutral vs. partisan), political affiliation of the author (Democrat or Republican), and the content of the message (e.g., informational, an attack on another candidate, critiques). intent, partisanship, and target audience and augmented with political party data, was subjected to classification. Models were developed to differentiate messages based on bias (neutral/bipartisan vs. partisan), the author's political affiliation, and the nature of the content (e.g., informational, personal, policy, mobilization, attack). <br />
-
-Finally, I used the best performing models to classify the candidates' 6-month campaign messaging tweetset based on the criteria established by the 114th Congress dataset. This classification helped me analyze overall campaign strategies, but also allowed me to compare Marie Glusenkamp Perez and Chris Deluzio's messaging against each other and against the broader dataset.
-
-The purpose of this project is to utilize Natural Language Processing (NLP) to dissect the digital campaign strategies of Marie Glusenkamp Perez (WA-03) and Chris Deluzio (PA-17), two Democratic newcomers who each overperformed the partisan lean of their districts to win in the 2022 midterm elections. By analyzing their tweets from a crucial six-month pre-election period, the study identifies key messaging themes using Topic Modeling. It further extends to classify a dataset of 5000 tweets and Facebook posts from the 114th Congress, annotated for message intent, partisanship, and audience, with an added dimension of political affiliation.
-
-The research trains models to categorize communications by bias (neutral/bipartisan vs. partisan), author's party affiliation, and message type (informational, announcements, attacks, etc.). The most effective models are then applied to the candidates' tweets to decode their campaign messaging, offering insights into their strategies and broader political communication trends.
-
-
-I determined which candidates to focus on through comparing margins of victory in the 2022 midterm elections to their district's Partisan Voter Index scores (PVI). For my 2 selected candidates of focus, I created a corpus of their tweets going back 6 months before election day, November 8th, 2022, covering the heart of their campaign season.<br />
- 
-Next, I used Natural Language Processing (NLP) methods to train models to classify a 5000-tweet/facebook post dataset from members of the 114th Congress. The messaging dataset was addended with human judgments about the purpose, partisanship, and audience of the messages, and I feature engineered party onto this dataset, as well. Natural Language Processing methods were used to train models to classify on the previous m<br />
-
-
-I hope that my analysis and insights can help inform Democratic strategy to help win back the US house and keep it for the decade ahead. -->
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
@@ -161,7 +140,7 @@ These models were then applied to analyze the tweets of Marie Glusenkamp Perez (
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-
+## 
 
 
 
