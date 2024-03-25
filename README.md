@@ -101,21 +101,38 @@ I hope that my analysis and insights can help inform Democratic strategy to help
 
 I determined which candidates to focus on through comparing their 2022 electoral margins with their district's Partisan Voter Index scores (PVI). PVI measures how partisan the district is compared to the nation as a whole, based on how the constituents of those districts voted in previous presidential elections. <br />
 
-To find my candidates, I feature engineered a "Performance" metric (difference between PVI and 2022 margin) and only considered those districts with a PVI below D+1 to select candidates that performed well in toss-up districts or "Trump Country".
+To identify standout candidates, I devised a 'Performance' metric by calculating the difference between each district's Partisan Voter Index (PVI) and the candidate's electoral margin in 2022. This approach highlighted those who significantly outperformed their district's typical partisan alignment.
+
 
 ![Overperformance](images/Overperformance.png)
 
-Next, I narrowed down to only consider first-time candidates to eliminate any potential bias from incumbency advantage. Also, I excluded Mary Peltola from Alaska due to the state's use of Ranked Choice Voting, (a form of voting I very much support, but doesn't align for a direct comparison in this analysis). <br />
+Next, my focus shifted to first-time candidates to avoid the complexities of incumbency. Mary Peltola from Alaska was also excluded due to the state's use of Ranked Choice Voting, which, while innovative, complicates direct comparison in this context. <br />
 
-That left me with 6 candidates to consider, all having overperformed their districts' partisan lean by at least 5 points.
-
-The following candidates greatly overperformed in their districts, but were eliminated from consideration for various reasons:
+That left me with 6 candidates to consider, all having overperformed their districts' partisan lean by at least 5 points.  The following 4 candidates greatly overperformed in their districts, but were eliminated from consideration for various reasons:
 ![Candidates](images/Candidates.png)
-While these candidates performed well in difficult races, they all shared varying degrees of Kooky opponents, or their twitter accounts for the campaign were deleted after the midterms. <br />
-
-Adam Frisch would have been interesting to analyze, but he didn't make it past the post to win in CO-03, and, frankly, he tweeted way too much (Elon Musk had newly ended free access to API pulls, so collecting tweets involved hours of copy/pasting). The next deepest red district to pull out the win was...
+Most of these candidates were ruled out due to their opposition by 'Kooky/Extreme' candidates or the deletion of their campaign's Twitter accounts post-midterms.
+Adam Frisch, who narrowly missed victory in CO-03, was initially a candidate of interest. However, his exclusion was due to the sheer volume of his tweets, which,thanks to Elon Musk's recent termination of free API access by Twitter, made data collection too labor-intensive. The next deepest red district to pull out the win was...
 
 ![MGP](images/MGP.png)
+
+Marie Glusenkamp Perez faced cuckoo Joe Kent, who expressed some extreme views like supporting the arrest of Dr. Anthony Fauci and endorsing the claims of a stolen 2020 election. In fact, he became the candidate for WA-03 after successfully primarying the serving Republican Congressperson, Jaime Herrera Beutler, one of only 10 republicans who voted to impeach Donald Trump following the events of January 6th.<br />
+
+
+The next candidate I wanted to assess took a little more research to come to a decision, but I wanted to find a Democrat who overperformed in his district, while contending against an opponent who was a more mainstream. I landed on...
+
+![Deluzio](images/Deluzio.png)
+
+Chris Deluzio, competing in a toss-up district, significantly outperformed against Jeremy Shaffer, who notably sidestepped affirming or denying the 2020 election fraud claims, and even released an ad promising to "protect women's healthcare" <br />
+
+### Tweet Collection
+As mentioned before, the termination of free API access meant manually compiling tweets for Chris Deluzio and Marie Glusenkamp Perez, and then using a custom parsing script to organize and format these tweets into a structured dataset for analysis. Tweets were manually copied, separated by a '|' delimiter, and then organized into a corpus of around 900 tweets per candidate. [candidate notebook](MGP and Delozio.ipynb).
+
+
+
+
+
+
+
 
 
 
