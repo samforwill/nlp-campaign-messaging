@@ -27,16 +27,16 @@
     </li>
     <li><a href="#selecting-the-candidates">Selecting the Candidates</a></li>
           <ul>
-        <li><a href="#collecting-and-parsing-their-tweets">Collecting and Parsing their Tweets</a></li>
-              </ul>
-        <li><a href="#candidate-tweet-wrangling">Candidate Tweet Wrangling</a></li>
+        <li><a href="#tweet-collection">Tweet Collection</a></li>
               </ul>
     <li><a href="#114th-congress-tweet-sentiment-classification">114th Congress Tweet Sentiment Classification</a></li>
     <li><a href="#classifying-mgp-and-deluzio-tweets">Classifying MGP and Deluzio Tweets</a></li>
-                  <ul>
-        <!-- <li><a href="#regressors-and-analysis-notebook">Regressors and Analysis Notebook</a></li>
+                  <!--ul>
+         <li><a href="#regressors-and-analysis-notebook">Regressors and Analysis Notebook</a></li>
               </ul> -->
-    <li><a href="#r">Unsupervised Topic Modeling</a></li>
+   <ul> <li><a href="#classifying-MGP-&-Deluzio-Tweets-via-114th-Congress-Model">
+   Classifying MGP & Deluzio Tweets via 114th Congress Model</a></li></ul>
+      <ul> <li><a href="#unsupervised-topic-modeling">Unsupervised Topic Modeling</a></li></ul>
                         <!-- <ul>
         <li><a href="#top-democratic-features-for-predicting-pvi">Top Democratic Features for Predicting PVI</a></li>
         <li><a href="#top-republican-features-for-predicting-pvi">Top Republican Features for Predicting PVI</a></li>
