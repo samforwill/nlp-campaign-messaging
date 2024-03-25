@@ -144,7 +144,7 @@ To address this, I used this comprehensive member list from the [C-span 114th Su
 
 After the data was addended to include each tweeter's political affilitation, several machine learning models were trained to classify tweets based on partisanship and content. This process encorporated Natural Language Processing (NLP) techniques, including TF-IDF vectorization for feature extraction and the application of multiple classifiers such as RandomForest, Naive Bayes, SVM, and Neural Networks within a pipeline structure optimized through GridSearchCV for hyperparameter tuning.<br />
 
-Accuracy was significantly improved after integrating Word2Vec embeddings, enhancing the models' ability to capture semantic nuances within the text data. The final models were decent at discerning party affiliation, distinguishing between neutral and partisan messages, and categorizing the underlying message themes.<br />
+Accuracy was significantly improved after integrating Word2Vec embeddings, enhancing the models' ability to capture more difficult nuances within the text data. The final models were decent at discerning party affiliation, distinguishing between neutral and partisan messages, and categorizing the underlying message themes.<br />
 
 
 The optimal models for each classification target—Party, Bias, and Message—were determined based on F1 scores and accuracy. Below are the best-performing models for each category, along with their respective confusion matrices:
@@ -156,6 +156,8 @@ The optimal models for each classification target—Party, Bias, and Message—w
 ![bias_and_party](images/bias_and_party.png)
 
 ![message](images/message.png)
+
+These models were then applied to analyze the tweets of Marie Glusenkamp Perez (MGP) and Chris Deluzio, shedding light on their campaign messaging strategies in the following section.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
