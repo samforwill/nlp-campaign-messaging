@@ -157,7 +157,7 @@ The optimal models for each classification target—Party, Bias, and Message—w
 
 ![message](images/message.png)
 
-These models were then applied to analyze the tweets of Marie Glusenkamp Perez (MGP) and Chris Deluzio, shedding light on their campaign messaging strategies in the following section.
+These models were then applied to analyze the tweets of Marie Glusenkamp Perez (MGP) and Chris Deluzio, in order to shed light on their campaign messaging strategies in the following section.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
