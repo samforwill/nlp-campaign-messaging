@@ -93,7 +93,7 @@ I hope that my analysis and insights can help inform Democratic strategy to help
 2. 2022 Midterm Results were sourced from [The Daily Kos](https://www.dailykos.com/stories/2022/9/21/1742660/-The-ultimate-Daily-Kos-Elections-guide-to-all-of-our-data-sets).
 3. The campaign tweets from Marie Glusenkamp Perez and Chris Deluzio were hand-copied from their twitter accounts [@MGPforCongress](https://twitter.com/mgpforcongress) and [@ChrisforPA](https://twitter.com/chrisforPA)
 
-4. The 114th Congress tweets addended with characterization inputs was sourced from Crowdflower's Data For Everyone Library via [Kaggle] (https://www.kaggle.com/datasets/crowdflower/political-social-media-posts/data).
+4. The 114th Congress tweets addended with characterization inputs was sourced from Crowdflower's Data For Everyone Library via [Kaggle](https://www.kaggle.com/datasets/crowdflower/political-social-media-posts/data).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -127,11 +127,14 @@ Chris Deluzio, competing in a toss-up district, significantly outperformed again
 ### Tweet Collection
 As mentioned before, the termination of free API access meant manually compiling tweets for Chris Deluzio and Marie Glusenkamp Perez, and then using a custom parsing script to organize and format these tweets into a structured dataset for analysis. Tweets were manually copied, separated by a '|' delimiter, and then organized into a corpus of around 900 tweets per candidate. [candidate notebook](MGP and Delozio.ipynb).
 
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+## 114th Congress Tweet Sentiment Classification
 
 
 
 
-
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
 
