@@ -131,17 +131,6 @@ As mentioned before, the termination of free API access meant manually compiling
 
 ## 114th Congress Tweet Sentiment Classification
 
-So the first thing I notice in observing this tweetset of 5000 tweets from 114th Congressmembers, is that, while each tweet is labeled with "partisan" or "neutral", these is no indication of WHICH party the member belongs to. It literally has the following format:
-
-| label | 
-| :----------- | 
-| From: Mitch McConnell (Senator from Kentucky) |
-| From: Kurt Schrader (Representative from Oregon) |
-| From: Michael Crapo (Senator from Idaho) |
-
-So in order to assign each tweet with the political affiliation of each tweeter, I copied all of the text on this [C-span Summary Page including pictures](https://www.c-span.org/congress/members/?chamber=house&congress=114&all) of every member of the 114th Congress, and then developed some code to parse through every member, delete suffixes, and deal with duplicated member last names (like Rob Bishop UT-01, and Mike Bishop MI-08) and assign their political party. 
-
-
 The dataset of 5000 tweets from 114th Congress members immediately presented a challenge: each tweet was tagged as "partisan" or "neutral," but provided no information on the political party of the tweeter. The data was presented like this:
 
 | label |
