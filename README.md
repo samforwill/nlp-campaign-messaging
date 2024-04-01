@@ -43,9 +43,9 @@
 
 ## Introduction
 
- This project applies Natural Language Processing (NLP) to analyze the twitter messaging strategies of Marie Glusenkamp Perez (WA-03) and Chris Deluzio (PA-17), Democratic newcomers competing in two of the most challenging districts for Democrats in 2022 midterm cycle.<br />
+ This project applies Natural Language Processing (NLP) to analyze the twitter messaging strategies of Marie Glusenkamp Perez (WA-03) and Chris Deluzio (PA-17), Democratic newcomers competing in two of the most challenging districts for Democrats in the 2022 midterm cycle.<br />
  
- Given the 2022 midterms were marked by the defeats of many election deniers and January 6th apologists, a secondary focus of this study is to assess the difference in our candidates' messaging strategies against distinct types of opponents— one faced Joe Kent in WA, a 'Kooky' nominee who fully embraced the 2020 election conspiracies, and the other faced Jeremy Shaffer in PA, a mainstream Republican who acknowledged Joe Biden's 2020 victory. 
+ Given the 2022 midterms were marked by the defeats of many election deniers and January 6th apologists, a secondary focus of this study is to assess the difference in our candidates' messaging strategies against distinct types of opponents— one faced Joe Kent in WA, a 'Kooky' nominee who fully embraced the 2020 election conspiracies, and the other faced Jeremy Shaffer in PA, a mainstream Republican who reluctantly acknowledged Joe Biden's 2020 victory (after desperately trying to avoid the question altogether). 
  
 ## Methodology
  
@@ -65,37 +65,39 @@ Finally, I used unsupervised Topic Modeling to determine and compare the predomi
 
 4. The 114th Congress tweets addended with characterization inputs was sourced from Crowdflower's Data For Everyone Library via [Kaggle](https://www.kaggle.com/datasets/crowdflower/political-social-media-posts/data).
 
+5. GloVe models and vectors https://nlp.stanford.edu/projects/glove/
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## Selecting the Candidates
 
 I determined which candidates to focus on through comparing their 2022 electoral margins with their district's Partisan Voter Index scores (PVI). PVI measures how partisan the district is compared to the nation as a whole, based on how the constituents of those districts voted in previous presidential elections. <br />
 
-To identify standout candidates, I devised a 'Performance' metric by calculating the difference between each district's Partisan Voter Index (PVI) and the candidate's electoral margin in 2022. This approach highlighted those who significantly outperformed their district's typical partisan alignment.
+To identify standout candidates, I devised a 'Performance' metric by calculating the difference between each district's Partisan Voter Index (PVI) and the candidate's electoral margin in 2022. This approach identified those who significantly outperformed their district's typical partisan lean.
 
 
 ![Overperformance](images/Overperformance.png)
 
-Next, my focus shifted to first-time candidates to avoid the complexities of incumbency. Mary Peltola from Alaska was also excluded due to the state's use of Ranked Choice Voting, which, while innovative, complicates direct comparison in this context. <br />
+Of the top 18 overperforming candidates pictured in the graph above by district title, I narrowed my focus to first-time candidates to avoid any influence of incumbency effects. Mary Peltola from Alaska was also excluded due to the state's use of Ranked Choice Voting, which, while I personally am a big fan of RCV, complicates direct comparison of candidates in this context. <br />
 
 That left me with 6 candidates to consider, all having overperformed their districts' partisan lean by at least 5 points.  The following 4 candidates greatly overperformed in their districts, but were eliminated from consideration for various reasons:
 ![Candidates](images/Candidates.png)
-Most of these candidates were ruled out due to their opposition by 'Kooky/Extreme' candidates or the deletion of their campaign's Twitter accounts post-midterms.
-Adam Frisch, who narrowly missed victory in CO-03, was initially a candidate of interest. However, his exclusion was due to the sheer volume of his tweets, which,thanks to Elon Musk's recent termination of free API access by Twitter, made data collection too labor-intensive. The next deepest red district to pull out the win was...
+Most of these candidates were ruled out due to their opposition by 'Kooky/Extreme' candidates or the deletion of their campaign's Twitter accounts post-midterms (Emilia Sykes would have been fun to analyze and I love her glasses <3).
+Adam Frisch, who just barely fell short of victory in CO-03, was initially a candidate of interest, but was excluded due to the sheer volume of his tweets, which,thanks to Elon Musk's recent termination of free API access for Twitter, made data collection too labor-intensive. The next deepest red district to pull out the win was...
 
 ![MGP](images/MGP.png)
 
-Marie Glusenkamp Perez faced cuckoo Joe Kent, who expressed some extreme views like supporting the arrest of Dr. Anthony Fauci and endorsing the claims of a stolen 2020 election. In fact, he became the candidate for WA-03 after successfully primarying the serving Republican Congressperson, Jaime Herrera Beutler, one of only 10 republicans who voted to impeach Donald Trump following the events of January 6th.<br />
+Marie Glusenkamp Perez! She faced cuckoo-bird Joe Kent, who expressed some extreme views like supporting the arrest of Dr. Anthony Fauci and endorsing the claims of a stolen 2020 election. In fact, he became the candidate for WA-03 after successfully primarying the serving Republican Congressperson, Jaime Herrera Beutler, one of only 10 republicans who voted to impeach Donald Trump following the events of January 6th.<br />
 
 
-The next candidate I wanted to assess took a little more research to come to a decision, but I wanted to find a Democrat who overperformed in his district, while contending against an opponent who was a more mainstream. I landed on...
+The next candidate I wanted to assess took a little more research to come to a decision, but I wanted to find a Democrat who overperformed in his district, while contending against an opponent who was more mainstream Republican. I landed on...
 
 ![Deluzio](images/Deluzio.png)
 
-Chris Deluzio, competing in a toss-up district, significantly outperformed against Jeremy Shaffer, who notably sidestepped affirming or denying the 2020 election fraud claims, and even released an ad promising to "protect women's healthcare" <br />
+Chris Deluzio, competing in a toss-up district, significantly outperformed against Jeremy Shaffer, who notably tried to sidestep affirming or denying the 2020 election fraud claims, and even released an ad promising to "protect women's healthcare." <br />
 
 ### Tweet Collection
-As mentioned before, the termination of free API access meant manually compiling tweets for Chris Deluzio and Marie Glusenkamp Perez, and then using a custom parsing script to organize and format these tweets into a structured dataset for analysis. Tweets were manually copied, separated by a '|' delimiter, and then organized into a corpus of around 900 tweets per candidate. [candidate notebook](MGP and Delozio.ipynb).
+As mentioned before, the termination of free API access meant manually compiling tweets for Chris Deluzio and Marie Glusenkamp Perez, and then using a custom parsing script to organize and format these tweets into a structured dataset for analysis. Tweets were manually copied, separated by a '|' delimiter, and then organized into a corpus of around 1000 total tweets. [candidate notebook](MGP and Delozio.ipynb).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -180,3 +182,6 @@ These results underscore the challenges in applying NLP to social media texts, w
     seamless="seamless"
     frameborder="0">
 </iframe>
+
+
+ACKNOWLEDGMENTS -- My lovely partner Felipe who helped me manually copy and paste tweets
