@@ -152,6 +152,9 @@ dmypy.json
 # Cython debug symbols
 cython_debug/
 
+#vector array for GloVe model
+data/glove-twitter-100.model.vectors.npy
+
 # PyCharm
 #  JetBrains specific template is maintained in a separate JetBrains.gitignore that can
 #  be found at https://github.com/github/gitignore/blob/main/Global/JetBrains.gitignore
