@@ -172,3 +172,11 @@ These results underscore the challenges in applying NLP to social media texts, w
 
 
 
+<iframe src="images/deluzio_topics.html"
+    sandbox="allow-same-origin allow-scripts"
+    width="100%"
+    height="500"
+    scrolling="no"
+    seamless="seamless"
+    frameborder="0">
+</iframe>
