@@ -83,8 +83,9 @@ That left me with 6 candidates to consider, all having overperformed their distr
 
 <img src="images/Candidates.png" alt="Candidates" width="600" style="display: block; margin: auto;">
 
-Most of these candidates were ruled out due to their opposition by 'Kooky/Extreme' candidates or the deletion of their campaign's Twitter accounts post-midterms (Emilia Sykes would have been fun to analyze and I love her glasses <3).
-Adam Frisch, who just barely fell short of victory in CO-03, was initially a candidate of interest, but was excluded due to the sheer volume of his tweets, which,thanks to Elon Musk's recent termination of free API access for Twitter, made data collection too labor-intensive. The next deepest red district to pull out the win was...
+Emilia Sykes would have been fun to analyze (and I love her glasses), but she deleted her campaign account following the election. Adam Frisch, who just barely fell short of victory in CO-03, was initially a candidate of interest, but was excluded due to the sheer volume of his tweets, which, thanks to Elon Musk's recent termination of free API access for Twitter, made data collection too labor-intensive. 
+
+But ultimately, I found myself drawn to the candidate who arguably pulled off the biggest flip of the midterms. Her unique campaign and distinctive messaging strategy provided ample material for analysis, ultimately leading me to...
 
 <img src="images/MGP.png" alt="MGP" width="600" style="display: block; margin: auto;">
 
@@ -96,7 +97,7 @@ The next candidate I wanted to assess took a little more research to come to a d
 
 <img src="images/Deluzio.png" alt="Deluzio" width="600" style="display: block; margin: auto;">
 
-Chris Deluzio, competing in a toss-up district, significantly outperformed against Jeremy Shaffer, who notably tried to sidestep affirming or denying the 2020 election fraud claims, and even released an ad promising to "protect women's healthcare." <br />
+Chris Deluzio! He competed in a pure toss-up district and significantly outperformed against Jeremy Shaffer, who notably tried to sidestep affirming or denying the 2020 election fraud claims, and even released an ad promising to "protect women's healthcare." <br />
 
 ### Tweet Collection
 As mentioned before, the termination of free API access meant manually compiling tweets for Chris Deluzio and Marie Glusenkamp Perez, and then using a custom parsing script to organize and format these tweets into a structured dataset for analysis. Tweets were manually copied, separated by a '|' delimiter, and then organized into a corpus of around 1000 total tweets. [candidate notebook](MGP and Delozio.ipynb).
@@ -178,12 +179,15 @@ It's crucial to note the limitations in classifier performance when interpreting
 - Categories like 'personal' and 'policy' showed relatively better performance, but this was mostly due to the fact that the dataset was highly imbalanced. Since most of the messages were tagged as 'policy' and 'personal', the models learned to more often predict these categories 
 - Categories with lower precision and recall, such as 'constituency' and 'other', had low classification reliability.
 
-While the visualizations provide a structured way to explore the candidates' messaging, the underlying classifier limitations relying on the imbalanced dataset necessitate the use of different NLP techniques to glean important strategy insights. 
+The model accuracy is severely limited on the data it was trained on. Due to the human-labeling process for this dataset, the errors and judgments by the topic labelers pass through the model during training, complicated futher by the large imbalance of the labels in certain categories. This problem is exacerbated during the prediction of tweets outside the 114th Congress dataset when introducing the tweetset of Marie Glusenkamp Perez and Chris Deluzio. This issue could be mitigated by introducing the model to more data, more current data, and balancing along categories. This would be preferable to reduce the data dependency of the model and increase the robustness for general purposes.
+
+While the visualizations provide a structured way to explore the candidates' messaging, the underlying limitations necessitate the use of different NLP techniques to glean important strategy insights. 
 
 </details>
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## Unsupervised Topic Modeling
+
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
