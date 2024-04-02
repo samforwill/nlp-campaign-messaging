@@ -204,7 +204,7 @@ Obviously, this topic seems to deal with extremism with words like "extremist", 
 
 Now, this is all well and good, but it *is* a baseline model, so let's not dive too deep into it and see if we can go ahead and up the ante a bit with more complex modeling.
 
-### Non-Negative Matrix Factorization (NMF) on 100-Dimensional Twitter GloVe Vectors
+# Non-Negative Matrix Factorization (NMF) on 100-Dimensional Twitter GloVe Vectors
 
 lol what a silly title. It seems almost designed to make you tune out... BUT DON'T! It's actually super cool and impressively useful for Topic Modeling. 
 
