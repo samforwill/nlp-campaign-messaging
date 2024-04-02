@@ -188,22 +188,99 @@ While the visualizations provide a structured way to explore the candidates' mes
 
 ### Latent Dirichlet Allocation (LDA) on Term Frequency-Inverse Document Frequency (TF-IDF)
 
-As a baseline, I used Latent Dirichlet Allocation (LDA) on Term Frequency-Inverse Document Frequency (TF-IDF) to analyze my candidates' tweets. TF-IDF measures the importance of words in a document (tweet) relative to the corpus (collection of all tweets in the campaign season), using a 'bag of words' approach-- i.e. each tweet is a "bag" containing all the words it contains, without considering their order or their grammatical structure— it simply counts the occurrence of each word. However, with only 1000 already-short tweets, LDA's effectiveness may be limited, and so I used this method as a baseline topic modeling method for comparison.<br/>
+As a baseline, I used Latent Dirichlet Allocation (LDA) on Term Frequency-Inverse Document Frequency (TF-IDF) to analyze my candidates' tweets. TF-IDF measures the importance of words in a document (tweet) relative to the corpus (collection of all tweets in the campaign season), using a 'bag of words' approach-- i.e. each tweet is a "bag" containing all the words it contains, without considering their order or their grammatical structure— it just counts the occurrence of each word. However, with only 1000 already-short tweets, LDA's effectiveness may be limited, and so I used this method as a baseline topic modeling method for comparison.<br/>
 
-LDA uses these term frequencies to search for patterns and group things together into topics it thinks are related. It's up to the administerer to determine the underlying patterns. So, let's look at some results, shall we?
+LDA uses these term frequencies to search for patterns and group things together into topics it thinks are related. It's up to the administerer to determine the underlying patterns. 
 
-Instructed to sort Marie Glusnekamp Perez's tweets into 5 Topics, these are the most important words associated with each topic:
+Having the model sort Marie Glusnekamp Perez's tweets into 5 Topics seemed to make the most sense when looking at the results, at a glance. These are the most important words associated with each topic for MGP:
 
 ![MGP LDA](images/MGP_LDA.png)
 
-It seems like Topic 1 involves canvassing and GOTV messaging with terms like "volunteer", "join", "doors", "Vancouver" (big population center in the district where running up turnout numbers would be important to win). The other topics offer some hints at overarching topics, but it's still not too easy to discern. 
+It seems like Topic 1 involves canvassing and GOTV messaging with terms like "volunteer", "join", "doors", "Vancouver" (big population center in the district where running up turnout numbers would be important to win). The other topics' words offer some hints at overarching themes, but it's still not as easy to discern as the first topic.
 
-Again, LDA topic modeling shouldn't be too sophisticated given our small corpi and short documents, but, as I mentioned earlier, specific terms and their frequencies give each word a weight of importance to the topic. To display this concept, here are the words for Chris Deluzio's first topic with their weight importance graphed: 
+But again, LDA topic modeling shouldn't be too sophisticated given our small corpi and short documents. As I mentioned before, TF-IDF works by counting word frequencies in documents, so each word is given a weight of importance to the topic. To display this concept, here are the words for Chris Deluzio's first topic with term weight importances graphed: 
 ![Deluzio LDA](images/Deluzio_LDA.png)
-This topic seems to deal with extremism with words like "extremist", "abortion", and "ban".
+Obviously, this topic seems to deal with extremism with words like "extremist", "abortion", "ban", and "protect". 
+
+Now, this is all well and good, but it *is* a baseline model, so let's not dive too deep into it and see if we can go ahead and up the ante a bit with more complex modeling.
+
+### Non-Negative Matrix Factorization (NMF) on 100-Dimensional Twitter GloVe Vectors
+
+lol what a silly title. It seems almost designed to make you tune out... BUT DON'T! It's actually super cool and impressively useful for Topic Modeling. 
+
+Let's just dive right in with this "100-dimensional GloVe Vectors" thing: GloVe is an unsupervised learning algorithm designed by [these dudes](https://nlp.stanford.edu/projects/glove/) at Stanford. It can train on any corpus, but the GloVe model I used was trained on 2 billion tweets, which is important for a few reasons. First, GloVe trains on word-word co-occurence rates, but my model is trained specifically on how words are used together and semantically similar ** on Twitter.** Twitter is not newspaper articles, or books, or technical journals, so the word-word dependence rates that develop on twitter are, to a large degree, affected by the character limit itself! Also, the language is more vernacular, and it is designed, necessarily, for interaction. 
+So, given all these aspects of twitter language, I used a model that vectorizes every word into 100-dimensional vectors. Why 100 dimensions? I don't know, I think I thought 100-dimensions would lead to more precise results, but since the method I'm using is a dimension-reduction model for topic modeling, it now seems foolish to have started so high. But what's done is done and the results were cool and interesting, so just hang with me. 
+
+#### Process:
+Every word of every tweet in the corpi were turned into vectors with the GloVe model trained on the twitter space. And then each tweet averaged its vectors for grouping.
+
+These were the results I came up with:
+
+MGP:
+
+    Voice for Working Class
+"When I look at Congress I don’t see people who represent me or my neighbors. I’m running to bring the voices of working people back to Washington D.C.”
+    Digital & Community Engagement
+"Vancouver Rally: Join us as we gather to voice our support and unite for change. Your presence matters.”
+Characteristic Tweet: "Join supporters at Loowit Brewing for a debate watch party. Drink beer, eat food, and watch the debate with good company. If you can’t make it, the debate will be livestreamed."
+    Endorsements & Policy Priorities
+Characteristic Tweet: "(1/3) We asked, and you answered! The results from our GE Survey are in, and here’s what you chose as your top priorities: -Affordable childcare -Jobs & wage growth -Climate action -Abortion rights -Affordable healthcare -Supporting manufacturing -Supporting small business"
+    Voter Mobilization Efforts
+Characteristic Tweet: "JOIN ME THIS SATURDAY 🗓 At our canvass kickoffs in Longview and Vancouver. Come grab a yard sign 🪧 hear me speak 📢 and knock on some doors! 🚪 RSVP Here: https://mobilize.us/marieforcongress/"
+    Anti-Extremism
+"Joe Kent is an extremist who will undermine our Constitution and make our communities less safe. I will protect our democracy and support our firefighters, officers, and first responders. Extremism vs. a safe world is the choice in this election."
+    Volunteer & Fundraising
+"I don't take corporate PAC money. I rely on grassroots contributors to fund this campaign. Please chip in now to keep our new TV ad on the air, defeat Joe Kent, and flip #WA03 blue. https://t.co/iQsEmAa5kB"
+    Defending Rights & Freedoms
+"Americans who love freedom overwhelmingly support marriage equality. This should not be up for debate in 2022. I stand with the LGBTQ community & support the Respect for Marriage Act 🏳️‍🌈."
+
+Deluzio
+
+<!-- Topic Summaries with Example Tweets
+Advocacy for Workers and Local Engagement
+Title: Union Solidarity & Local Empowerment
+Summary: Deluzio champions workers' rights, local manufacturing, and actively participates in community events, contrasting his approach with his opponent's less community-focused stance.
+Tweet on Theme: "Let's make stuff in this country, let's have our union brothers and sisters make it right here in #PA17, and let's get to work."
+Tweet Tying to Opponent: "💪@AlleghenyLabor This is what a union strong shirt made right here at home looks like, and my team will always have our campaign gear made by American union workers. (But if you want foreign-made campaign crap, go check out the guy I'm running against.)"
+Reproductive Rights and Opposition to Extremism
+Title: Reproductive Rights & Fighting Extremism
+Summary: Deluzio strongly supports reproductive rights and positions himself against the perceived extremism of his opponent, especially on issues like abortion.
+Tweet on Theme: "I was willing to die for this country, so you know I'll fight like hell to protect our fundamental rights, including the right to an abortion. #PA17"
+Tweet Tying to Opponent: "My opponent is an extremist who wants an abortion ban in the constitution, even for victims of rape and incest. His views are a threat to our families and our freedom. Help us restore and protect reproductive rights. #PA17”
 
 
-So let's look at the outc
+Title: Jobs & Infrastructure
+Summary: Deluzio advocates for significant investments in infrastructure and job growth, often criticizing his opponent's corporate ties and stance on economic policies.
+Tweet on Theme: "Jobs jobs jobs! Great stuff here for western PA from @JoshShapiroPA"
+Tweet Tying to Opponent: "Jeremy Shaffer has made a fortune building roads and bridges (even nuclear power) in Communist China. We need to get tough on China and invest in jobs and infrastructure right here in America! #PA17Debate”
+
+Title: Democracy & Veterans' Rights
+Summary: Deluzio leverages his background as a veteran to underline his dedication to democracy and veterans' rights, contrasting his record with his opponent's alignment with figures who challenge democratic norms.
+Tweet on Theme: "I risked my life for this country because I believe in America. The patriotism I learned growing up right here in #PA17 demands we fight for our common good. And I'm running for Congress to serve this country and all of us once again, always putting you and your families first.🇺🇸"
+Tweet Tying to Opponent: "Jeremy Shaffer is already working with extremists like Mastriano to strip away reproductive freedom. I've been committed to defending our Constitution since my days in uniform, and I'll always fight to protect your rights from these attacks.”
+Tweet Tying to Opponent: "Jeremy Shaffer is campaigning with election deniers - people who will do everything to undermine our elections, our democracy, and the integrity of YOUR VOTE. #PA17Debate"
+
+Title: Corporate Greed & Economic Fairness
+Summary: Deluzio criticizes corporate practices contributing to economic inequality, advocating for the middle class and small businesses. He contrasts his stance with his opponent's corporate affiliations, emphasizing the need for fair economic policies.
+Tweet on Theme: "Huge corporations with too much power have been jacking up prices while making record $$. CEOs are openly bragging about it! I'll fight them. No more price gouging, no more lousy trade deals & stretched supply chains, no more crushing workers & consumers."
+Tweet Tying to Opponent: "We have to fight the corporate jagoffs ripping us off, sitting on record profits that we're all paying for. They already have enough yes-men working for 'em in Congress; they don't need another one like my #PA17 corporate executive opponent.”
+
+Title: Social Security Defense & Anti-Extremism
+Summary: Deluzio firmly opposes policies from the right that threaten Social Security, presenting himself as a defender of senior citizens' rights against extremism. His campaign draws a clear line between his advocacy for social safety nets and his opponent's alignment with policies that could undermine these protections.
+Tweet on Theme: "These insane Republican threats to Social Security and Medicare would send millions of retirees into poverty. I'll fight them tooth and nail when I'm your #PA17 Congressman."
+Tweet Tying to Opponent: "My opponent 🤝 Hurting #PA17 seniors. If elected, Shaffer will join other radical Republicans to put Social Security on the chopping block and undermine seniors' health care by cutting Medicare. I won't let that stand. Our seniors deserve better." -->
+
+deluzio and screenshots of tweets
+
+
+
+![
+
+
+
+
+
+
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
