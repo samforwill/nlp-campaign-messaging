@@ -113,8 +113,9 @@ As mentioned before, the termination of free API access meant manually compiling
     <p>words words words words words</p>
     <p>words words words words words</p>
   </div>
-  <img src="images/young_guns.png" alt="young guns" style="width: 300px; margin-left: 20px;">
+  <img src="images/young_guns.png" alt="young guns" style="width: 300px; margin-left: 20px; float: right;">
 </div>
+
 
 
 
