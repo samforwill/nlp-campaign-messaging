@@ -68,7 +68,7 @@ Finally, I used unsupervised Topic Modeling techniques to determine and compare 
 
 ## Selecting the Candidates
 
-**SYNOPSIS:** I determined which candidates to focus on through comparing their 2022 electoral margins with their district's Partisan Voter Index scores (PVI). I ultimately landed on Marie Glusenkamp Perez in WA-04, and Chris Deluzio in PA-17. MGP's opponent, Joe Kent, was a far-right candidate, while Deluzio's opponent, Jeremy Shaffer, was a much more mainstream center-right candidate. <br />
+**SYNOPSIS:** I determined which candidates to focus on through comparing their 2022 electoral margins with their district's Partisan Voter Index scores (PVI). I ultimately landed on Marie Glusenkamp Perez in WA-03, and Chris Deluzio in PA-17. MGP's opponent, Joe Kent, was a far-right candidate, while Deluzio's opponent, Jeremy Shaffer, was a much more mainstream center-right candidate. <br />
 
 <details>
 <summary><b><big>Expand for Detailed Walk-Through Below</big></b></summary>
@@ -92,7 +92,7 @@ Adam Frisch, who just barely fell short of victory in CO-03, was initially a can
 Marie Glusenkamp Perez! She faced cuckoo-bird Joe Kent, who expressed some extreme views like supporting the arrest of Dr. Anthony Fauci and endorsing the claims of a stolen 2020 election. In fact, he became the candidate for WA-03 after successfully primarying the serving Republican Congressperson, Jaime Herrera Beutler, one of only 10 republicans who voted to impeach Donald Trump following the events of January 6th.<br />
 
 
-The next candidate I wanted to assess took a little more research to come to a decision, but I wanted to find a Democrat who overperformed in his district, while contending against an opponent who was more mainstream Republican. I landed on...
+The next candidate I wanted to assess took a little more research to come to a decision, but I wanted to find a Democrat who overperformed in their district, while contending against an opponent who was a more mainstream Republican. I landed on...
 
 <img src="images/Deluzio.png" alt="Deluzio" width="600" style="display: block; margin: auto;">
 
@@ -104,7 +104,7 @@ As mentioned before, the termination of free API access meant manually compiling
 </details>
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-# 114th Congress Tweet Sentiment Classification
+## 114th Congress Tweet Sentiment Classification
 
 
 Diving into this 2013-2014 dataset of politicians' social media felt like sorting through a cursed time capsule—fascinating, nostalgic, but ultimately reflecting an unrecognizable reality. Many of the key players in Congress, whose tweets I wrangled here, have fizzled or been replaced. And among the 5000 posts, not a single mention of 'Donald Trump'.
@@ -183,6 +183,9 @@ While the visualizations provide a structured way to explore the candidates' mes
 </details>
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
+## Unsupervised Topic Modeling
 
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ACKNOWLEDGMENTS -- My lovely partner Felipe who helped me manually copy and paste tweets
