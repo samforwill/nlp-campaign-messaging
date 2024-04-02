@@ -111,26 +111,9 @@ As mentioned before, the termination of free API access meant manually compiling
 Diving into this 2013-2014 dataset of politicians' social media felt like sorting through a cursed time capsule—fascinating, nostalgic, but ultimately reflecting an unrecognizable reality. Many of the key players in Congress, whose tweets I wrangled here, have fizzled or been replaced. And among the 5000 posts, not a single mention of 'Donald Trump'.
 
 While the dataset does have its utility, its limitations were overwhelming. Nonetheless, for this exercise, I used some advanced classification modeling techniques to attempt to extract insights. The details are outlined below for those interested in the gritty process. The next section, however, is where we'll dive into the more interesting and fruitful analysis.
-
-<summary>Detailed Process (For the Curious)</summary>
-
-
-
-
-
-
-
-### Important TL;DR:
-**  At first glance, it would seem like having a collection of thousands of social media messages from politicians would be the perfect dataset for a project like this, but this dataset had a lot of limitations. 
-First off, the tweets and posts are all from 2013/2014, and, suffice it to say, there have been some huge political shifts in that time. Both the Majority and Minority leader in the house at the time were ousted in primaries to their left and right. And then there's the massive seachange in our political demeanor that came with the campaign, presidency, defeat, denial of defeat, and, of course, attempted overthrow of the government by Donald Trump. Honestly, it was kind of eerie reading through all these messages from the long begotten yesteryears without the orange menace. 
-Anyway, Next, there's the source of the data itself, which was tagged and labeled by human hands. Which humans? How many humans? I don't know! But someone or some people labeled each tweet as an "attack message", or a "policy" message, putting them into categories that are hard to define and necessarily subjective.
-So, as far as extracting useful information about my two candidates' campaign strategies, this process wasn't too elucidating, shall we say. HOWEVER, as far as good practice and extracting as much classification power from this dataset as possible, the processed is outlined below in detail. 
-The real treat comes in the next section, where I will spend the bulk of my energies, but expand to view the full process below. 
-
 <details>
-  <summary>Click me</summary>
-  
-  
+<summary>Detailed Process (For the Curious)</summary>
+</details>
 
 
 The dataset of 5000 tweets from 114th Congress members immediately presented a challenge: each tweet was tagged as "partisan" or "neutral," but provided no information on the political party of the tweeter. The data was presented like this:
