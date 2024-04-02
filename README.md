@@ -74,9 +74,9 @@ Finally, I used unsupervised Topic Modeling techniques to determine and compare 
 I determined which candidates to focus on through comparing their 2022 electoral margins with their district's Partisan Voter Index scores (PVI). PVI measures how partisan the district is compared to the nation as a whole, based on how the constituents of those districts voted in previous presidential elections. <br />
 
 To identify standout candidates, I devised a 'Performance' metric by calculating the difference between each district's Partisan Voter Index (PVI) and the candidate's electoral margin in 2022. This approach identified those who significantly outperformed their district's typical partisan lean.
-
+<picture>
 ![Overperformance](images/Overperformance.png)
-
+</picture>
 
 Of the top 18 overperforming candidates indicated in the graph above by district title, I narrowed my focus to first-time candidates to avoid any influence of incumbency effects. Mary Peltola from Alaska was also excluded due to the state's use of Ranked Choice Voting, which, while I am personally a fan of RCV, complicates direct comparison of candidates in this context. <br />
 
