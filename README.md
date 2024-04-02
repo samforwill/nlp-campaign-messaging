@@ -210,7 +210,7 @@ Now, this is all well and good, but it *is* a baseline model, so let's not dive 
 lol what a silly title. It seems almost designed to make you tune out... BUT DON'T! It's actually super cool and impressively useful for Topic Modeling. 
 
 Let's just dive right in with this "100-dimensional GloVe Vectors" thing: GloVe is an unsupervised learning algorithm designed by [these dudes](https://nlp.stanford.edu/projects/glove/) at Stanford. It can train on any corpus, but the GloVe model I used was trained on 2 billion tweets, which is important for a few reasons. First, GloVe trains on word-word co-occurence rates, but my model is trained specifically on how words are used together and semantically similar ** on Twitter.** Twitter is not newspaper articles, or books, or technical journals, so the word-word dependence rates that develop on twitter are, to a large degree, affected by the character limit itself! Also, the language is more vernacular, and it is designed, necessarily, for interaction. 
-So, given all these aspects of twitter language, I used a model that vectorizes every word into 100-dimensional vectors. Why 100 dimensions? I don't know, I think I thought 100-dimensions would lead to more precise results, but since the method I'm using is a dimension-reduction model for topic modeling, it now seems foolish to have started so high. But what's done is done and the results were cool and interesting, so just hang with me. 
+So, given all these aspects of twitter language, I used a model that vectorizes every word into 100-dimensional vectors. 
 
 #### Process:
 Every word of every tweet in the corpi were turned into vectors with the GloVe model trained on the twitter space. And then each tweet averaged its vectors for grouping.
