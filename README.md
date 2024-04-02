@@ -104,14 +104,16 @@ Chris Deluzio, competing in a toss-up district, significantly outperformed again
 ### Tweet Collection
 As mentioned before, the termination of free API access meant manually compiling tweets for Chris Deluzio and Marie Glusenkamp Perez, and then using a custom parsing script to organize and format these tweets into a structured dataset for analysis. Tweets were manually copied, separated by a '|' delimiter, and then organized into a corpus of around 1000 total tweets. [candidate notebook](MGP and Delozio.ipynb).
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
 </details>
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
 # 114th Congress Tweet Sentiment Classification
 
 
 Diving into this 2013-2014 dataset of politicians' social media felt like sorting through a cursed time capsule—fascinating, nostalgic, but ultimately reflecting an unrecognizable reality. Many of the key players in Congress, whose tweets I wrangled here, have fizzled or been replaced. And among the 5000 posts, not a single mention of 'Donald Trump'.
 
 While the dataset does have its utility, its limitations were overwhelming. Nonetheless, for this exercise, I used some advanced classification modeling techniques to attempt to extract insights. The details are outlined below for those interested in the gritty process. The next section, however, is where we'll dive into the more interesting and fruitful analysis.
+
 <details>
 <summary>Detailed Process (For the Curious)</summary>
 
