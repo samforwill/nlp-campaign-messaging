@@ -75,8 +75,8 @@ I determined which candidates to focus on through comparing their 2022 electoral
 
 To identify standout candidates, I devised a 'Performance' metric by calculating the difference between each district's Partisan Voter Index (PVI) and the candidate's electoral margin in 2022. This approach identified those who significantly outperformed their district's typical partisan lean.
 
-
 ![Overperformance](images/Overperformance.png)
+
 
 Of the top 18 overperforming candidates indicated in the graph above by district title, I narrowed my focus to first-time candidates to avoid any influence of incumbency effects. Mary Peltola from Alaska was also excluded due to the state's use of Ranked Choice Voting, which, while I am personally a fan of RCV, complicates direct comparison of candidates in this context. <br />
 
@@ -104,22 +104,29 @@ As mentioned before, the termination of free API access meant manually compiling
 # 114th Congress Tweet Sentiment Classification
   <img src="images/young_guns.png" alt="young guns" style="width: 100px; margin-left: 20px; float: right;">
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>114th Congress Tweet Sentiment Classification</title>
+</head>
+<body>
+
+    <img src="images/young_guns.png" alt="young guns" style="width: 100px; margin-left: 20px; float: right;">
+    
+    <h1>114th Congress Tweet Sentiment Classification</h1>
+    
+    <p>Diving into this 2013-2014 dataset of politicians' social media felt like sorting through a cursed time capsule—both fascinating and somewhat nostalgic, but ultimately reflecting an unrecognizable reality. Many of the key players in Congress, whose tweets I wrangled here, have fizzled or been replaced. And among the 5000 posts, not a single mention of 'Donald Trump'. Truly, a different universe.</p>
+
+</body>
+</html>
 
 
 
 
 
-
-
-
-
-
-<div style="display: flex;">
-  <span style="flex: 1;">
-    Diving into this 2013-2014 dataset of politicians' social media felt like sorting through a cursed time capsule—both fascinating and somewhat nostalgic, but ultimately reflecting an unrecognizable reality. Many of the key players in Congress, whose tweets I wrangled here, have fizzled or been replaced. And among the 5000 posts, not a single mention of 'Donald Trump'. Truly, a different universe.
-  </span>
-  <img src="images/young_guns.png" alt="young guns" style="width: 300px; margin-left: 20px;">
-</div>
+Diving into this 2013-2014 dataset of politicians' social media felt like sorting through a cursed time capsule—both fascinating and somewhat nostalgic, but ultimately reflecting an unrecognizable reality. Many of the key players in Congress, whose tweets I wrangled here, have fizzled or been replaced. And among the 5000 posts, not a single mention of 'Donald Trump'. Truly, a different universe.
 
 Moreover, while the dataset does have its utility, questions about the key target characteristics reveal some of its limitations. Each tweet was manually tagged by an unspecified person or group of persons, and this process of labeling tweets as 'attack' or 'policy' or 'personal' feels like a necessarily subjective exercise. 
 
