@@ -113,8 +113,6 @@ Diving into this 2013-2014 dataset of politicians' social media felt like sortin
 While the dataset does have its utility, its limitations were overwhelming. Nonetheless, for this exercise, I used some advanced classification modeling techniques to attempt to extract insights. The details are outlined below for those interested in the gritty process. The next section, however, is where we'll dive into the more interesting and fruitful analysis.
 <details>
 <summary>Detailed Process (For the Curious)</summary>
-</details>
-
 
 The dataset of 5000 tweets from 114th Congress members immediately presented a challenge: each tweet was tagged as "partisan" or "neutral," but provided no information on the political party of the tweeter. The data was presented like this:
 
