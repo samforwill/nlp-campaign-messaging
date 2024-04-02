@@ -192,13 +192,13 @@ As a baseline, I used Latent Dirichlet Allocation (LDA) on Term Frequency-Invers
 
 LDA uses these term frequencies to search for patterns and group things together into topics it thinks are related. It's up to the user to interpret these topics and discern underlying patterns. 
 
-Sorting Marie Glusenkamp Perez's tweetset into 5 topics appeared to work best after experimenting with different number of topics and reviewing the results. Below are the key words associated with each topic for MGP:"
+Sorting Marie Glusenkamp Perez's tweetset into 5 topics appeared to work best after experimenting with different number of topics and reviewing the results. Below are the key words associated with each topic for MGP:
 
 ![MGP LDA](images/MGP_LDA.png)
 
 It seems like Topic 1 involves canvassing and GOTV messaging with terms like "volunteer", "join", "doors", "Vancouver" (big population center in the district where running up turnout numbers would be important to win). The other topics' words offer some hints at overarching themes, but it's still not as easy to discern as the first topic. But again, LDA topic modeling shouldn't be too sophisticated given our small corpi and short documents. 
 
-TF-IDF scores words based on frequency and rarity, while LDA assigns each word a weight indicating its importance to the topic. LDA then identifies topics based on these scores. To demonstrate this concept, below is a bar graph showing the top 10 important words for Chris Deluzio's first topic, along with the weights (importance) of each word to the topic:
+TF-IDF scores words based on frequency and rarity, then LDA identifies topics based on these scores.  Since LDA is a probabilistic model, when it is determining underlying topics, it assigns each word a weight indicating its importance to the topic.  To demonstrate this concept, below is a bar graph showing the top 10 important words for Chris Deluzio's first topic, along with the weights (importance) of each word to the topic:
 
 ![Deluzio LDA](images/Deluzio_LDA.png)
 Obviously, this topic seems to deal with extremism with words like "extremist", "abortion", "ban", and "protect". 
