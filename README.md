@@ -26,18 +26,13 @@
       <a href="#data-used">Data Used</a>
     </li>
     <li><a href="#selecting-the-candidates">Selecting the Candidates</a></li>
-          <ul>
-        <li><a href="#tweet-collection">Tweet Collection</a></li>
-              </ul>
     <li><a href="#114th-congress-tweet-sentiment-classification">114th Congress Tweet Sentiment Classification</a></li>
-    <li><a href="#classifying-mgp-and-deluzio-tweets">Classifying MGP and Deluzio Tweets</a></li>
-   <ul> <li><a href="#analyzing-tweets-with-trained-models">
-   Analyzing Tweets with Trained Models</a></li></ul>
-      <ul> <li><a href="#unsupervised-topic-modeling">Unsupervised Topic Modeling</a></li></ul>
-    <li><a href="#recommendations-and-conclusions">Recommendations and Conclusions</a></li>
+    <li><a href="#unsupervised-topic-modeling">Unsupervised Topic Modeling</a></li>
+    <li><a href="topic-comparisons-between-candidates">Topic Comparisons between Candidates</a></li>
+    <li><a href="#insights-and-conclusions">Insights and Conclusions</a></li>
     <li><a href="#future-work">Future Work</a></li>
-  </ol>
-  <!--li><a href="#acknowledgments">Acknowledgments</a></li>
+    <li><a href="#acknowledgments">Acknowledgments</a></li>
+   </ol>
 <!--/details-->
 
 
@@ -46,6 +41,8 @@
  This project applies Natural Language Processing (NLP) to analyze the twitter messaging strategies of Marie Glusenkamp Perez (WA-03) and Chris Deluzio (PA-17), Democratic newcomers competing in two of the most challenging districts for Democrats in the 2022 midterm cycle.<br />
  
  Given the 2022 midterms were marked by the defeats of many election deniers and January 6th apologists, a secondary focus of this study is to assess the difference in our candidates' messaging strategies against distinct types of opponents— one faced Joe Kent in WA, a 'Kooky' nominee who fully embraced the 2020 election conspiracies, and the other faced Jeremy Shaffer in PA, a mainstream Republican who reluctantly acknowledged Joe Biden's 2020 victory (after desperately trying to avoid the question altogether). 
+ 
+ <p align="right">(<a href="#readme-top">back to top</a>)</p>
  
 ## Methodology
  
@@ -74,7 +71,7 @@ Finally, I used unsupervised Topic Modeling techniques to determine and compare 
 **SYNOPSIS:** I determined which candidates to focus on through comparing their 2022 electoral margins with their district's Partisan Voter Index scores (PVI). I ultimately landed on Marie Glusenkamp Perez in WA-04, and Chris Deluzio in PA-17. MGP's opponent, Joe Kent, was a far-right candidate, while Deluzio's opponent, Jeremy Shaffer, was a much more mainstream center-right candidate. <br />
 
 <details>
-## <summary><b><big>Expand for Detailed Walk-Through Below</big></b></summary>
+<summary><b><big>Expand for Detailed Walk-Through Below</big></b></summary>
 
 To identify standout candidates, I devised a 'Performance' metric by calculating the difference between each district's Partisan Voter Index (PVI) and the candidate's electoral margin in 2022. PVI measures how partisan the district is compared to the nation as a whole, based on how the constituents of those districts voted in previous presidential elections. This approach identified those who significantly outperformed their district's typical partisan lean.
 
@@ -147,7 +144,7 @@ These models were then applied to analyze the tweets of Marie Glusenkamp Perez (
 
 ## Analyzing Tweets with Trained Models
 
-After fine-tuning our models on the 114th Congress dataset, I turned my attention to the real test: analyzing the campaign messages of Marie Glusenkamp Perez (MGP) and Chris Deluzio. Here's the process:
+After fine-tuning the models on the 114th Congress dataset, I turned my attention to the real test: analyzing the campaign messages of Marie Glusenkamp Perez (MGP) and Chris Deluzio. Here's the process:
 
 ### Analysis Workflow -- From Raw Tweets to Insights
 #### Preprocessing Tweets:
@@ -178,22 +175,14 @@ The distribution of tweets across different message categories (e.g., 'policy', 
 **Performance Caveats**:
 It's crucial to note the limitations in classifier performance when interpreting these visualizations. For instance, the 'message' category classifier achieved an accuracy of approximately 36.7%, with varying precision and recall across categories. This variability suggests that while some insights can be gleaned from the classified data, the findings should be taken with caution.
 
-- Categories like 'personal' and 'policy' showed relatively better performance, indicating more reliability in these insights.
-- Categories with lower precision and recall, such as 'constituency' and 'other', may be less reliable for drawing conclusions.
+- Categories like 'personal' and 'policy' showed relatively better performance, but this was mostly due to the fact that the dataset was highly imbalanced. Since most of the messages were tagged as 'policy' and 'personal', the models learned to more often predict these categories 
+- Categories with lower precision and recall, such as 'constituency' and 'other', had low classification reliability.
 
-These results underscore the challenges in applying NLP to social media texts, where nuances and context can significantly impact classification accuracy. Therefore, while the visualizations provide a structured way to explore the candidates' messaging, the underlying classifier limitations necessitate a careful interpretation of these insights.
+While the visualizations provide a structured way to explore the candidates' messaging, the underlying classifier limitations relying on the imbalanced dataset necessitate the use of different NLP techniques to glean important strategy insights. 
 
 </details>
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-
-<iframe src="images/deluzio_topics.html"
-    sandbox="allow-same-origin allow-scripts"
-    width="100%"
-    height="500"
-    scrolling="no"
-    seamless="seamless"
-    frameborder="0">
-</iframe>
 
 
 ACKNOWLEDGMENTS -- My lovely partner Felipe who helped me manually copy and paste tweets
