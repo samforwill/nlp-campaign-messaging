@@ -194,7 +194,7 @@ LDA uses these term frequencies to search for patterns and group things together
 
 Instructed to sort Marie Glusnekamp Perez's tweets into 5 Topics, these are the most important words associated with each topic:
 
-![MPG LDA](images/MPG_LDA.png)
+![MGP LDA](images/MGP_LDA.png)
 
 It seems like Topic 1 involves canvassing and GOTV messaging with terms like "volunteer", "join", "doors", "Vancouver" (big population center in the district where running up turnout numbers would be important to win). The other topics offer some hints at overarching topics, but it's still not too easy to discern. 
 
