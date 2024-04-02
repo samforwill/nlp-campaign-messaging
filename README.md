@@ -217,7 +217,7 @@ Every word of every tweet in the corpi were turned into vectors with the GloVe m
 These were the results I came up with:
 
 MGP:
-
+<!--
    *  Voice for Working Class
 * "When I look at Congress I don’t see people who represent me or my neighbors. I’m running to bring the voices of working people back to Washington D.C.”
     Digital & Community Engagement
