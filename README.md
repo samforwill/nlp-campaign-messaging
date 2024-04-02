@@ -102,15 +102,7 @@ As mentioned before, the termination of free API access meant manually compiling
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 # 114th Congress Tweet Sentiment Classification
-
-
-<div style="display: flex;">
-  <div style="flex: 1;">
-    words words words
-    words words words
-  <img src="images/young_guns.png" alt="young guns" style="width: 300px; margin-left: 20px; float: right;">
-</div>
-
+  <img src="images/young_guns.png" alt="young guns" style="width: 100px; margin-left: 20px; float: right;">
 
 
 
