@@ -274,9 +274,9 @@ deluzio and screenshots of tweets
 
 
 
-[![MGP Topics](images/MGP_topics.png)](https://samforwill.w3spaces.com/bokeh/mgp_topics.html)
+[![MGP Topics](images/MGP_Topics.png)](https://samforwill.w3spaces.com/bokeh/mgp_topics.html)
 
-[![Deluzio Topics](images/Deluzio_topics.png)](https://samforwill.w3spaces.com/bokeh/deluzio_topics.html)
+[![Deluzio Topics](images/Deluzio_Topics.png)](https://samforwill.w3spaces.com/bokeh/deluzio_topics.html)
 
 cosine-similar term search process and iteratively creating the dataframe
 [![Candidate Comparisons](images/Candidate_Comparisons.png)](https://samforwill.w3spaces.com/bokeh/candidate_comparisons.html)
