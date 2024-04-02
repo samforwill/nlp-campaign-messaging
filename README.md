@@ -81,8 +81,9 @@ To identify standout candidates, I devised a 'Performance' metric by calculating
 Of the top 18 overperforming candidates indicated in the graph above by district title, I narrowed my focus to first-time candidates to avoid any influence of incumbency effects. Mary Peltola from Alaska was also excluded due to the state's use of Ranked Choice Voting, which, while I am personally a fan of RCV, complicates direct comparison of candidates in this context. <br />
 
 That left me with 6 candidates to consider, all having overperformed their districts' partisan lean by at least 5 points.  The following 4 candidates greatly overperformed in their districts, but were eliminated from consideration for various reasons:
-
+<picture>
 <img src="images/Candidates.png" alt="Candidates" width="600" style="display: block; margin: auto;">
+</picture>
 
 Most of these candidates were ruled out due to their opposition by 'Kooky/Extreme' candidates or the deletion of their campaign's Twitter accounts post-midterms (Emilia Sykes would have been fun to analyze and I love her glasses <3).
 Adam Frisch, who just barely fell short of victory in CO-03, was initially a candidate of interest, but was excluded due to the sheer volume of his tweets, which,thanks to Elon Musk's recent termination of free API access for Twitter, made data collection too labor-intensive. The next deepest red district to pull out the win was...
