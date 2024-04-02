@@ -104,11 +104,12 @@ As mentioned before, the termination of free API access meant manually compiling
 # 114th Congress Tweet Sentiment Classification
 
 ### Quick Takeaway:
-
-<div style="text-align: right;">
-  <img src="images/young_guns.png" alt="young guns" width="300">
-Diving into this 2013-2014 dataset of politicians' social media felt like sorting through a cursed time capsule— both fascinating and somewhat nostalgic, but ultimately reflecting an unrecognizable reality. Many of the key players in Congress, whose tweets I wrangled here, have fizzled or been replaced. And among the 5000 posts, not a single mention of 'Donald Trump'. Truly, a different universe. </span>
-
+<div style="display: flex;">
+  <span style="flex: 1;">
+    Diving into this 2013-2014 dataset of politicians' social media felt like sorting through a cursed time capsule—both fascinating and somewhat nostalgic, but ultimately reflecting an unrecognizable reality. Many of the key players in Congress, whose tweets I wrangled here, have fizzled or been replaced. And among the 5000 posts, not a single mention of 'Donald Trump'. Truly, a different universe.
+  </span>
+  <img src="images/young_guns.png" alt="young guns" style="width: 300px; margin-left: 20px;">
+</div>
 Moreover, while the dataset does have its utility, questions about the key target characteristics reveal some of its limitations. Each tweet was manually tagged by an unspecified person or group of persons, and this process of labeling tweets as 'attack' or 'policy' or 'personal' feels like a necessarily subjective exercise. 
 
 Despite these hurdles, I used some advanced classification modeling techniques to extract insights from this dataset. However, the utility of classifying tweets as "biased" or "neutral" doesn't reveal too much important information about the campaign strategies in 2022 or looking ahead to 2024 and beyond. Though, not looking too far ahead, because as I mentioned. The entire world can change in a decade. 
