@@ -103,6 +103,29 @@ As mentioned before, the termination of free API access meant manually compiling
 
 # 114th Congress Tweet Sentiment Classification
 
+
+<div style="display: flex;">
+  <div style="flex: 1;">
+    <p>words words words</p>
+    <p>words words words</p>
+    <p>words words words</p>
+    <p>words words words words words</p>
+    <p>words words words words words</p>
+    <p>words words words words words</p>
+  </div>
+  <img src="images/young_guns.png" alt="young guns" style="width: 300px; margin-left: 20px;">
+</div>
+
+
+
+
+
+
+
+
+
+
+
 <div style="display: flex;">
   <span style="flex: 1;">
     Diving into this 2013-2014 dataset of politicians' social media felt like sorting through a cursed time capsule—both fascinating and somewhat nostalgic, but ultimately reflecting an unrecognizable reality. Many of the key players in Congress, whose tweets I wrangled here, have fizzled or been replaced. And among the 5000 posts, not a single mention of 'Donald Trump'. Truly, a different universe.
