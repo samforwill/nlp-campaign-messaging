@@ -192,7 +192,7 @@ As a baseline, I used Latent Dirichlet Allocation (LDA) on Term Frequency-Invers
 
 LDA uses these term frequencies to search for patterns and group things together into topics it thinks are related. It's up to the user to interpret these topics and discern underlying patterns. 
 
-Sorting Marie Glusnekamp Perez's tweetset into 5 topics appeared to work best after experimenting with different number of topics and reviewing the results. Below are the key words associated with each topic for MGP:"
+Sorting Marie Glusenkamp Perez's tweetset into 5 topics appeared to work best after experimenting with different number of topics and reviewing the results. Below are the key words associated with each topic for MGP:"
 
 ![MGP LDA](images/MGP_LDA.png)
 
