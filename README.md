@@ -106,13 +106,8 @@ As mentioned before, the termination of free API access meant manually compiling
 
 <div style="display: flex;">
   <div style="flex: 1;">
-    <p>words words words</p>
-    <p>words words words</p>
-    <p>words words words</p>
-    <p>words words words words words</p>
-    <p>words words words words words</p>
-    <p>words words words words words</p>
-  </div>
+    words words words
+    words words words
   <img src="images/young_guns.png" alt="young guns" style="width: 300px; margin-left: 20px; float: right;">
 </div>
 
