@@ -51,9 +51,9 @@
  
  First, I trained classification models on a dataset of 5000 Twitter/Facebook posts of members of the 114th Congress to characterize each message's: bias (neutral vs. partisan), nature of the message (e.g., informational, personal, policy, mobilization, attack), and political affiliation of the author (Democrat or Republican).
  
- I then used the best performing trained models to classify my two candidates' tweets over a 6-month period immediately leading up to the 2022 midterm elections. This classification helped me analyze overall digital strategies, and also allowed me to compare Marie Glusenkamp Perez and Chris Deluzio's messaging against each other.
-
-Finally, I used unsupervised Topic Modeling to determine and compare the predominant themes in the candidates’ tweetsets. The topic model analyzed the collection of peak campaign season tweets for MGP and Deluzio to find patterns based on word frequency, order, distance, and meaning and then group various items into relevant categories. 
+ I then used the best performing trained models to classify my two candidates' tweets over a 6-month period immediately leading up to the 2022 midterm elections. 
+ 
+Finally, I used unsupervised Topic Modeling techniques to determine and compare the predominant themes in the candidates’ messaging strategies. The topic model analyzed the collection of peak campaign season tweets for MGP and Deluzio to find patterns based on word frequency, and semantic similarity to group various items into categories. 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -78,7 +78,7 @@ To identify standout candidates, I devised a 'Performance' metric by calculating
 
 ![Overperformance](images/Overperformance.png)
 
-Of the top 18 overperforming candidates pictured in the graph above by district title, I narrowed my focus to first-time candidates to avoid any influence of incumbency effects. Mary Peltola from Alaska was also excluded due to the state's use of Ranked Choice Voting, which, while I personally am a big fan of RCV, complicates direct comparison of candidates in this context. <br />
+Of the top 18 overperforming candidates indicated in the graph above by district title, I narrowed my focus to first-time candidates to avoid any influence of incumbency effects. Mary Peltola from Alaska was also excluded due to the state's use of Ranked Choice Voting, which, while I am personally a fan of RCV, complicates direct comparison of candidates in this context. <br />
 
 That left me with 6 candidates to consider, all having overperformed their districts' partisan lean by at least 5 points.  The following 4 candidates greatly overperformed in their districts, but were eliminated from consideration for various reasons:
 ![Candidates](images/Candidates.png)
@@ -101,7 +101,44 @@ As mentioned before, the termination of free API access meant manually compiling
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-## 114th Congress Tweet Sentiment Classification
+# 114th Congress Tweet Sentiment Classification
+
+### Quick Takeaway:
+
+<div>
+  <img src="young_guns.png" alt="young guns">
+  <span>
+Diving into this 2013-2014 dataset of politicians' social media felt like sorting through a cursed time capsule— both fascinating and somewhat nostalgic, but ultimately reflecting an unrecognizable reality. Many of the key players in Congress, whose tweets I wrangled here, have fizzled or been replaced. And among the 5000 posts, not a single mention of 'Donald Trump'. Truly, a different universe. </span>
+
+Moreover, while the dataset does have its utility, questions about the key target characteristics reveal some of its limitations. Each tweet was manually tagged by an unspecified person or group of persons, and this process of labeling tweets as 'attack' or 'policy' or 'personal' feels like a necessarily subjective exercise. 
+
+Despite these hurdles, I used some advanced classification modeling techniques to extract insights from this dataset. However, the utility of classifying tweets as "biased" or "neutral" doesn't reveal too much important information about the campaign strategies in 2022 or looking ahead to 2024 and beyond. Though, not looking too far ahead, because as I mentioned. The entire world can change in a decade. 
+ The details are outlined below for those interested in the gritty process. The next section, however, is where we'll dive into the more interesting and fruitful analysis.
+
+</div>
+
+
+<details>
+  <summary>Detailed Process (For the Curious)</summary>
+
+
+
+
+
+
+
+### Important TL;DR:
+**  At first glance, it would seem like having a collection of thousands of social media messages from politicians would be the perfect dataset for a project like this, but this dataset had a lot of limitations. 
+First off, the tweets and posts are all from 2013/2014, and, suffice it to say, there have been some huge political shifts in that time. Both the Majority and Minority leader in the house at the time were ousted in primaries to their left and right. And then there's the massive seachange in our political demeanor that came with the campaign, presidency, defeat, denial of defeat, and, of course, attempted overthrow of the government by Donald Trump. Honestly, it was kind of eerie reading through all these messages from the long begotten yesteryears without the orange menace. 
+Anyway, Next, there's the source of the data itself, which was tagged and labeled by human hands. Which humans? How many humans? I don't know! But someone or some people labeled each tweet as an "attack message", or a "policy" message, putting them into categories that are hard to define and necessarily subjective.
+So, as far as extracting useful information about my two candidates' campaign strategies, this process wasn't too elucidating, shall we say. HOWEVER, as far as good practice and extracting as much classification power from this dataset as possible, the processed is outlined below in detail. 
+The real treat comes in the next section, where I will spend the bulk of my energies, but expand to view the full process below. 
+
+<details>
+  <summary>Click me</summary>
+  
+  
+
 
 The dataset of 5000 tweets from 114th Congress members immediately presented a challenge: each tweet was tagged as "partisan" or "neutral," but provided no information on the political party of the tweeter. The data was presented like this:
 
@@ -116,15 +153,13 @@ To address this, I used this comprehensive member list from the [C-span 114th Su
 
 After the data was addended to include each tweeter's political affilitation, several machine learning models were trained to classify tweets based on partisanship and content. This process encorporated Natural Language Processing (NLP) techniques, including TF-IDF vectorization for feature extraction and the application of multiple classifiers such as RandomForest, Naive Bayes, SVM, and Neural Networks within a pipeline structure optimized through GridSearchCV for hyperparameter tuning.<br />
 
-Accuracy was significantly improved after integrating Word2Vec embeddings, enhancing the models' ability to capture more difficult nuances within the text data. The final models were decent at discerning party affiliation, distinguishing between neutral and partisan messages, and categorizing the underlying message themes.<br />
-
-
 The optimal models for each classification target—Party, Bias, and Message—were determined based on F1 scores and accuracy. Below are the best-performing models for each category, along with their respective confusion matrices:
 
 - **Bias Prediction**: The Gaussian Naive Bayes Model emerged as the top performer for distinguishing between partisan and neutral tweets.
 - **Party Affiliation Prediction**: The Multi-Layer Perceptron Classifier, a type of basic feedforward artificial neural network, was most effective in identifying the political party.
 - **Message Category Prediction**: Gaussian Naive Bayes also proved to be the best model for categorizing the content of the tweets.
 
+Word2Vec embeddings were able to enhancing the models' accuracy slightly. The final models were decent at discerning party affiliation, distinguishing between neutral and partisan messages, and categorizing the underlying message themes.<br />
 ![bias_and_party](images/bias_and_party.png)
 
 ![message](images/message.png)
@@ -171,7 +206,7 @@ It's crucial to note the limitations in classifier performance when interpreting
 
 These results underscore the challenges in applying NLP to social media texts, where nuances and context can significantly impact classification accuracy. Therefore, while the visualizations provide a structured way to explore the candidates' messaging, the underlying classifier limitations necessitate a careful interpretation of these insights.
 
-
+</details>
 
 
 <iframe src="images/deluzio_topics.html"
