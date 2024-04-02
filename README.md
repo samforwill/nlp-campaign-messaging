@@ -188,7 +188,7 @@ While the visualizations provide a structured way to explore the candidates' mes
 
 ### Latent Dirichlet Allocation (LDA) on Term Frequency-Inverse Document Frequency (TF-IDF)
 
-As a baseline, I used Latent Dirichlet Allocation (LDA) on Term Frequency-Inverse Document Frequency (TF-IDF) to analyze my candidates' tweets. TF-IDF measures the importance of words in a document (tweet) relative to the corpus (collection of all tweets in the campaign season), using a 'bag of words' approach-- i.e. each tweet is a "bag" containing all the words it contains, without considering their order or their grammatical structure— it just counts the occurrence of each word. However, with only 1000 already-short tweets, LDA's effectiveness may be limited, and so I used this method as a baseline topic modeling method for comparison.<br/>
+As a baseline, I used Latent Dirichlet Allocation (LDA) on Term Frequency-Inverse Document Frequency (TF-IDF) to analyze my candidates' tweets. TF-IDF measures the importance of words in a document (tweet) relative to the corpus (collection of all tweets in the campaign season) However, with only 1000 already-short tweets, LDA's effectiveness may be limited, and so I used this method as a baseline topic modeling method for comparison.<br/>
 
 LDA uses these term frequencies to search for patterns and group things together into topics it thinks are related. It's up to the administerer to determine the underlying patterns. 
 
