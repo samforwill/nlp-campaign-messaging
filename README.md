@@ -193,7 +193,9 @@ As a baseline, I used Latent Dirichlet Allocation (LDA) on Term Frequency-Invers
 LDA uses these term frequencies to search for patterns and group things together into topics it thinks are related. It's up to the administerer to determine the underlying patterns. So, let's look at some results, shall we?
 
 Instructed to sort Marie Glusnekamp Perez's tweets into 5 Topics, these are the most important words associated with each topic:
+
 ![MPG LDA](images/MPG_LDA.png)
+
 It seems like Topic 1 involves canvassing and GOTV messaging with terms like "volunteer", "join", "doors", "Vancouver" (big population center in the district where running up turnout numbers would be important to win). The other topics offer some hints at overarching topics, but it's still not too easy to discern. 
 
 Again, LDA topic modeling shouldn't be too sophisticated given our small corpi and short documents, but, as I mentioned earlier, specific terms and their frequencies give each word a weight of importance to the topic. To display this concept, here are the words for Chris Deluzio's first topic with their weight importance graphed: 
