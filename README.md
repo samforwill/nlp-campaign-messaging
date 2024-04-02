@@ -105,9 +105,8 @@ As mentioned before, the termination of free API access meant manually compiling
 
 ### Quick Takeaway:
 
-<div>
-  <img src="images/young_guns.png" alt="young guns">
-  <span>
+<div style="text-align: right;">
+  <img src="images/young_guns.png" alt="young guns" width="300">
 Diving into this 2013-2014 dataset of politicians' social media felt like sorting through a cursed time capsule— both fascinating and somewhat nostalgic, but ultimately reflecting an unrecognizable reality. Many of the key players in Congress, whose tweets I wrangled here, have fizzled or been replaced. And among the 5000 posts, not a single mention of 'Donald Trump'. Truly, a different universe. </span>
 
 Moreover, while the dataset does have its utility, questions about the key target characteristics reveal some of its limitations. Each tweet was manually tagged by an unspecified person or group of persons, and this process of labeling tweets as 'attack' or 'policy' or 'personal' feels like a necessarily subjective exercise. 
