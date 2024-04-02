@@ -218,8 +218,8 @@ These were the results I came up with:
 
 MGP:
 
-    Voice for Working Class
-"When I look at Congress I don’t see people who represent me or my neighbors. I’m running to bring the voices of working people back to Washington D.C.”
+   *  Voice for Working Class
+* "When I look at Congress I don’t see people who represent me or my neighbors. I’m running to bring the voices of working people back to Washington D.C.”
     Digital & Community Engagement
 "Vancouver Rally: Join us as we gather to voice our support and unite for change. Your presence matters.”
 Characteristic Tweet: "Join supporters at Loowit Brewing for a debate watch party. Drink beer, eat food, and watch the debate with good company. If you can’t make it, the debate will be livestreamed."
@@ -274,9 +274,9 @@ deluzio and screenshots of tweets
 
 
 
-[![MGP Topics](images/mgp_topics.png)](https://samforwill.w3spaces.com/bokeh/mgp_topics.html)
+[![MGP Topics](images/MGP_topics.png)](https://samforwill.w3spaces.com/bokeh/mgp_topics.html)
 
-[![Deluzio Topics](images/deluzio_topics.png)](https://samforwill.w3spaces.com/bokeh/deluzio_topics.html)
+[![Deluzio Topics](images/Deluzio_topics.png)](https://samforwill.w3spaces.com/bokeh/deluzio_topics.html)
 
 cosine-similar term search process and iteratively creating the dataframe
 [![Candidate Comparisons](images/Candidate_Comparisons.png)](https://samforwill.w3spaces.com/bokeh/candidate_comparisons.html)
