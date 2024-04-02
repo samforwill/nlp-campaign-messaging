@@ -74,7 +74,7 @@ Finally, I used unsupervised Topic Modeling techniques to determine and compare 
 **SYNOPSIS:** I determined which candidates to focus on through comparing their 2022 electoral margins with their district's Partisan Voter Index scores (PVI). I ultimately landed on Marie Glusenkamp Perez in WA-04, and Chris Deluzio in PA-17. MGP's opponent, Joe Kent, was a far-right candidate, while Deluzio's opponent, Jeremy Shaffer, was a much more mainstream center-right candidate. <br />
 
 <details>
-  <summary>Expand for Detailed Walk-Through Below</summary>
+<summary><b><big>Expand for Detailed Walk-Through Below</big></b></summary>
 
 To identify standout candidates, I devised a 'Performance' metric by calculating the difference between each district's Partisan Voter Index (PVI) and the candidate's electoral margin in 2022. PVI measures how partisan the district is compared to the nation as a whole, based on how the constituents of those districts voted in previous presidential elections. This approach identified those who significantly outperformed their district's typical partisan lean.
 
@@ -115,7 +115,7 @@ Diving into this 2013-2014 dataset of politicians' social media felt like sortin
 While the dataset does have its utility, its limitations were overwhelming. Nonetheless, for this exercise, I used some advanced classification modeling techniques to attempt to extract insights. The details are outlined below for those interested in the gritty process. The next section, however, is where we'll dive into the more interesting and fruitful analysis.
 
 <details>
-<summary>Detailed Process (For the Curious)</summary>
+<summary><b><big>Detailed Process (For the Curious)</big></b></summary>
 
 The dataset of 5000 tweets from 114th Congress members immediately presented a challenge: each tweet was tagged as "partisan" or "neutral," but provided no information on the political party of the tweeter. The data was presented like this:
 
