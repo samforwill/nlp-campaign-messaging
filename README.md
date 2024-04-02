@@ -274,9 +274,12 @@ deluzio and screenshots of tweets
 
 
 
-![
+[![MGP Topics](images/mgp_topics.png)](https://samforwill.w3spaces.com/bokeh/mgp_topics.html)
 
+[![Deluzio Topics](images/deluzio_topics.png)](https://samforwill.w3spaces.com/bokeh/deluzio_topics.html)
 
+cosine-similar term search process and iteratively creating the dataframe
+[![Candidate Comparisons](images/Candidate_Comparisons.png)](https://samforwill.w3spaces.com/bokeh/candidate_comparisons.html)
 
 
 
