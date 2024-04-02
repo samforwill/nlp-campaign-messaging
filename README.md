@@ -110,14 +110,9 @@ As mentioned before, the termination of free API access meant manually compiling
 
 Diving into this 2013-2014 dataset of politicians' social media felt like sorting through a cursed time capsule—fascinating, nostalgic, but ultimately reflecting an unrecognizable reality. Many of the key players in Congress, whose tweets I wrangled here, have fizzled or been replaced. And among the 5000 posts, not a single mention of 'Donald Trump'.
 
-While the dataset does have its utility, questions about the key target characteristics reveal some of its limitations. Each tweet was manually tagged by an unspecified person or group of persons, and this process of labeling tweets as 'attack' or 'policy' or 'personal' feels like a necessarily subjective exercise. 
+While the dataset does have its utility, its limitations were overwhelming. Nonetheless, for this exercise, I used some advanced classification modeling techniques to attempt to extract insights. The details are outlined below for those interested in the gritty process. The next section, however, is where we'll dive into the more interesting and fruitful analysis.
 
-Despite these hurdles, I used some advanced classification modeling techniques to extract insights from this dataset. However, the utility of classifying tweets as "biased" or "neutral" doesn't reveal too much important information about the campaign strategies in 2022 or looking ahead to 2024 and beyond. Though, not looking too far ahead, because, as noted, the entire world can change in a decade. 
-
- The details are outlined below for those interested in the gritty process. The next section, however, is where we'll dive into the more interesting and fruitful analysis.
-
-<details>
-  <summary>Detailed Process (For the Curious)</summary>
+<summary>Detailed Process (For the Curious)</summary>
 
 
 
