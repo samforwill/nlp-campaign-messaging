@@ -38,7 +38,7 @@
 
 ## Introduction
 
- This project applies Natural Language Processing (NLP) to analyze the twitter messaging strategies of Marie Glusenkamp Perez (WA-03) and Chris Deluzio (PA-17), Democratic newcomers competing in two of the most challenging districts for Democrats in the 2022 midterm cycle.<br />
+ This project applies Natural Language Processing (NLP) techniques to analyze the twitter messaging strategies of Marie Glusenkamp Perez (WA-03) and Chris Deluzio (PA-17), Democratic newcomers competing in two of the most challenging districts for Democrats in the 2022 midterm cycle.<br />
  
  Given the 2022 midterms were marked by the defeats of many election deniers and January 6th apologists, a secondary focus of this study is to assess the difference in our candidates' messaging strategies against distinct types of opponents— one faced Joe Kent in WA, a 'Kooky' nominee who fully embraced the 2020 election conspiracies, and the other faced Jeremy Shaffer in PA, a mainstream Republican who reluctantly acknowledged Joe Biden's 2020 victory (after desperately trying to avoid the question altogether). 
  
@@ -46,11 +46,9 @@
  
 ## Methodology
  
- First, I trained classification models on a dataset of 5000 Twitter/Facebook posts of members of the 114th Congress to characterize each message's: bias (neutral vs. partisan), nature of the message (e.g., informational, personal, policy, mobilization, attack), and political affiliation of the author (Democrat or Republican).
+I used classification models to analyze a dataset of 5000 Twitter and Facebook posts by members of the 114th Congress. The dataset was pre-labeled with categories including bias, message nature, and political affiliation. My goal was to train the models to classify tweets based on these labels, which I then applied to my two candidates' tweets leading up to the 2022 midterm elections.
  
- I then used the best performing trained models to classify my two candidates' tweets over a 6-month period immediately leading up to the 2022 midterm elections. 
- 
-Finally, I used unsupervised Topic Modeling techniques to determine and compare the predominant themes in the candidates’ messaging strategies. The topic model analyzed the collection of peak campaign season tweets for MGP and Deluzio to find patterns based on word frequency, and semantic similarity to group various items into categories. 
+I also applied unsupervised topic modeling techniques, beginning with Latent Dirichlet Allocation (LDA) as a baseline method and then using Non-Negative Matrix Factorization (NMF) on Twitter GloVe vectors for refined clustering. After generating the topic groupings, I searched through each candidate's Tweet corpus for words closely associated with these topics to compare how often each candidate messaged on these topics to assiss differing strategies. I used cosine similarity calculations within the tweet vector space to determine which words were most semantically similar in each topic. 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -68,7 +66,7 @@ Finally, I used unsupervised Topic Modeling techniques to determine and compare 
 
 ## Selecting the Candidates
 
-**SYNOPSIS:** I determined which candidates to focus on through comparing their 2022 electoral margins with their district's Partisan Voter Index scores (PVI). I ultimately landed on Marie Glusenkamp Perez in WA-03, and Chris Deluzio in PA-17. MGP's opponent, Joe Kent, was a far-right candidate, while Deluzio's opponent, Jeremy Shaffer, was a much more mainstream center-right candidate. <br />
+**SYNOPSIS:** I determined which candidates to focus on through comparing their 2022 electoral margins with their district's Partisan Voter Index scores (PVI). I ultimately landed on Marie Glusenkamp Perez in WA-03, and Chris Deluzio in PA-17. Below documents the step-by-step process of determining the candidates of focus<br />
 
 <details>
 <summary><b><big>Expand for Detailed Walk-Through Below</big></b></summary>
@@ -188,7 +186,22 @@ While the visualizations provide a structured way to explore the candidates' mes
 
 ## Unsupervised Topic Modeling
 
+### Latent Dirichlet Allocation (LDA) on Term Frequency-Inverse Document Frequency (TF-IDF)
 
+As a baseline, I used Latent Dirichlet Allocation (LDA) on Term Frequency-Inverse Document Frequency (TF-IDF) to analyze my candidates' tweets. TF-IDF measures the importance of words in a document (tweet) relative to the corpus (collection of all tweets in the campaign season), using a 'bag of words' approach-- i.e. each tweet is a "bag" containing all the words it contains, without considering their order or their grammatical structure— it simply counts the occurrence of each word. However, with only 1000 already-short tweets, LDA's effectiveness may be limited, and so I used this method as a baseline topic modeling method for comparison.<br/>
+
+LDA uses these term frequencies to search for patterns and group things together into topics it thinks are related. It's up to the administerer to determine the underlying patterns. So, let's look at some results, shall we?
+
+Instructed to sort Marie Glusnekamp Perez's tweets into 5 Topics, these are the most important words associated with each topic:
+![MPG LDA](images/MPG_LDA.png)
+It seems like Topic 1 involves canvassing and GOTV messaging with terms like "volunteer", "join", "doors", "Vancouver" (big population center in the district where running up turnout numbers would be important to win). The other topics offer some hints at overarching topics, but it's still not too easy to discern. 
+
+Again, LDA topic modeling shouldn't be too sophisticated given our small corpi and short documents, but, as I mentioned earlier, specific terms and their frequencies give each word a weight of importance to the topic. To display this concept, here are the words for Chris Deluzio's first topic with their weight importance graphed: 
+![Deluzio LDA](images/Deluzio_LDA.png)
+This topic seems to deal with extremism with words like "extremist", "abortion", and "ban".
+
+
+So let's look at the outc
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
