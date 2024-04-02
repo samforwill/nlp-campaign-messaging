@@ -214,9 +214,9 @@ So, given all these aspects of twitter language, I used a model that vectorizes 
 #### Process:
 Every word of every tweet in the corpi were turned into vectors with the GloVe model trained on the twitter space. And then each tweet averaged its vectors for grouping.
 
-These were the results I came up with:
+<!---These were the results I came up with: -----
 
-MGP:
+MGP:------
 <!--
    *  Voice for Working Class
 * "When I look at Congress I don’t see people who represent me or my neighbors. I’m running to bring the voices of working people back to Washington D.C.”
@@ -268,9 +268,9 @@ Tweet Tying to Opponent: "We have to fight the corporate jagoffs ripping us off,
 Title: Social Security Defense & Anti-Extremism
 Summary: Deluzio firmly opposes policies from the right that threaten Social Security, presenting himself as a defender of senior citizens' rights against extremism. His campaign draws a clear line between his advocacy for social safety nets and his opponent's alignment with policies that could undermine these protections.
 Tweet on Theme: "These insane Republican threats to Social Security and Medicare would send millions of retirees into poverty. I'll fight them tooth and nail when I'm your #PA17 Congressman."
-Tweet Tying to Opponent: "My opponent 🤝 Hurting #PA17 seniors. If elected, Shaffer will join other radical Republicans to put Social Security on the chopping block and undermine seniors' health care by cutting Medicare. I won't let that stand. Our seniors deserve better." -->
+Tweet Tying to Opponent: "My opponent 🤝 Hurting #PA17 seniors. If elected, Shaffer will join other radical Republicans to put Social Security on the chopping block and undermine seniors' health care by cutting Medicare. I won't let that stand. Our seniors deserve better." 
 
-deluzio and screenshots of tweets
+deluzio and screenshots of tweets -->
 
 
 
