@@ -268,25 +268,16 @@ Once the tweets were grouped (I found 7 topics to be the best grouping parameter
     <img src="images/mgp_defend_tweet.png" width="60%" alt="Defending Tweet" />
 </a>
 
-## Click Below to Explore the Top 50 Tweets in Each Category
+## Click Below to Explore Marie Glusenkamp Perez's Top 50 Tweets in Each Category
 
 [![MGP Topics](images/MGP_Topics.png)](https://samforwill.w3spaces.com/bokeh/mgp_topics.html)
 
 <!---These were the results I came up with: -----
 
-
-    Defending Rights & Freedoms
-"Americans who love freedom overwhelmingly support marriage equality. This should not be up for debate in 2022. I stand with the LGBTQ community & support the Respect for Marriage Act 🏳️‍🌈."
-
 Deluzio
 
 <!-- Topic Summaries with Example Tweets
-Advocacy for Workers and Local Engagement
-Title: Union Solidarity & Local Empowerment
-Summary: Deluzio champions workers' rights, local manufacturing, and actively participates in community events, contrasting his approach with his opponent's less community-focused stance.
-Tweet on Theme: "Let's make stuff in this country, let's have our union brothers and sisters make it right here in #PA17, and let's get to work."
-Tweet Tying to Opponent: "💪@AlleghenyLabor This is what a union strong shirt made right here at home looks like, and my team will always have our campaign gear made by American union workers. (But if you want foreign-made campaign crap, go check out the guy I'm running against.)"
-Reproductive Rights and Opposition to Extremism
+
 Title: Reproductive Rights & Fighting Extremism
 Summary: Deluzio strongly supports reproductive rights and positions himself against the perceived extremism of his opponent, especially on issues like abortion.
 Tweet on Theme: "I was willing to die for this country, so you know I'll fight like hell to protect our fundamental rights, including the right to an abortion. #PA17"
@@ -315,12 +306,59 @@ Tweet on Theme: "These insane Republican threats to Social Security and Medicare
 Tweet Tying to Opponent: "My opponent 🤝 Hurting #PA17 seniors. If elected, Shaffer will join other radical Republicans to put Social Security on the chopping block and undermine seniors' health care by cutting Medicare. I won't let that stand. Our seniors deserve better." 
 
 deluzio and screenshots of tweets -->
+## Chris Deluzio's Topics
+
+### 1. Deluzio Topic 1 -- "Union Solidarity & Local Empowerment"
+
+<a href="https://twitter.com/ChrisForPA/status/1544675057737269252">
+    <img src="images/deluzio_union_tweet.png" width="60%" alt="Union Tweet" />
+</a>
+
+### 2. Deluzio Topic 2 -- "Reproductive Rights & Fighting Extremism"
+
+<a href="https://twitter.com/ChrisForPA/status/1562466032601600001">
+    <img src="images/deluzio_abortion_tweet.png" width="60%" alt="Abortion Tweet" />
+</a>
+
+### 3. Deluzio Topic 3 -- "Community Events"
+
+<a href="https://twitter.com/ChrisForPA/status/1568669438295306241">
+    <img src="images/deluzio_community_tweet.png" width="60%" alt="Communmity Tweet" />
+</a>
+
+### 4. Deluzio Topic 4 -- "Jobs & Infrastructure"
+
+<a href="https://twitter.com/ChrisForPA/status/1554920539319283712">
+    <img src="images/deluzio_jobs_tweet.png" width="60%" alt="Jobs Tweet" />
+</a>
+
+### 5. Deluzio Topic 5 -- "Advocacy & Community Solidarity"
+
+<a href="https://twitter.com/ChrisForPA/status/1552026970036240389">
+    <img src="images/deluzio_advocacy_tweet.png" width="60%" alt="Advocacy Tweet" />
+</a>
+
+### 6. MGP Topic 6 -- "Corporate Greed & Economic Fairness"
+
+<a href="https://twitter.com/ChrisForPA/status/1585700173577158656">
+    <img src="images/deluzio_corporations_tweet.png" width="60%" alt="Corporations Tweet" />
+</a>
+
+### 6. MGP Topic 7 -- "Defending Rights & Democracy"
+
+<a href="https://twitter.com/ChrisForPA/status/1572015179990114304">
+    <img src="images/deluzio_defend_tweet.png" width="60%" alt="Defending Tweet" />
+</a>
 
 
 
-[![MGP Topics](images/MGP_Topics.png)](https://samforwill.w3spaces.com/bokeh/mgp_topics.html)
+## Click Below to Chris Deluzio's Top 50 Tweets in Each Category
 
 [![Deluzio Topics](images/Deluzio_Topics.png)](https://samforwill.w3spaces.com/bokeh/deluzio_topics.html)
+
+
+
+
 
 cosine-similar term search process and iteratively creating the dataframe
 [![Candidate Comparisons](images/Candidate_Comparisons.png)](https://samforwill.w3spaces.com/bokeh/candidate_comparisons.html)
