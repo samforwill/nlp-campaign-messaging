@@ -232,7 +232,7 @@ Once the tweets were grouped (I found 7 topics to be the best grouping parameter
 1. MGP Topic 1 -- "Voice for Working Class"</big></b></summary>
 
 <a href="https://twitter.com/MGPforCongress/status/1578454359788376065">
-    <img src="images/mgp_working_class_tweet.png" width="60%" alt="Working Class Tweet" />
+    <img src="images/mgp_working_class_tweet.png" alt="Working Class Tweet" />
 </a>
 </details>
 
@@ -242,7 +242,7 @@ Once the tweets were grouped (I found 7 topics to be the best grouping parameter
 2. MGP Topic 2 -- "Digital & Community Engagement"</big></b></summary>
 
 <a href="https://twitter.com/MGPforCongress/status/1580754873540542464">
-    <img src="images/mgp_digital_tweet.png" width="60%" alt="Digital Tweet" />
+    <img src="images/mgp_digital_tweet.png"  alt="Digital Tweet" />
 </a>
 </details>
 
@@ -251,7 +251,7 @@ Once the tweets were grouped (I found 7 topics to be the best grouping parameter
 3. MGP Topic 3 -- "Endorsements & Policy Priorities"</big></b></summary>
 
 <a href="https://twitter.com/MGPforCongress/status/1561818273330503681">
-    <img src="images/mgp_policy_tweet.png" width="60%" alt="Policy Tweet" />
+    <img src="images/mgp_policy_tweet.png"  alt="Policy Tweet" />
 </a>
 </details>
 
@@ -260,7 +260,7 @@ Once the tweets were grouped (I found 7 topics to be the best grouping parameter
 4. MGP Topic 4 -- "Voter Mobilization Efforts"</big></b></summary>
 
 <a href="https://twitter.com/MGPforCongress/status/1567961466850131969">
-    <img src="images/mgp_mobilization_tweet.png" width="60%" alt="Mobilization Tweet" />
+    <img src="images/mgp_mobilization_tweet.png"  alt="Mobilization Tweet" />
 </a>
 </details>
 
@@ -269,7 +269,7 @@ Once the tweets were grouped (I found 7 topics to be the best grouping parameter
 5. MGP Topic 5 -- "Anti-Extremism"</big></b></summary>
 
 <a href="https://twitter.com/MGPforCongress/status/1572635581280321537">
-    <img src="images/mgp_extremism_tweet.png" width="60%" alt="Anti-Extremism Tweet" />
+    <img src="images/mgp_extremism_tweet.png"  alt="Anti-Extremism Tweet" />
 </a>
 </details>
 
@@ -279,7 +279,7 @@ Once the tweets were grouped (I found 7 topics to be the best grouping parameter
 6. MGP Topic 6 -- "Volunteer & Fundraising"</big></b></summary>
 
 <a href="https://twitter.com/MGPforCongress/status/1584586583763988480">
-    <img src="images/mgp_fundraising_tweet.png" width="60%" alt="Fundraising Tweet" />
+    <img src="images/mgp_fundraising_tweet.png"  alt="Fundraising Tweet" />
 </a>
 </details>
 
@@ -288,7 +288,7 @@ Once the tweets were grouped (I found 7 topics to be the best grouping parameter
 7. MGP Topic 7 -- "Defending Rights & Freedoms"</big></b></summary>
 
 <a href="https://twitter.com/MGPforCongress/status/1570516774558527488">
-    <img src="images/mgp_defend_tweet.png" width="60%" alt="Defending Tweet" />
+    <img src="images/mgp_defend_tweet.png"  alt="Defending Tweet" />
 </a>
 </details>
 
