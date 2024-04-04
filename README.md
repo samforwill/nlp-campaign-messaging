@@ -296,83 +296,73 @@ Once the tweets were grouped (I found 7 topics to be the best grouping parameter
 
 [![MGP Topics](images/MGP_Topics.png)](https://samforwill.w3spaces.com/bokeh/mgp_topics.html)
 
-<!---These were the results I came up with: -----
-
-Deluzio
-
-<!-- Topic Summaries with Example Tweets
-
-Title: Reproductive Rights & Fighting Extremism
-Summary: Deluzio strongly supports reproductive rights and positions himself against the perceived extremism of his opponent, especially on issues like abortion.
-Tweet on Theme: "I was willing to die for this country, so you know I'll fight like hell to protect our fundamental rights, including the right to an abortion. #PA17"
-Tweet Tying to Opponent: "My opponent is an extremist who wants an abortion ban in the constitution, even for victims of rape and incest. His views are a threat to our families and our freedom. Help us restore and protect reproductive rights. #PA17”
 
 
-Title: Jobs & Infrastructure
-Summary: Deluzio advocates for significant investments in infrastructure and job growth, often criticizing his opponent's corporate ties and stance on economic policies.
-Tweet on Theme: "Jobs jobs jobs! Great stuff here for western PA from @JoshShapiroPA"
-Tweet Tying to Opponent: "Jeremy Shaffer has made a fortune building roads and bridges (even nuclear power) in Communist China. We need to get tough on China and invest in jobs and infrastructure right here in America! #PA17Debate”
 
-Title: Democracy & Veterans' Rights
-Summary: Deluzio leverages his background as a veteran to underline his dedication to democracy and veterans' rights, contrasting his record with his opponent's alignment with figures who challenge democratic norms.
-Tweet on Theme: "I risked my life for this country because I believe in America. The patriotism I learned growing up right here in #PA17 demands we fight for our common good. And I'm running for Congress to serve this country and all of us once again, always putting you and your families first.🇺🇸"
-Tweet Tying to Opponent: "Jeremy Shaffer is already working with extremists like Mastriano to strip away reproductive freedom. I've been committed to defending our Constitution since my days in uniform, and I'll always fight to protect your rights from these attacks.”
-Tweet Tying to Opponent: "Jeremy Shaffer is campaigning with election deniers - people who will do everything to undermine our elections, our democracy, and the integrity of YOUR VOTE. #PA17Debate"
-
-Title: Corporate Greed & Economic Fairness
-Summary: Deluzio criticizes corporate practices contributing to economic inequality, advocating for the middle class and small businesses. He contrasts his stance with his opponent's corporate affiliations, emphasizing the need for fair economic policies.
-Tweet on Theme: "Huge corporations with too much power have been jacking up prices while making record $$. CEOs are openly bragging about it! I'll fight them. No more price gouging, no more lousy trade deals & stretched supply chains, no more crushing workers & consumers."
-Tweet Tying to Opponent: "We have to fight the corporate jagoffs ripping us off, sitting on record profits that we're all paying for. They already have enough yes-men working for 'em in Congress; they don't need another one like my #PA17 corporate executive opponent.”
-
-Title: Social Security Defense & Anti-Extremism
-Summary: Deluzio firmly opposes policies from the right that threaten Social Security, presenting himself as a defender of senior citizens' rights against extremism. His campaign draws a clear line between his advocacy for social safety nets and his opponent's alignment with policies that could undermine these protections.
-Tweet on Theme: "These insane Republican threats to Social Security and Medicare would send millions of retirees into poverty. I'll fight them tooth and nail when I'm your #PA17 Congressman."
-Tweet Tying to Opponent: "My opponent 🤝 Hurting #PA17 seniors. If elected, Shaffer will join other radical Republicans to put Social Security on the chopping block and undermine seniors' health care by cutting Medicare. I won't let that stand. Our seniors deserve better." 
-
-deluzio and screenshots of tweets -->
 ## Chris Deluzio's Topics
 
-### 1. Deluzio Topic 1 -- "Union Solidarity & Local Empowerment"
+<details>
+<summary><b><big>
+1. Deluzio Topic 1 -- "Union Solidarity & Local Empowerment"</big></b></summary>
 
 <a href="https://twitter.com/ChrisForPA/status/1544675057737269252">
     <img src="images/deluzio_union_tweet.png" width="60%" alt="Union Tweet" />
 </a>
+</details>
 
-### 2. Deluzio Topic 2 -- "Reproductive Rights & Fighting Extremism"
+<details>
+<summary><b><big>
+2. Deluzio Topic 2 -- "Reproductive Rights & Fighting Extremism"</big></b></summary>
 
 <a href="https://twitter.com/ChrisForPA/status/1562466032601600001">
     <img src="images/deluzio_abortion_tweet.png" width="60%" alt="Abortion Tweet" />
 </a>
+</details>
 
-### 3. Deluzio Topic 3 -- "Community Events"
+<details>
+<summary><b><big>
+3. Deluzio Topic 3 -- "Community Events"</big></b></summary>
 
 <a href="https://twitter.com/ChrisForPA/status/1568669438295306241">
     <img src="images/deluzio_community_tweet.png" width="60%" alt="Communmity Tweet" />
 </a>
+</details>
 
-### 4. Deluzio Topic 4 -- "Jobs & Infrastructure"
+<details>
+<summary><b><big>
+4. Deluzio Topic 4 -- "Jobs & Infrastructure"</big></b></summary>
 
 <a href="https://twitter.com/ChrisForPA/status/1554920539319283712">
     <img src="images/deluzio_jobs_tweet.png" width="60%" alt="Jobs Tweet" />
 </a>
+</details>
 
-### 5. Deluzio Topic 5 -- "Advocacy & Community Solidarity"
+<details>
+<summary><b><big>
+5. Deluzio Topic 5 -- "Advocacy & Community Solidarity"</big></b></summary>
 
 <a href="https://twitter.com/ChrisForPA/status/1552026970036240389">
     <img src="images/deluzio_advocacy_tweet.png" width="60%" alt="Advocacy Tweet" />
 </a>
+</details>
 
-### 6. Deluzio Topic 6 -- "Corporate Greed & Economic Fairness"
+<details>
+<summary><b><big>
+6. Deluzio Topic 6 -- "Corporate Greed & Economic Fairness"</big></b></summary>
 
 <a href="https://twitter.com/ChrisForPA/status/1585700173577158656">
     <img src="images/deluzio_corporations_tweet.png" width="60%" alt="Corporations Tweet" />
 </a>
+</details>
 
-### 7. Deluzio Topic 7 -- "Defending Rights & Democracy"
+<details>
+<summary><b><big>
+7. Deluzio Topic 7 -- "Defending Rights & Democracy"</big></b></summary>
 
 <a href="https://twitter.com/ChrisForPA/status/1572015179990114304">
     <img src="images/deluzio_defend_tweet.png" width="60%" alt="Defending Tweet" />
 </a>
+</details>
 
 
 
