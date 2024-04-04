@@ -268,7 +268,9 @@ Once the tweets were grouped (I found 7 topics to be the best grouping parameter
     <img src="images/mgp_defend_tweet.png" width="60%" alt="Defending Tweet" />
 </a>
 
+## Click Below to Explore the Top 50 Tweets in Each Category
 
+[![MGP Topics](images/MGP_Topics.png)](https://samforwill.w3spaces.com/bokeh/mgp_topics.html)
 
 <!---These were the results I came up with: -----
 
