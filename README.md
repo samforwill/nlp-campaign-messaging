@@ -207,10 +207,15 @@ Now, this is all well and good, but it *is* a baseline model, so let's not dive 
 
 # Non-Negative Matrix Factorization (NMF) on 100-Dimensional Twitter GloVe Vectors
 
-lol what a silly title. It seems almost designed to make you tune out... BUT DON'T! It's actually super cool and impressively useful for Topic Modeling. 
+<!-- lol what a silly title. It seems almost designed to make you tune out... BUT DON'T! It's actually super cool and impressively useful for Topic Modeling.  -->
 
-Let's just dive right in with this "100-dimensional GloVe Vectors" thing: GloVe is an unsupervised learning algorithm designed by [these dudes](https://nlp.stanford.edu/projects/glove/) at Stanford. It can train on any corpus, but the GloVe model I used was trained on 2 billion tweets, which is important for a few reasons. First, GloVe trains on word-word co-occurence rates, but my model is trained specifically on how words are used together and semantically similar ** on Twitter.** Twitter is not newspaper articles, or books, or technical journals, so the word-word dependence rates that develop on twitter are, to a large degree, affected by the character limit itself! Also, the language is more vernacular, and it is designed, necessarily, for interaction. 
+### GloVe (Global Vectors for Word Representation)
+
+Let's just dive right in with this "100-dimensional GloVe Vectors" thing: GloVe is an unsupervised learning algorithm designed by [researchers at Stanford](https://nlp.stanford.edu/projects/glove/). It can train on any corpus, but the GloVe model I used was trained on 2 billion tweets, which is important for a few reasons. First, GloVe trains on word-word co-occurence rates, but my model is trained specifically on how words are used together and semantically similar **on Twitter.** Twitter is not newspaper articles, or books, or technical journals, so the word-word codependence rates that develop on twitter are, to a large degree, affected by the character limit itself! Also, the language is more vernacular, and tweets are designed to be shared, commented on, and interacted with. It's just a different semantic universe from other corpi.
 So, given all these aspects of twitter language, I used a model that vectorizes every word into 100-dimensional vectors. 
+
+### Non-Negative Matrix Factorization
+
 
 #### Process:
 Every word of every tweet in the corpi were turned into vectors with the GloVe model trained on the twitter space. And then each tweet averaged its vectors for grouping.
