@@ -226,14 +226,17 @@ Once the tweets were grouped (I found 7 topics to be the best grouping parameter
 
 ## Marie Glusenkamp Perez Topics
 
-1. MGP Topic 1 -- "Voice for Working Class"
+### 1. MGP Topic 1 -- "Voice for Working Class"
 
-[![Working Class Tweet](images/mgp_working_class_tweet.png)](https://twitter.com/MGPforCongress/status/1578454359788376065)
+<a href="https://twitter.com/MGPforCongress/status/1578454359788376065">
+    <img src="images/mgp_working_class_tweet.png" width="50%" alt="Working Class Tweet" />
+</a>
 
-2. MGP Topic 2 -- "Digital & Community Engagement"
+### 2. MGP Topic 2 -- "Digital & Community Engagement"
 
-[![Digital Tweet](images/mgp_digital_tweet.png)](https://twitter.com/MGPforCongress/status/1580754873540542464)
-
+<a href="https://twitter.com/MGPforCongress/status/1580754873540542464">
+    <img src="images/mgp_digital_tweet.png" width="50%" alt="Digital Tweet" />
+</a>
 
  
 
