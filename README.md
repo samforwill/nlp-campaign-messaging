@@ -6,7 +6,8 @@
 
 <div align="center">
   <a href="https://github.com/samforwill/2024Strategies">
-    <img src="images/twitterpolitics.png" alt="tweeters chirping" style="width: 70%; max-width: 900px;">
+    <img src="images/MGP_For_Congress_Banner.png" alt="MGP Banner" style="width: 100%; max-width: 900px;">
+    <img src="images/Deluzio_For_Congress_Banner.png" alt="Deluzio Banner" style="width: 100%; max-width: 900px;">
   </a>
 
 <h3 align="center">Examining the Twitter Messaging Strategies of Two Democratic Newcomers Who Overcame the Red Tide in the 2022 Midterms </h3>
