@@ -339,13 +339,13 @@ deluzio and screenshots of tweets -->
     <img src="images/deluzio_advocacy_tweet.png" width="60%" alt="Advocacy Tweet" />
 </a>
 
-### 6. MGP Topic 6 -- "Corporate Greed & Economic Fairness"
+### 6. Deluzio Topic 6 -- "Corporate Greed & Economic Fairness"
 
 <a href="https://twitter.com/ChrisForPA/status/1585700173577158656">
     <img src="images/deluzio_corporations_tweet.png" width="60%" alt="Corporations Tweet" />
 </a>
 
-### 6. MGP Topic 7 -- "Defending Rights & Democracy"
+### 6. Deluzio Topic 7 -- "Defending Rights & Democracy"
 
 <a href="https://twitter.com/ChrisForPA/status/1572015179990114304">
     <img src="images/deluzio_defend_tweet.png" width="60%" alt="Defending Tweet" />
