@@ -306,7 +306,7 @@ Once the tweets were grouped (I found 7 topics to be the best grouping parameter
 1. Deluzio Topic 1 -- "Union Solidarity & Local Empowerment"</big></b></summary>
 
 <a href="https://twitter.com/ChrisForPA/status/1544675057737269252">
-    <img src="images/deluzio_union_tweet.png" width="60%" alt="Union Tweet" />
+    <img src="images/deluzio_union_tweet.png"  alt="Union Tweet" />
 </a>
 </details>
 
@@ -315,7 +315,7 @@ Once the tweets were grouped (I found 7 topics to be the best grouping parameter
 2. Deluzio Topic 2 -- "Reproductive Rights & Fighting Extremism"</big></b></summary>
 
 <a href="https://twitter.com/ChrisForPA/status/1562466032601600001">
-    <img src="images/deluzio_abortion_tweet.png" width="60%" alt="Abortion Tweet" />
+    <img src="images/deluzio_abortion_tweet.png"  alt="Abortion Tweet" />
 </a>
 </details>
 
@@ -324,7 +324,7 @@ Once the tweets were grouped (I found 7 topics to be the best grouping parameter
 3. Deluzio Topic 3 -- "Community Events"</big></b></summary>
 
 <a href="https://twitter.com/ChrisForPA/status/1568669438295306241">
-    <img src="images/deluzio_community_tweet.png" width="60%" alt="Communmity Tweet" />
+    <img src="images/deluzio_community_tweet.png"  alt="Communmity Tweet" />
 </a>
 </details>
 
@@ -333,7 +333,7 @@ Once the tweets were grouped (I found 7 topics to be the best grouping parameter
 4. Deluzio Topic 4 -- "Jobs & Infrastructure"</big></b></summary>
 
 <a href="https://twitter.com/ChrisForPA/status/1554920539319283712">
-    <img src="images/deluzio_jobs_tweet.png" width="60%" alt="Jobs Tweet" />
+    <img src="images/deluzio_jobs_tweet.png"  alt="Jobs Tweet" />
 </a>
 </details>
 
@@ -342,7 +342,7 @@ Once the tweets were grouped (I found 7 topics to be the best grouping parameter
 5. Deluzio Topic 5 -- "Advocacy & Community Solidarity"</big></b></summary>
 
 <a href="https://twitter.com/ChrisForPA/status/1552026970036240389">
-    <img src="images/deluzio_advocacy_tweet.png" width="60%" alt="Advocacy Tweet" />
+    <img src="images/deluzio_advocacy_tweet.png"  alt="Advocacy Tweet" />
 </a>
 </details>
 
@@ -351,7 +351,7 @@ Once the tweets were grouped (I found 7 topics to be the best grouping parameter
 6. Deluzio Topic 6 -- "Corporate Greed & Economic Fairness"</big></b></summary>
 
 <a href="https://twitter.com/ChrisForPA/status/1585700173577158656">
-    <img src="images/deluzio_corporations_tweet.png" width="60%" alt="Corporations Tweet" />
+    <img src="images/deluzio_corporations_tweet.png"  alt="Corporations Tweet" />
 </a>
 </details>
 
@@ -360,7 +360,7 @@ Once the tweets were grouped (I found 7 topics to be the best grouping parameter
 7. Deluzio Topic 7 -- "Defending Rights & Democracy"</big></b></summary>
 
 <a href="https://twitter.com/ChrisForPA/status/1572015179990114304">
-    <img src="images/deluzio_defend_tweet.png" width="60%" alt="Defending Tweet" />
+    <img src="images/deluzio_defend_tweet.png"  alt="Defending Tweet" />
 </a>
 </details>
 
