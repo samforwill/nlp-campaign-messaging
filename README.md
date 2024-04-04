@@ -229,34 +229,50 @@ Once the tweets were grouped (I found 7 topics to be the best grouping parameter
 ### 1. MGP Topic 1 -- "Voice for Working Class"
 
 <a href="https://twitter.com/MGPforCongress/status/1578454359788376065">
-    <img src="images/mgp_working_class_tweet.png" width="50%" alt="Working Class Tweet" />
+    <img src="images/mgp_working_class_tweet.png" width="60%" alt="Working Class Tweet" />
 </a>
 
 ### 2. MGP Topic 2 -- "Digital & Community Engagement"
 
 <a href="https://twitter.com/MGPforCongress/status/1580754873540542464">
-    <img src="images/mgp_digital_tweet.png" width="50%" alt="Digital Tweet" />
+    <img src="images/mgp_digital_tweet.png" width="60%" alt="Digital Tweet" />
 </a>
 
- 
+### 3. MGP Topic 3 -- "Endorsements & Policy Priorities"
+
+<a href="https://twitter.com/MGPforCongress/status/1561818273330503681">
+    <img src="images/mgp_policy_tweet.png" width="60%" alt="Policy Tweet" />
+</a>
+
+### 4. MGP Topic 4 -- "Voter Mobilization Efforts"
+
+<a href="https://twitter.com/MGPforCongress/status/1567961466850131969">
+    <img src="images/mgp_mobilization_tweet.png" width="60%" alt="Mobilization Tweet" />
+</a>
+
+### 5. MGP Topic 5 -- "Anti-Extremism"
+
+<a href="https://twitter.com/MGPforCongress/status/1572635581280321537">
+    <img src="images/mgp_extremism_tweet.png" width="60%" alt="Anti-Extremism Tweet" />
+</a>
+
+### 6. MGP Topic 6 -- "Volunteer & Fundraising"
+
+<a href="https://twitter.com/MGPforCongress/status/1584586583763988480">
+    <img src="images/mgp_fundraising_tweet.png" width="60%" alt="Fundraising Tweet" />
+</a>
+
+### 6. MGP Topic 7 -- "Defending Rights & Freedoms"
+
+<a href="https://twitter.com/MGPforCongress/status/1570516774558527488">
+    <img src="images/mgp_defend_tweet.png" width="60%" alt="Defending Tweet" />
+</a>
+
+
 
 <!---These were the results I came up with: -----
 
-MGP:------
-<!--
-   *  Voice for Working Class
-* "When I look at Congress I don’t see people who represent me or my neighbors. I’m running to bring the voices of working people back to Washington D.C.”
-    Digital & Community Engagement
-"Vancouver Rally: Join us as we gather to voice our support and unite for change. Your presence matters.”
-Characteristic Tweet: "Join supporters at Loowit Brewing for a debate watch party. Drink beer, eat food, and watch the debate with good company. If you can’t make it, the debate will be livestreamed."
-    Endorsements & Policy Priorities
-Characteristic Tweet: "(1/3) We asked, and you answered! The results from our GE Survey are in, and here’s what you chose as your top priorities: -Affordable childcare -Jobs & wage growth -Climate action -Abortion rights -Affordable healthcare -Supporting manufacturing -Supporting small business"
-    Voter Mobilization Efforts
-Characteristic Tweet: "JOIN ME THIS SATURDAY 🗓 At our canvass kickoffs in Longview and Vancouver. Come grab a yard sign 🪧 hear me speak 📢 and knock on some doors! 🚪 RSVP Here: https://mobilize.us/marieforcongress/"
-    Anti-Extremism
-"Joe Kent is an extremist who will undermine our Constitution and make our communities less safe. I will protect our democracy and support our firefighters, officers, and first responders. Extremism vs. a safe world is the choice in this election."
-    Volunteer & Fundraising
-"I don't take corporate PAC money. I rely on grassroots contributors to fund this campaign. Please chip in now to keep our new TV ad on the air, defeat Joe Kent, and flip #WA03 blue. https://t.co/iQsEmAa5kB"
+
     Defending Rights & Freedoms
 "Americans who love freedom overwhelmingly support marriage equality. This should not be up for debate in 2022. I stand with the LGBTQ community & support the Respect for Marriage Act 🏳️‍🌈."
 
