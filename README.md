@@ -195,7 +195,7 @@ LDA uses these term frequencies to search for patterns and group things together
 
 Sorting Marie Glusenkamp Pérez's tweetset into 5 topics created the following key word associations to each topic for MGP:
 
-<img src="images/MPG_LDA.png" alt="MPG LDA" style="border: 2px solid #000000;"/>
+<img src="images/MGP_LDA.png" alt="MPG LDA" style="border: 2px solid #000000;"/>
 
 It seems like Topic 1 involves canvassing and GOTV messaging with terms like "volunteer", "join", "doors", "Vancouver" (big population center in the district where running up turnout numbers would be important to win). The other topics' words offer some hints at overarching themes, but they are not as easy to discern as the first topic.<br/>
 
