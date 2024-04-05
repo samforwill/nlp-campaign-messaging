@@ -39,9 +39,9 @@
 
 ## Introduction
 
- This project applies Natural Language Processing (NLP) techniques to analyze the twitter messaging strategies of Marie Glusenkamp Pérez (WA-03) and Chris Deluzio (PA-17), Democratic newcomers competing in two of the most challenging districts for Democrats in the 2022 midterm cycle.<br />
+ This project applies Natural Language Processing (NLP) techniques to analyze the twitter messaging strategies of Marie Glusenkamp Pérez (WA-03) and Chris Deluzio (PA-17), Democratic newcomers who competed in two of the most challenging districts for Democrats in the 2022 midterm cycle.<br />
  
- Given the 2022 midterms were marked by the defeats of many election deniers and January 6th apologists, a secondary focus of this study is to assess the difference in our candidates' messaging strategies against distinct types of opponents— one faced Joe Kent in WA, a 'Kooky' nominee who fully embraced the 2020 election conspiracies, and the other faced Jeremy Shaffer in PA, a mainstream Republican who reluctantly acknowledged Joe Biden's 2020 victory (after desperately trying to avoid the question altogether). 
+ Given the 2022 midterms were marked by the defeats of many election deniers and January 6th apologists, a secondary focus of this study is to assess the difference in our candidates' messaging strategies against distinct types of opponents— one faced Joe Kent in WA, a 'Kooky' nominee who fully embraced the 2020 election conspiracies, and the other faced Jeremy Shaffer in PA, a mainstream Republican who acknowledged, though reluctantly, Joe Biden's 2020 victory. 
  
  <p align="right">(<a href="#readme-top">back to top</a>)</p>
  
@@ -49,7 +49,7 @@
  
 I used classification models to analyze a dataset of 5000 Twitter and Facebook posts by members of the 114th Congress. The dataset was pre-labeled with categories including bias, message nature, and political affiliation. My goal was to train the models to classify tweets based on these labels, which I then applied to my two candidates' tweets leading up to the 2022 midterm elections.
  
-I also applied unsupervised topic modeling techniques, beginning with Latent Dirichlet Allocation (LDA) as a baseline method and then using Non-Negative Matrix Factorization (NMF) on Twitter GloVe vectors for refined clustering. After generating the topic groupings, I searched through each candidate's Tweet corpus for words closely associated with these topics to compare how often each candidate messaged on these topics to assiss differing strategies. I used cosine similarity calculations within the tweet vector space to determine which words were most semantically similar in each topic. 
+I also applied unsupervised topic modeling techniques, beginning with Latent Dirichlet Allocation (LDA) as a baseline method and then using Non-Negative Matrix Factorization (NMF) on Twitter GloVe vectors for refined clustering. After generating the topic groupings, I searched through each candidate's Tweet corpus for words closely associated with these topics to compare how often each candidate messaged on these topics to assess differing strategies. I used cosine similarity calculations within the tweet vector space to determine which words were most semantically similar in each topic. 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -61,7 +61,7 @@ I also applied unsupervised topic modeling techniques, beginning with Latent Dir
 
 4. The 114th Congress tweets addended with characterization inputs was sourced from Crowdflower's Data For Everyone Library via [Kaggle](https://www.kaggle.com/datasets/crowdflower/political-social-media-posts/data).
 
-5. GloVe models and vectors https://nlp.stanford.edu/projects/glove/
+5. GloVe models and vectors arrays were sourced from [Jeffrey Pennington, Richard Socher, and Christopher D. Manning of Stanford](https://nlp.stanford.edu/projects/glove/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -104,7 +104,7 @@ As mentioned before, the termination of free API access meant manually compiling
 </details>
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-## 114th Congress Tweet Sentiment Classification
+## 114th Congress Tweets Dataset Sentiment Classification
 
 
 Diving into this 2013-2014 dataset of politicians' social media felt like sorting through a cursed time capsule—fascinating, nostalgic, but ultimately reflecting an unrecognizable reality. Many of the key players in Congress, whose tweets I wrangled here, have fizzled or been replaced. And among the 5000 posts, not a single mention of 'Donald Trump'.
@@ -185,9 +185,9 @@ While the visualizations provide a structured way to explore the candidates' mes
 </details>
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-## Unsupervised Topic Modeling
+# Unsupervised Topic Modeling
 
-### Baseline Model -- Latent Dirichlet Allocation (LDA) on Term Frequency-Inverse Document Frequency (TF-IDF)
+## Baseline Model -- Latent Dirichlet Allocation (LDA) on Term Frequency-Inverse Document Frequency (TF-IDF)
 
 As a baseline, I used Latent Dirichlet Allocation (LDA) on Term Frequency-Inverse Document Frequency (TF-IDF) to analyze my candidates' tweets. TF-IDF measures the importance of words in a document (tweet) relative to the corpus (collection of all tweets in the campaign season). However, with only 1000 already-short tweets, LDA's effectiveness may be limited, and so I used this method as a baseline topic modeling method for comparison.<br/>
 
@@ -206,13 +206,13 @@ Obviously, this topic seems to deal with extremism with words like "extremist", 
 
 Now, this is all well and good, but it *is* a baseline model, so let's not dive too deep into it and see if we can go ahead and up the ante a bit with more complex modeling.
 
-# Non-Negative Matrix Factorization (NMF) on 100-Dimensional Twitter GloVe Vectors
+## Advanced Model -- Non-Negative Matrix Factorization (NMF) on 100-Dimensional Twitter GloVe Vectors
 
 <!-- lol what a silly title. It seems almost designed to make you tune out... BUT DON'T! It's actually super cool and impressively useful for Topic Modeling.  -->
 
 ### GloVe (Global Vectors for Word Representation)
 
-Let's just dive right in with this "100-dimensional GloVe Vectors" thing: GloVe is an unsupervised learning algorithm designed by [researchers at Stanford](https://nlp.stanford.edu/projects/glove/). It can train on any corpus, but the GloVe model I used was trained on 2 billion tweets, which is important for a few reasons. First, GloVe trains on word-word co-occurence rates, but my model is trained specifically on how words are used together and semantically similar **on Twitter.** Twitter is not newspaper articles, or books, or technical journals, so the word-word codependence rates that develop on twitter are, to a large degree, affected by the character limit itself! Also, the language is more vernacular, and tweets are designed to be shared, commented on, and interacted with. It's just a different semantic universe from other corpi.
+Let's just dive right in with this "100-dimensional GloVe Vectors" thing: GloVe is an unsupervised learning algorithm designed by [researchers at Stanford](https://nlp.stanford.edu/projects/glove/). It can train on any corpus, but the GloVe model I used was trained on 2 billion tweets, which is important for a few reasons. First, GloVe trains on word-word co-occurence rates, but my model is trained specifically on how words are used together and semantically similar **on Twitter.** Twitter is not newspaper articles, or books, or technical journals, so the word-word codependence rates that develop on twitter are, to a large degree, affected by the character limit itself! Also, the language is more vernacular, and tweets are designed to be shared, commented on, and interacted with. It's just a different semantic universe from other corpi.<br/>
 So, given all these aspects of twitter language, I used a model that vectorizes every word into 100-dimensional vectors. Word embeddings can better handle polysemy (words with multiple meanings) by providing contextually appropriate vectors, whereas TF-IDF used in my baseline model treats each word instance identically regardless of semantic context.
 
 ### Non-Negative Matrix Factorization
@@ -221,7 +221,7 @@ Non-Negative Matrix Factorization (NMF) is a technique that decomposes high-dime
 
 
 #### Process:
-After some limited pre-processing, each word within the tweets was converted into a 100-dimensional vector using the GloVe model. The word vectors were averaged to produce a single vector to represents each tweet. These tweet vectors were stacked into a matrix, which served as the input for the NMF model to break down into associated topics. Given the non-negativity constraint inherent in NMF, absolute values of the tweet vectors were utilized to ensure all inputs were non-negative. (I also tried shifting the vector values to all exist in positive space, but it didn't yield a noticeable improvement in the resulting topics.) 
+After some limited pre-processing, each word within the tweets was converted into a 100-dimensional vector using the GloVe model. The word vectors were averaged to produce a single vector to represents each tweet. These tweet vectors were stacked into a matrix, which served as the input for the NMF model to break down into associated topics. Given the non-negativity constraint inherent in NMF, absolute values of the tweet vectors were utilized to ensure all inputs were non-negative. (I also tried shifting the vector values to all exist in positive space, but it didn't yield a noticeable improvement in the resulting topics.) <br/>
 
 Once the tweets were grouped (I found 7 topics to be the best grouping parameter), I went through the top 50 tweets associated with each topic, and found the tweets to be best described by the following themes:
 
