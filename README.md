@@ -27,8 +27,9 @@
       <a href="#data-used">Data Used</a>
     </li>
     <li><a href="#selecting-the-candidates">Selecting the Candidates</a></li>
-    <li><a href="#114th-congress-tweet-sentiment-classification">114th Congress Tweet Sentiment Classification</a></li>
+    <li><a href="#114th-congress-tweets-dataset-sentiment-classification">114th Congress Tweets Dataset Sentiment Classification</a></li>
     <li><a href="#unsupervised-topic-modeling">Unsupervised Topic Modeling</a></li>
+      <ul><li><a href="#baseline-model-(</li></ul>
     <li><a href="topic-comparisons-between-candidates">Topic Comparisons between Candidates</a></li>
     <li><a href="#insights-and-conclusions">Insights and Conclusions</a></li>
     <li><a href="#future-work">Future Work</a></li>
@@ -187,7 +188,8 @@ While the visualizations provide a structured way to explore the candidates' mes
 
 # Topic Modeling (Unsupervised)
 
-## Baseline Model -- Latent Dirichlet Allocation (LDA) on Term Frequency-Inverse Document Frequency (TF-IDF)
+## Baseline Model 
+#### Latent Dirichlet Allocation (LDA) on Term Frequency-Inverse Document Frequency (TF-IDF)
 
 As a baseline, I used Latent Dirichlet Allocation (LDA) on Term Frequency-Inverse Document Frequency (TF-IDF) to analyze my candidates' tweets. TF-IDF measures the importance of words in a document (tweet) relative to the corpus (collection of all tweets in the campaign season). However, with only 1000 already-short tweets, LDA's effectiveness may be limited, and so I used this method as a baseline topic modeling method for comparison.<br/>
 
