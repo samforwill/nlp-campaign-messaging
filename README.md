@@ -28,8 +28,11 @@
     </li>
     <li><a href="#selecting-the-candidates">Selecting the Candidates</a></li>
     <li><a href="#114th-congress-tweets-dataset-sentiment-classification">114th Congress Tweets Dataset Sentiment Classification</a></li>
-    <li><a href="#unsupervised-topic-modeling">Unsupervised Topic Modeling</a></li>
-      <ul><li><a href="#baseline-model-(</li></ul>
+    <li><a href="#topic-modeling=(unsupervised)">Topic Modeling (Unsupervised)</a></li>
+      <ul><li><a href="#baseline-model">Baseline Model</a></li></ul>
+      <ul><li><a href="#advanced model">Advanced Model</a></li></ul>
+    <li><a href="#marie-glusenkamp-pérez-topics">Marie Glusenkamp Pérez Topics</a></li>  
+    <li><a href="#chris-deluzio-topics">Chris Deluzio Topics</a></li>   
     <li><a href="topic-comparisons-between-candidates">Topic Comparisons between Candidates</a></li>
     <li><a href="#insights-and-conclusions">Insights and Conclusions</a></li>
     <li><a href="#future-work">Future Work</a></li>
@@ -189,7 +192,7 @@ While the visualizations provide a structured way to explore the candidates' mes
 # Topic Modeling (Unsupervised)
 
 ## Baseline Model 
-#### Latent Dirichlet Allocation (LDA) on Term Frequency-Inverse Document Frequency (TF-IDF)
+### Latent Dirichlet Allocation (LDA) on Term Frequency-Inverse Document Frequency (TF-IDF)
 
 As a baseline, I used Latent Dirichlet Allocation (LDA) on Term Frequency-Inverse Document Frequency (TF-IDF) to analyze my candidates' tweets. TF-IDF measures the importance of words in a document (tweet) relative to the corpus (collection of all tweets in the campaign season). However, with only 1000 already-short tweets, LDA's effectiveness may be limited, and so I used this method as a baseline topic modeling method for comparison.<br/>
 
@@ -207,6 +210,8 @@ TF-IDF scores words based on frequency and rarity, then LDA identifies topics ba
 ![MGP LDA](images/mgp_topic1.png)
 
 Now, this is all well and good, but it *is* a baseline model, so let's not dive too deep into it and see if we can go ahead and up the ante a bit with more complex modeling.
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 # Advanced Model -- Non-Negative Matrix Factorization (NMF) on 100-Dimensional Twitter GloVe Vectors
 
@@ -226,13 +231,15 @@ Non-Negative Matrix Factorization (NMF) is a technique that decomposes high-dime
 ### Process:
 After some limited pre-processing, each word within the tweets was converted into a 100-dimensional vector using the GloVe model. The word vectors were averaged to produce a single vector to represents each tweet. These tweet vectors were stacked into a matrix, which served as the input for the NMF model to break down into associated topics. Given the non-negativity constraint inherent in NMF, absolute values of the tweet vectors were utilized to ensure all inputs were non-negative. (I also tried shifting the vector values to all exist in positive space, but it didn't yield a noticeable improvement in the resulting topics.) <br/>
 
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+## Marie Glusenkamp Pérez Topics
+
 Here is the distribution of unlabeled tweet topics that the model found to share semantic similarity (I found 7 topics to be the best grouping parameter).
 
 ![MGP Topic Distribution](images/mgp_topic_distribution.png)
 
 Once the tweets were grouped , I went through the top 50 tweets associated with each topic, and found the tweets to be best described by the following themes: 
-
-## Marie Glusenkamp Pérez Topics
 
 <details>
 <summary><b><big>
@@ -304,7 +311,7 @@ You can check for yourself to see if you agree with the topic categories by look
 
 [![MGP Topics](images/MGP_Topics.png)](https://samforwill.w3spaces.com/bokeh/mgp_topics.html)
 
-
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
 ## Chris Deluzio's Topics
@@ -385,7 +392,7 @@ Once the tweets were grouped , I went through the top 50 tweets associated with 
 [![Deluzio Topics](images/Deluzio_Topics.png)](https://samforwill.w3spaces.com/bokeh/deluzio_topics.html)
 
 
-
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
 cosine-similar term search process and iteratively creating the dataframe
