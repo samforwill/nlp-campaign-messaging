@@ -185,7 +185,7 @@ While the visualizations provide a structured way to explore the candidates' mes
 </details>
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-# Unsupervised Topic Modeling
+# Topic Modeling (Unsupervised)
 
 ## Baseline Model -- Latent Dirichlet Allocation (LDA) on Term Frequency-Inverse Document Frequency (TF-IDF)
 
@@ -193,15 +193,15 @@ As a baseline, I used Latent Dirichlet Allocation (LDA) on Term Frequency-Invers
 
 LDA uses these term frequencies to search for patterns and group things together into topics it thinks are related. It's up to the user to interpret these topics and discern underlying patterns. 
 
-Sorting Marie Glusenkamp Pérez's tweetset into 5 topics appeared to work best after experimenting with different number of topics and reviewing the results. Below are the key words associated with each topic for MGP:
+Sorting Marie Glusenkamp Pérez's tweetset into 5 topics appeared to work best. Below are the key words associated with each topic for MGP:
 
 ![MGP LDA](images/MGP_LDA.png)
 
-It seems like Topic 1 involves canvassing and GOTV messaging with terms like "volunteer", "join", "doors", "Vancouver" (big population center in the district where running up turnout numbers would be important to win). The other topics' words offer some hints at overarching themes, but it's still not as easy to discern as the first topic. But again, LDA topic modeling shouldn't be too sophisticated given our small corpi and short documents. 
+It seems like Topic 1 involves canvassing and GOTV messaging with terms like "volunteer", "join", "doors", "Vancouver" (big population center in the district where running up turnout numbers would be important to win). The other topics' words offer some hints at overarching themes, but they are not as easy to discern as the first topic. Again, LDA topic modeling shouldn't be too sophisticated given our small corpi and short documents. 
 
-TF-IDF scores words based on frequency and rarity, then LDA identifies topics based on these scores.  Since LDA is a probabilistic model, when it is determining underlying topics, it assigns each word a weight indicating its importance to the topic.  To demonstrate this concept, below is a bar graph showing the top 10 important words for Chris Deluzio's first topic, along with the weights (importance) of each word to the topic:
+TF-IDF scores words based on frequency and rarity, then LDA identifies topics based on these scores.  Since LDA is a probabilistic model, when it is determining underlying topics, it assigns each word a weight indicating its importance to the topic.  To demonstrate this concept, below is a bar graph showing the importance weights for the words in MGP's first topic.
 
-![Deluzio LDA](images/Deluzio_LDA.png)
+![MGP LDA](images/mgp_topic1.png)
 Obviously, this topic seems to deal with extremism with words like "extremist", "abortion", "ban", and "protect". 
 
 Now, this is all well and good, but it *is* a baseline model, so let's not dive too deep into it and see if we can go ahead and up the ante a bit with more complex modeling.
@@ -220,7 +220,7 @@ So, given all these aspects of twitter language, I used a model that vectorizes 
 Non-Negative Matrix Factorization (NMF) is a technique that decomposes high-dimensional datasets into lower-dimensional components. Compared to LDA on TF-IDF, NMF can handle denser data representations like GloVe embeddings more naturally, leveraging the semantic information embedded in word vectors. TF-IDF was like sorting through a giant word salad and counting the words that appear, but NMF with twitter-trained GloVe vectors knows that terms like 'Follow' and 'Mention' have related meaning in this semantic universe. This leads to better grouping and more interpretable and distinct topics.
 
 
-#### Process:
+### Process:
 After some limited pre-processing, each word within the tweets was converted into a 100-dimensional vector using the GloVe model. The word vectors were averaged to produce a single vector to represents each tweet. These tweet vectors were stacked into a matrix, which served as the input for the NMF model to break down into associated topics. Given the non-negativity constraint inherent in NMF, absolute values of the tweet vectors were utilized to ensure all inputs were non-negative. (I also tried shifting the vector values to all exist in positive space, but it didn't yield a noticeable improvement in the resulting topics.) <br/>
 
 Once the tweets were grouped (I found 7 topics to be the best grouping parameter), I went through the top 50 tweets associated with each topic, and found the tweets to be best described by the following themes:
