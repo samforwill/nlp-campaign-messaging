@@ -39,7 +39,7 @@
 
 ## Introduction
 
- This project applies Natural Language Processing (NLP) techniques to analyze the twitter messaging strategies of Marie Glusenkamp Perez (WA-03) and Chris Deluzio (PA-17), Democratic newcomers competing in two of the most challenging districts for Democrats in the 2022 midterm cycle.<br />
+ This project applies Natural Language Processing (NLP) techniques to analyze the twitter messaging strategies of Marie Glusenkamp Pérez (WA-03) and Chris Deluzio (PA-17), Democratic newcomers competing in two of the most challenging districts for Democrats in the 2022 midterm cycle.<br />
  
  Given the 2022 midterms were marked by the defeats of many election deniers and January 6th apologists, a secondary focus of this study is to assess the difference in our candidates' messaging strategies against distinct types of opponents— one faced Joe Kent in WA, a 'Kooky' nominee who fully embraced the 2020 election conspiracies, and the other faced Jeremy Shaffer in PA, a mainstream Republican who reluctantly acknowledged Joe Biden's 2020 victory (after desperately trying to avoid the question altogether). 
  
@@ -57,7 +57,7 @@ I also applied unsupervised topic modeling techniques, beginning with Latent Dir
 ## Data Used
 1. PVI score data was sourced from the [Cook Political Report](https://www.cookpolitical.com/cook-pvi/2023-partisan-voting-index/118-district-map-and-list).
 2. 2022 Midterm Results were sourced from [The Daily Kos](https://www.dailykos.com/stories/2022/9/21/1742660/-The-ultimate-Daily-Kos-Elections-guide-to-all-of-our-data-sets).
-3. The campaign tweets from Marie Glusenkamp Perez and Chris Deluzio were hand-copied from their twitter accounts [@MGPforCongress](https://twitter.com/mgpforcongress) and [@ChrisforPA](https://twitter.com/chrisforPA)
+3. The campaign tweets from Marie Glusenkamp Pérez and Chris Deluzio were hand-copied from their twitter accounts [@MGPforCongress](https://twitter.com/mgpforcongress) and [@ChrisforPA](https://twitter.com/chrisforPA)
 
 4. The 114th Congress tweets addended with characterization inputs was sourced from Crowdflower's Data For Everyone Library via [Kaggle](https://www.kaggle.com/datasets/crowdflower/political-social-media-posts/data).
 
@@ -67,7 +67,7 @@ I also applied unsupervised topic modeling techniques, beginning with Latent Dir
 
 ## Selecting the Candidates
 
-**SYNOPSIS:** I determined which candidates to focus on through comparing their 2022 electoral margins with their district's Partisan Voter Index scores (PVI). I ultimately landed on Marie Glusenkamp Perez in WA-03, and Chris Deluzio in PA-17. Below documents the step-by-step process of determining the candidates of focus<br />
+**SYNOPSIS:** I determined which candidates to focus on through comparing their 2022 electoral margins with their district's Partisan Voter Index scores (PVI). I ultimately landed on Marie Glusenkamp Pérez in WA-03, and Chris Deluzio in PA-17. Below documents the step-by-step process of determining the candidates of focus<br />
 
 <details>
 <summary><b><big>Expand for Detailed Walk-Through Below</big></b></summary>
@@ -89,7 +89,7 @@ But ultimately, I found myself drawn to the candidate who arguably pulled off th
 <img src="images/MGP.png" alt="MGP" width="600" style="display: block; margin: auto;">
 
 
-Marie Glusenkamp Perez! She faced cuckoo-bird Joe Kent, who expressed some extreme views like supporting the arrest of Dr. Anthony Fauci and endorsing the claims of a stolen 2020 election. In fact, he became the candidate for WA-03 after successfully primarying the serving Republican Congressperson, Jaime Herrera Beutler, one of only 10 republicans who voted to impeach Donald Trump following the events of January 6th.<br />
+Marie Glusenkamp Pérez! She faced cuckoo-bird Joe Kent, who expressed some extreme views like supporting the arrest of Dr. Anthony Fauci and endorsing the claims of a stolen 2020 election. In fact, he became the candidate for WA-03 after successfully primarying the serving Republican Congressperson, Jaime Herrera Beutler, one of only 10 republicans who voted to impeach Donald Trump following the events of January 6th.<br />
 
 
 The next candidate I wanted to assess took a little more research to come to a decision, but I wanted to find a Democrat who overperformed in their district, while contending against an opponent who was a more mainstream Republican. I landed on...
@@ -99,7 +99,7 @@ The next candidate I wanted to assess took a little more research to come to a d
 Chris Deluzio! He competed in a pure toss-up district and significantly outperformed against Jeremy Shaffer, who notably tried to sidestep affirming or denying the 2020 election fraud claims, and even released an ad promising to "protect women's healthcare." <br />
 
 ### Tweet Collection
-As mentioned before, the termination of free API access meant manually compiling tweets for Chris Deluzio and Marie Glusenkamp Perez, and then using a custom parsing script to organize and format these tweets into a structured dataset for analysis. Tweets were manually copied, separated by a '|' delimiter, and then organized into a corpus of around 1000 total tweets. [candidate notebook](MGP and Delozio.ipynb).
+As mentioned before, the termination of free API access meant manually compiling tweets for Chris Deluzio and Marie Glusenkamp Pérez, and then using a custom parsing script to organize and format these tweets into a structured dataset for analysis. Tweets were manually copied, separated by a '|' delimiter, and then organized into a corpus of around 1000 total tweets. [candidate notebook](MGP and Delozio.ipynb).
 
 </details>
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -138,13 +138,13 @@ Word2Vec embeddings were able to enhancing the models' accuracy slightly. The fi
 
 ![message](images/message.png)
 
-These models were then applied to analyze the tweets of Marie Glusenkamp Perez (MGP) and Chris Deluzio, in order to shed light on their campaign messaging strategies in the following section.
+These models were then applied to analyze the tweets of Marie Glusenkamp Pérez (MGP) and Chris Deluzio, in order to shed light on their campaign messaging strategies in the following section.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## Analyzing Tweets with Trained Models
 
-After fine-tuning the models on the 114th Congress dataset, I turned my attention to the real test: analyzing the campaign messages of Marie Glusenkamp Perez (MGP) and Chris Deluzio. Here's the process:
+After fine-tuning the models on the 114th Congress dataset, I turned my attention to the real test: analyzing the campaign messages of Marie Glusenkamp Pérez (MGP) and Chris Deluzio. Here's the process:
 
 ### Analysis Workflow -- From Raw Tweets to Insights
 #### Preprocessing Tweets:
@@ -161,7 +161,7 @@ Balancing Volumes-- Due to the different numbers of tweets from each candidate, 
 
 #### Visualization Analysis and Classifier Performance:
 
-After classifying the tweets and normalizing the data, we employed visualizations to examine the differences in messaging strategies between Marie Glusenkamp Perez and Chris Deluzio. Each visualization offers insights into specific aspects of their Twitter engagement, based on their classification results.
+After classifying the tweets and normalizing the data, we employed visualizations to examine the differences in messaging strategies between Marie Glusenkamp Pérez and Chris Deluzio. Each visualization offers insights into specific aspects of their Twitter engagement, based on their classification results.
 
 1. **Message Categories**: 
 
@@ -178,7 +178,7 @@ It's crucial to note the limitations in classifier performance when interpreting
 - Categories like 'personal' and 'policy' showed relatively better performance, but this was mostly due to the fact that the dataset was highly imbalanced. Since most of the messages were tagged as 'policy' and 'personal', the models learned to more often predict these categories 
 - Categories with lower precision and recall, such as 'constituency' and 'other', had low classification reliability.
 
-The model accuracy is severely limited on the data it was trained on. Due to the human-labeling process for this dataset, the errors and judgments by the topic labelers pass through the model during training, complicated futher by the large imbalance of the labels in certain categories. This problem is exacerbated during the prediction of tweets outside the 114th Congress dataset when introducing the tweetset of Marie Glusenkamp Perez and Chris Deluzio. This issue could be mitigated by introducing the model to more data, more current data, and balancing along categories. This would be preferable to reduce the data dependency of the model and increase the robustness for general purposes.
+The model accuracy is severely limited on the data it was trained on. Due to the human-labeling process for this dataset, the errors and judgments by the topic labelers pass through the model during training, complicated futher by the large imbalance of the labels in certain categories. This problem is exacerbated during the prediction of tweets outside the 114th Congress dataset when introducing the tweetset of Marie Glusenkamp Pérez and Chris Deluzio. This issue could be mitigated by introducing the model to more data, more current data, and balancing along categories. This would be preferable to reduce the data dependency of the model and increase the robustness for general purposes.
 
 While the visualizations provide a structured way to explore the candidates' messaging, the underlying limitations necessitate the use of different NLP techniques to glean important strategy insights. 
 
@@ -193,7 +193,7 @@ As a baseline, I used Latent Dirichlet Allocation (LDA) on Term Frequency-Invers
 
 LDA uses these term frequencies to search for patterns and group things together into topics it thinks are related. It's up to the user to interpret these topics and discern underlying patterns. 
 
-Sorting Marie Glusenkamp Perez's tweetset into 5 topics appeared to work best after experimenting with different number of topics and reviewing the results. Below are the key words associated with each topic for MGP:
+Sorting Marie Glusenkamp Pérez's tweetset into 5 topics appeared to work best after experimenting with different number of topics and reviewing the results. Below are the key words associated with each topic for MGP:
 
 ![MGP LDA](images/MGP_LDA.png)
 
@@ -225,7 +225,7 @@ After some limited pre-processing, each word within the tweets was converted int
 
 Once the tweets were grouped (I found 7 topics to be the best grouping parameter), I went through the top 50 tweets associated with each topic, and found the tweets to be best described by the following themes:
 
-## Marie Glusenkamp Perez Topics
+## Marie Glusenkamp Pérez Topics
 
 <details>
 <summary><b><big>
@@ -292,7 +292,7 @@ Once the tweets were grouped (I found 7 topics to be the best grouping parameter
 </a>
 </details>
 
-## Click Below to Explore Marie Glusenkamp Perez's Top 50 Tweets in Each Category
+## Click Below to Explore Marie Glusenkamp Pérez's Top 50 Tweets in Each Category
 
 [![MGP Topics](images/MGP_Topics.png)](https://samforwill.w3spaces.com/bokeh/mgp_topics.html)
 
