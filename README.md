@@ -33,7 +33,7 @@
       <ul><li><a href="#advanced model">Advanced Model</a></li></ul>
     <li><a href="#marie-glusenkamp-pérez-topics">Marie Glusenkamp Pérez Topics</a></li>  
     <li><a href="#chris-deluzio-topics">Chris Deluzio Topics</a></li>   
-    <li><a href="topic-comparisons-between-candidates">Topic Comparisons between Candidates</a></li>
+    <li><a href="topic-comparisons-between-candidates">Topic Comparisons Between Candidates</a></li>
     <li><a href="#insights-and-conclusions">Insights and Conclusions</a></li>
     <li><a href="#future-work">Future Work</a></li>
     <li><a href="#acknowledgments">Acknowledgments</a></li>
@@ -316,7 +316,7 @@ You can check for yourself to see if you agree with the topic categories by look
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
-## Chris Deluzio's Topics
+## Chris Deluzio Topics
 
 Here is the distribution of tweet topics for Chris Deluzio that the model found to share semantic similarity.
 
@@ -388,16 +388,21 @@ Once the tweets were grouped , I went through the top 50 tweets associated with 
 </details>
 
 
-
-## Click Below to Chris Deluzio's Top 50 Tweets in Each Category
+You can check for yourself to see if you agree with the topic categories by looking at the top 50 tweets associated with each category in the graph below.
+### Click Below to Chris Deluzio's Top 50 Tweets in Each Category
 
 [![Deluzio Topics](images/Deluzio_Topics.png)](https://samforwill.w3spaces.com/bokeh/deluzio_topics.html)
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
+# Topic Comparisons Between Candidates
 
-cosine-similar term search process and iteratively creating the dataframe
+So now that I have a general sense of the most prominent topics each candidate was tweeting about, it's time to compare each to get a sense of how frequently each candidate tweeted on a certain topic. To do this, I searched through the corpus of each candidate's collection of tweets for a specific word and semantically similar words. Instead of just guessing words on a topic, I mathematized it by using my GloVe model to determine the most semantically similar words as they're used on Twitter, by using cosine similarity. Since each word is represented by a vector, similar words will be close in angle. Process below
+
+### Cosine Similarity -- Semantically Similar Words on Twitter 
+
+cosine-similar term search process and iteratively creating the dataframe\
 [![Candidate Comparisons](images/Candidate_Comparisons.png)](https://samforwill.w3spaces.com/bokeh/candidate_comparisons.html)
 
 
@@ -407,3 +412,4 @@ cosine-similar term search process and iteratively creating the dataframe
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ACKNOWLEDGMENTS -- My lovely partner Felipe who helped me manually copy and paste tweets
+Not 
