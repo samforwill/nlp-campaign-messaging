@@ -193,9 +193,9 @@ As a baseline, I used Latent Dirichlet Allocation (LDA) on Term Frequency-Invers
 
 LDA uses these term frequencies to search for patterns and group things together into topics it thinks are related. It's up to the user to interpret these topics and discern underlying patterns. 
 
-Sorting Marie Glusenkamp Pérez's tweetset into 5 topics appeared to work best. Below are the key words associated with each topic for MGP:
+Sorting Marie Glusenkamp Pérez's tweetset into 5 topics created the following key word associations to each topic for MGP:
 
-![MGP LDA](images/MGP_LDA.png)
+<img src="images/MPG_LDA.png" alt="MPG LDA" style="border: 2px solid #000000;"/>
 
 It seems like Topic 1 involves canvassing and GOTV messaging with terms like "volunteer", "join", "doors", "Vancouver" (big population center in the district where running up turnout numbers would be important to win). The other topics' words offer some hints at overarching themes, but they are not as easy to discern as the first topic.<br/>
 
@@ -211,7 +211,7 @@ Now, this is all well and good, but it *is* a baseline model, so let's not dive 
 
 ### GloVe (Global Vectors for Word Representation)
 
-GloVe is an unsupervised learning algorithm designed by [these dudes](https://nlp.stanford.edu/projects/glove/) at Stanford. It can train on any corpus, but the GloVe model I used was performed on 2 billion tweets, which is important for a few reasons. First, GloVe trains on word-word co-occurence rates, but my model is trained specifically on how words are used together and semantically similar **on Twitter.** Considering the normal corpi used for text classification, Twitter notably is not newspaper articles, or books, or technical journals, so the word-word codependence rates that develop on twitter are, to a large degree, affected by the character limit itself! Also, the language is more vernacular, and tweets are designed to be shared, commented on, and interacted with. It's just a different semantic universe from other corpi.<br/>
+GloVe is an unsupervised learning algorithm designed by [these dudes](https://nlp.stanford.edu/projects/glove/) at Stanford. It can train on any corpus, but the GloVe model I used was performed on 2 billion tweets, which is important for a few reasons. First, GloVe trains on word-word co-occurence rates, but my model is trained specifically on how words are used together and semantically similar **on Twitter.** Considering the normal corpi used for text classification, Twitter is not newspaper articles, or books, or technical journals, so the word-word codependence rates that develop on twitter are, to a large degree, affected by the character limit itself! Also, the language is more vernacular, and tweets are designed to be shared, commented on, and interacted with. It's just a different semantic universe from other corpi.<br/>
 
 So, given all these aspects of twitter language, I used a model that vectorizes every word into 100-dimensional vectors. Word embeddings can better handle polysemy (words with multiple meanings) by providing contextually appropriate vectors, whereas TF-IDF used in my baseline model treats each word instance identically regardless of semantic context.
 
@@ -223,7 +223,11 @@ Non-Negative Matrix Factorization (NMF) is a technique that decomposes high-dime
 ### Process:
 After some limited pre-processing, each word within the tweets was converted into a 100-dimensional vector using the GloVe model. The word vectors were averaged to produce a single vector to represents each tweet. These tweet vectors were stacked into a matrix, which served as the input for the NMF model to break down into associated topics. Given the non-negativity constraint inherent in NMF, absolute values of the tweet vectors were utilized to ensure all inputs were non-negative. (I also tried shifting the vector values to all exist in positive space, but it didn't yield a noticeable improvement in the resulting topics.) <br/>
 
-Once the tweets were grouped (I found 7 topics to be the best grouping parameter), I went through the top 50 tweets associated with each topic, and found the tweets to be best described by the following themes:
+Here is the distribution of tweets within unlabeled topics that the model found to share semantic similarity (I found 7 topics to be the best grouping parameter).
+
+![MGP Topic Distribution](images/mgp_topic_distribution.png)
+
+Once the tweets were grouped , I went through the top 50 tweets associated with each topic, and found the tweets to be best described by the following themes. 
 
 ## Marie Glusenkamp Pérez Topics
 
@@ -292,7 +296,8 @@ Once the tweets were grouped (I found 7 topics to be the best grouping parameter
 </a>
 </details>
 
-## Click Below to Explore Marie Glusenkamp Pérez's Top 50 Tweets in Each Category
+You can check for yourself to see if you agree with the topic categories but looking at the top 50 tweets associated with each category in the graph below.
+### Click Below to Explore Marie Glusenkamp Pérez's Top 50 Tweets in Each Category
 
 [![MGP Topics](images/MGP_Topics.png)](https://samforwill.w3spaces.com/bokeh/mgp_topics.html)
 
