@@ -223,11 +223,11 @@ Non-Negative Matrix Factorization (NMF) is a technique that decomposes high-dime
 ### Process:
 After some limited pre-processing, each word within the tweets was converted into a 100-dimensional vector using the GloVe model. The word vectors were averaged to produce a single vector to represents each tweet. These tweet vectors were stacked into a matrix, which served as the input for the NMF model to break down into associated topics. Given the non-negativity constraint inherent in NMF, absolute values of the tweet vectors were utilized to ensure all inputs were non-negative. (I also tried shifting the vector values to all exist in positive space, but it didn't yield a noticeable improvement in the resulting topics.) <br/>
 
-Here is the distribution of tweets within unlabeled topics that the model found to share semantic similarity (I found 7 topics to be the best grouping parameter).
+Here is the distribution of unlabeled tweet topics that the model found to share semantic similarity (I found 7 topics to be the best grouping parameter).
 
 ![MGP Topic Distribution](images/mgp_topic_distribution.png)
 
-Once the tweets were grouped , I went through the top 50 tweets associated with each topic, and found the tweets to be best described by the following themes. 
+Once the tweets were grouped , I went through the top 50 tweets associated with each topic, and found the tweets to be best described by the following themes: 
 
 ## Marie Glusenkamp Pérez Topics
 
@@ -305,6 +305,12 @@ You can check for yourself to see if you agree with the topic categories by look
 
 
 ## Chris Deluzio's Topics
+
+Here is the distribution of tweet topics for Chris Deluzio that the model found to share semantic similarity.
+
+![Deluzio Topic Distribution](images/deluzio_topic_distribution.png)
+
+Once the tweets were grouped , I went through the top 50 tweets associated with each topic, and found the tweets to be best described by the following themes: 
 
 <details>
 <summary><b><big>
