@@ -296,7 +296,7 @@ Once the tweets were grouped , I went through the top 50 tweets associated with 
 </a>
 </details>
 
-You can check for yourself to see if you agree with the topic categories but looking at the top 50 tweets associated with each category in the graph below.
+You can check for yourself to see if you agree with the topic categories by looking at the top 50 tweets associated with each category in the graph below.
 ### Click Below to Explore Marie Glusenkamp Pérez's Top 50 Tweets in Each Category
 
 [![MGP Topics](images/MGP_Topics.png)](https://samforwill.w3spaces.com/bokeh/mgp_topics.html)
