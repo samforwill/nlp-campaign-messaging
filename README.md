@@ -197,12 +197,11 @@ Sorting Marie Glusenkamp Pérez's tweetset into 5 topics appeared to work best. 
 
 ![MGP LDA](images/MGP_LDA.png)
 
-It seems like Topic 1 involves canvassing and GOTV messaging with terms like "volunteer", "join", "doors", "Vancouver" (big population center in the district where running up turnout numbers would be important to win). The other topics' words offer some hints at overarching themes, but they are not as easy to discern as the first topic. Again, LDA topic modeling shouldn't be too sophisticated given our small corpi and short documents. 
+It seems like Topic 1 involves canvassing and GOTV messaging with terms like "volunteer", "join", "doors", "Vancouver" (big population center in the district where running up turnout numbers would be important to win). The other topics' words offer some hints at overarching themes, but they are not as easy to discern as the first topic.<br/>
 
-TF-IDF scores words based on frequency and rarity, then LDA identifies topics based on these scores.  Since LDA is a probabilistic model, when it is determining underlying topics, it assigns each word a weight indicating its importance to the topic.  To demonstrate this concept, below is a bar graph showing the importance weights for the words in MGP's first topic.
+TF-IDF scores words based on frequency and rarity, then LDA identifies topics based on these scores.  When determining topics, it assigns each word a weight indicating its importance to the topic.  To demonstrate this concept, below is a bar graph showing the importance weights for the words in MGP's first topic.
 
 ![MGP LDA](images/mgp_topic1.png)
-Obviously, this topic seems to deal with extremism with words like "extremist", "abortion", "ban", and "protect". 
 
 Now, this is all well and good, but it *is* a baseline model, so let's not dive too deep into it and see if we can go ahead and up the ante a bit with more complex modeling.
 
