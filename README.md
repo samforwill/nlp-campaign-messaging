@@ -306,6 +306,8 @@ Once the tweets were grouped , I went through the top 50 tweets associated with 
 </a>
 </details>
 
+The important thing to note here is that each tweet isn't individually put into one distinct category, but rather, each tweet is given a score for the extent to which it is associated with each topic found by NMF. This makes natural sense, because you can talk about multiple things in one statement-- A tweet like "My extreme opponent wants to ban abortion, but I will work to protect choice. That's why I'm endorsed by Planned Parenthood" would have high scores in Topics 3, 5, and 7, but would be less associated with the other topics. </br>
+
 You can check for yourself to see if you agree with the topic categories by looking at the top 50 tweets associated with each category in the graph below.
 ### Click Below to Explore Marie Glusenkamp Pérez's Top 50 Tweets in Each Category
 
