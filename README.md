@@ -28,7 +28,7 @@
     </li>
     <li><a href="#selecting-the-candidates">Selecting the Candidates</a></li>
     <li><a href="#114th-congress-tweets-dataset-sentiment-classification">114th Congress Tweets Dataset Sentiment Classification</a></li>
-    <li><a href="#topic-modeling=(unsupervised)">Topic Modeling (Unsupervised)</a></li>
+    <li><a href="#topic-modeling---unsupervised">Topic Modeling (Unsupervised)</a></li>
       <ul><li><a href="#baseline-model">Baseline Model</a></li></ul>
       <ul><li><a href="#advanced model">Advanced Model</a></li></ul>
     <li><a href="#marie-glusenkamp-pérez-topics">Marie Glusenkamp Pérez Topics</a></li>  
@@ -189,7 +189,7 @@ While the visualizations provide a structured way to explore the candidates' mes
 </details>
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-# Topic Modeling (Unsupervised)
+# Topic Modeling - Unsupervised
 
 ## Baseline Model 
 ### Latent Dirichlet Allocation (LDA) on Term Frequency-Inverse Document Frequency (TF-IDF)
