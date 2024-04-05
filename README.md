@@ -411,5 +411,6 @@ cosine-similar term search process and iteratively creating the dataframe\
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-ACKNOWLEDGMENTS -- My lovely partner Felipe who helped me manually copy and paste tweets
-Not 
+ACKNOWLEDGMENTS --
+-My partner Felipe who helped me manually copy and paste tweets and format them for hours
+-Not Paul Kim
