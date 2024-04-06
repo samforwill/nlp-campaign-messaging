@@ -396,7 +396,7 @@ The interactive graph linked below shows the top 50 tweets associated with each 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-# Topic Comparisons Between Candidates
+## Topic Comparisons Between Candidates
 
 To quantify and compare how frequently each candidate tweeted on a topic, I searched their tweet corpora for specific keywords and semantically-similar terms related to the topics identified in the topic-modeling process.  Determining which terms to include in the search was refined through leveraging the Twitter-trained GloVe model, using cosine similarity to avoid completely subjective keyword selection.  When considering a term to use, I produced the top 50 words most similar to the keyword, then split this list into two categories: one with words pertinent to my semantic context, and another with words completely unrelated (though, semantically similar in a different context). <br/>
 
