@@ -33,7 +33,7 @@
       <ul><li><a href="#advanced model">Advanced Model</a></li></ul>
     <li><a href="#marie-glusenkamp-pérez-topics">Marie Glusenkamp Pérez Topics</a></li>  
     <li><a href="#chris-deluzio-topics">Chris Deluzio Topics</a></li>   
-    <li><a href="topic-comparisons-between-candidates">Topic Comparisons Between Candidates</a></li>
+    <li><a href="#topic-comparisons-between-candidates">Topic Comparisons Between Candidates</a></li>
     <li><a href="#insights-and-conclusions">Insights and Conclusions</a></li>
     <li><a href="#future-work">Future Work</a></li>
     <li><a href="#acknowledgments">Acknowledgments</a></li>
