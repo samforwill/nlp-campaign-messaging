@@ -220,7 +220,7 @@ Now, this is all well and good, but it *is* a baseline model, so let's not dive 
 
 ### GloVe (Global Vectors for Word Representation)
 
-GloVe is an unsupervised learning algorithm designed by [these dudes](https://nlp.stanford.edu/projects/glove/) at Stanford. It can train on any corpus, but the GloVe model I used was performed on 2 billion tweets, which is important for a few reasons. First, GloVe trains on word-word co-occurence rates, but my model is trained specifically on how words are used together and semantically similar **on Twitter.** Considering the normal corpi used for text classification, Twitter is not newspaper articles, or books, or technical journals, so the word-word codependence rates that develop on twitter are, to a large degree, affected by the character limit itself! Also, the language is more vernacular, and tweets are designed to be shared, commented on, and interacted with. It's just a different semantic universe from other corpi.<br/>
+GloVe is an unsupervised learning algorithm designed by [these dudes](https://nlp.stanford.edu/projects/glove/) at Stanford. It can train on any corpus, but the GloVe model I used was performed on 2 billion tweets, which is important for a few reasons. First, GloVe trains on word-word co-occurence rates, but my model is trained specifically on how words are used together and semantically similar **on Twitter.** Considering the normal corpora used for text classification, Twitter is not newspaper articles, or books, or technical journals, so the word-word codependence rates that develop on twitter are, to a large degree, affected by the character limit itself! Also, the language is more vernacular, and tweets are designed to be shared, commented on, and interacted with. It's just a different semantic universe from other corpora.<br/>
 
 So, given all these aspects of twitter language, I used a model that vectorizes every word into 100-dimensional vectors. Word embeddings can better handle polysemy (words with multiple meanings) by providing contextually appropriate vectors, whereas TF-IDF used in my baseline model treats each word instance identically regardless of semantic context.
 
@@ -398,11 +398,26 @@ The interactive graph linked below shows the top 50 tweets associated with each 
 
 # Topic Comparisons Between Candidates
 
-So now that I have a general sense of the most prominent topics each candidate was tweeting about, it's time to compare each to get a sense of how frequently each candidate tweeted on a certain topic. To do this, I searched through the corpus of each candidate's collection of tweets for a specific word and semantically similar words. Instead of just guessing words on a topic, I mathematized it by using my GloVe model to determine the most semantically similar words as they're used on Twitter, by using cosine similarity. Since each word is represented by a vector, similar words will be close in angle. Process below
+To quantify and compare how frequently each candidate tweeted on a topic, I searched their tweet corpora for specific keywords and semantically-similar terms related to the topics identified in the topic-modeling process.  Determining which terms to include in the search was refined through leveraging the Twitter-trained GloVe model, using cosine similarity to avoid completely subjective keyword selection.  When considering a term to use, I produced the top 50 words most similar to the keyword, then split this list into two categories: one with words pertinent to my semantic context, and another with words completely unrelated (though, semantically similar in a different context). <br/>
 
-### Cosine Similarity -- Semantically Similar Words on Twitter 
+For example, I wanted to know how frequently each candidate tweeted about their 'extreme' opponent. So, first I produced a list of the top 50 cosine-similar 'extreme' terms, and the GloVe model returns contextually similar terms like 'radical', 'dangerous', and 'far-right', but also produces other "extreme"-terms like 'fitness', 'depression', and 'jihadest'. <br/>
 
-cosine-similar term search process and iteratively creating the dataframe\
+By splitting these top50 terms into two lists-- relevant and irrelevant, I was able to calculate the average vector of each list and then use the GloVe model to produce words that were relevant to my specific context's vector average, and leave out terms clower to the vector average of the irrelevant terms. 
+
+The topic-words I chose to explore were:
+1. 'extreme'
+2. 'volunteer'
+3. ''unions'
+4. 'endorsement'
+5. 'protect'
+6. 'folks'
+7. 'abortion'
+8. 'manufacturing'
+9. 'china'
+10. 'corporations'
+
+Each term comes along with a list of semantically-similar terms that were used in assessing the corpora of each candidate. The linked graph below shows the results of these queries, the exact terms used in each list, along with example tweets from each candidate for each category. 
+
 [![Candidate Comparisons](images/candidate_topic_comparisons.png)](https://samforwill.w3spaces.com/bokeh/candidate_topic_comparisons.html)
 
 
@@ -411,6 +426,6 @@ cosine-similar term search process and iteratively creating the dataframe\
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-ACKNOWLEDGMENTS --
+## ACKNOWLEDGMENTS --
 -My partner Felipe who helped me manually copy and paste tweets and format them for hours
 -Not Paul Kim
