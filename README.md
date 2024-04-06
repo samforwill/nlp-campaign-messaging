@@ -396,13 +396,11 @@ The interactive graph linked below shows the top 50 tweets associated with each 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-## Topic Comparisons Between Candidates
+# Topic Comparisons Between Candidates
 
-To quantify and compare how frequently each candidate tweeted on a topic, I searched their tweet corpora for specific keywords and semantically-similar terms related to the topics identified in the topic-modeling process.  Determining which terms to include in the search was refined through leveraging the Twitter-trained GloVe model, using cosine similarity to avoid completely subjective keyword selection.  When considering a term to use, I produced the top 50 words most similar to the keyword, then split this list into two categories: one with words pertinent to my semantic context, and another with words completely unrelated (though, semantically similar in a different context). <br/>
+To quantify and compare tweet frequency on specific topics for each candidate, I analyzed their tweet corpora using keywords and semantically similar terms identified in topic modeling. I used the Twitter-trained GloVe model and cosine similarity to assist in keyword selection to reduce bias. For each keyword, I printed the 50 nearest words using cosine similarity and then divided them into 2 groups -- relevant and irrelevant--  based on their semantic context.
 
-For example, I wanted to know how frequently each candidate tweeted about their 'extreme' opponent. So, first I produced a list of the top 50 cosine-similar 'extreme' terms, and the GloVe model returns contextually similar terms like 'radical', 'dangerous', and 'far-right', but also produces other "extreme"-terms like 'fitness', 'depression', and 'jihadest'. <br/>
-
-By splitting these top50 terms into two lists-- relevant and irrelevant, I was able to calculate the average vector of each list and then use the GloVe model to produce words that were relevant to my specific context's vector average, and leave out terms clower to the vector average of the irrelevant terms. 
+Take the term 'extreme' as an example. The GloVe model identified similar terms like 'radical', 'dangerous', and 'far-right', alongside unrelated terms such as 'fitness', 'depression', and 'jihadist'. I then divided these into relevant and irrelevant lists, calculated their average vectors, and used the GloVe model to isolate terms associated with my context and exclude outside the zone of interest.
 
 The topic-words I chose to explore were:
 1. 'extreme'
@@ -416,7 +414,7 @@ The topic-words I chose to explore were:
 9. 'china'
 10. 'corporations'
 
-Each term comes along with a list of semantically-similar terms that were used in assessing the corpora of each candidate. The linked graph below shows the results of these queries, the exact terms used in each list, along with example tweets from each candidate for each category. 
+Each term comes along with a list of semantically-similar terms searched in the candidate corpora. The linked graph below shows the results of these queries, the exact terms used in each list, along with example tweets from each candidate for each category. 
 
 [![Candidate Comparisons](images/candidate_topic_comparisons.png)](https://samforwill.w3spaces.com/bokeh/candidate_topic_comparisons.html)
 
