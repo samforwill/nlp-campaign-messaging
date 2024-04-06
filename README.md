@@ -403,7 +403,7 @@ So now that I have a general sense of the most prominent topics each candidate w
 ### Cosine Similarity -- Semantically Similar Words on Twitter 
 
 cosine-similar term search process and iteratively creating the dataframe\
-[![Candidate Comparisons](images/Candidate_Topic_Comparisons.png)](https://samforwill.w3spaces.com/bokeh/candidate_topic_comparisons.html)
+[![Candidate Comparisons](images/candidate_topic_comparisons.png)](https://samforwill.w3spaces.com/bokeh/candidate_topic_comparisons.html)
 
 
 
