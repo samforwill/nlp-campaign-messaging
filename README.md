@@ -414,13 +414,31 @@ The topic-words I chose to explore were:
 9. 'china'
 10. 'corporations'
 
-The candidates' tweets were searched for these along with a list of semantically-similar terms searched in the candidate corpora. The interactive graph linked below shows the results of these queries, the exact terms used in each list, along with example tweets from each candidate for each category. 
+The candidates' tweets were searched for these terms along with a list of semantically-similar terms to gauge how frequently each candidate messaged on the associated topic. The interactive graph linked below shows the results of these queries, the exact terms used in each list, along with example tweets from each candidate for each category. 
 
 [![Candidate Comparisons](images/candidate_topic_comparisons.png)](https://samforwill.w3spaces.com/bokeh/candidate_topic_comparisons.html)
 
 # Insights and Conclusions
 
-So, I'm going to structure this section based on the narratives surrounding 2022. In that sense, let's start with abortion, which was a huge topic after the Dobbs v. Jackson Womens' health decision in the supreme court. Although each district was different, ~10% of each candidates tweets mentioned abortion. This says a few things to me: 1) it's a salient issue across all districts in the united states.
+1. In the wake of the *Dobbs v. Jackson Women's Health* decision, abortion rights became a huge topic in the 2022 midterms. The results above show that nearly 10% of all tweets from **both** Marie Gluesenkamp Perez (MGP) and Chris Deluzio touched on abortion rights and reproductive health, generally
+
+### Messaging Differences:
+
+- **Marie Gluesenkamp Perez:** Her tweets on this topic usually offered a more personal perspective to connect with voters in Washington's 3rd.
+  > "Like many moms, I've suffered through the heartbreak of miscarriage – imagine the horror of compounding that with being thrown in JAIL. Mothers deserve autonomy, not a police state."
+
+- **Chris Deluzio:** Deluzio's messaging on the topic focused more on the broader themes of rights and freedoms.  
+  > "I think you should have the right to make your own decisions about your pregnancy and health care, and I'll vote in Congress to protect abortion rights."
+
+### Contextual Reflections:
+
+The emphasis on abortion by both Perez and Deluzio, despite the low risk of losing abortion access in Washington and Pennsylvania, highlights its national importance in the post-Dobbs world. It would be interesting to observe a candidate from a state which increased restrictions, but overall, whether through personal stories or broader rights discussions, abortion was a central topic to these campaigns and the 2022 midterms overall. 
+
+
+
+
+
+
 
 :
 
