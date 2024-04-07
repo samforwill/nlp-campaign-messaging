@@ -35,8 +35,8 @@
     <li><a href="#chris-deluzio-topics">Chris Deluzio Topics</a></li>   
     <li><a href="#topic-comparisons-between-candidates">Topic Comparisons Between Candidates</a></li>
     <li><a href="#insights-and-conclusions">Insights and Conclusions</a></li>
-    <li><a href="#future-work">Future Work</a></li>
-    <li><a href="#acknowledgments">Acknowledgments</a></li>
+    <!--< li><a href="#future-work">Future Work</a></li>
+    <li><a href="#acknowledgments">Acknowledgments</a></li>-->
    </ol>
 <!--/details-->
 
@@ -457,17 +457,34 @@ Further, Deluzio frequently connected Shaffer to other more extreme political fi
 This method of linking Shaffer with known extremists, despite his moderate stances, and highlighting his silence on extreme issues was a great strategy in the political context of 2022.
 
 
+## 3. Unions vs. Corporations
 
 
+Deluzio's campaign emphasized unions and criticized corporate outsourcing, aligning with his district's industrial heritage and union-heavy electorate. He connected his opponent to corporate interests and used the "China" narrative to highlight the need for domestic manufacturing.  
+
+> "Corporate execs have been stiffing folks, crushing unions, & outsourcing jobs to China & all over the planet for way too long. [1/2]"
+
+> "'Corporate executive Jeremy Shaffer really can't stand to be asked about his business in China (or Saudi Arabia!). Corporations like the one that made him rich are raking in millions building up China's infrastructure & selling out folks from #PA17. Need proof? Here:'"
+
+This strategy was creative because recently, China as a cudgel has been used mostly by Republicans. Take a similar district like IN-05, Indianapolis suburbs, where Republican Rep. Victoria Spartz is associating her Republican primary opponent as "China Chuck."
 
 
+[![China Chuck](images/china_chuck.png)](https://s3.amazonaws.com/pdfweb/videos/da49429b-f004-4a65-bd35-48ccfd8ebe54.mp4)
+
+## 4. Ground Game
+
+Marie Gluesenkamp Perez's campaign prioritized ground efforts, with 1 in every 4 of her tweets promoting volunteering, canvassing, and fundraising. She often mentioned Vancouver, the largest metro area in her district, underscoring her strategy to maximize urban turnout and minimize rural conservative opposition. Since so much of her district is rural, solidifying turnout in metro/suburban areas was critical
+
+>'Join me this Saturday for our Longview and <br>Vancouver canvass kick-offs! First we’ll rally, next I’ll say a few words, and then we’ll all go knock on doors to tell our neighbors about this <br>important race. RSVP and learn about other upcoming events here: <br>https://mobilize.us/marieforcongress/',
+ 
+>'Hello from Pacific County, where we’re having fun in the rain at the South Bend Labor Day parade! Our campaign is powered by volunteers like you. Join us at our next event ➡️ <br>http://marieforcongress.com/volunteer/',
 
 
-
+**Summary:** Both campaigns effectively leveraged the national issues of 2022, such as abortion rights and anti-extremism, in their strategies. Deluzio capitalized on his district-specific issues, particularly unions, to resonate with his electorate. In contrast, MGP used more of her messaging capital on structuring her ground game, using her voice and reach to mobilize volunteers and supporters to turn out the right votes in the right places. 
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-## ACKNOWLEDGMENTS --
+<!---## ACKNOWLEDGMENTS --
 -My partner Felipe who helped me manually copy and paste tweets and format them for hours
 -Not Paul Kim
