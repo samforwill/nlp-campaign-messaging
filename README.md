@@ -431,7 +431,30 @@ In the wake of the *Dobbs v. Jackson Women's Health* decision, abortion rights b
 
 Despite the low risk of losing abortion access in Washington and Pennsylvania, nearly 1 in 10 tweets from both campaigns touched on the topic. It would be interesting to observe a candidate from a state which increased restrictions, but overall, whether through personal stories or broader rights discussions, abortion was a central topic to these campaigns and the 2022 midterms overall.
 
-## 2. 
+## 2. Extremist Opponent
+
+Both campaigns hammered the narrative of "extremism". Marie Gluesenkamp Perez (12% of all tweets) did so slightly more than Chris Deluzio (9.5%), but that is probably due to the fount of source material, given her opponent, Joe Kent's, genuinely insane and extreme positions:
+
+> "Joe Kent says the attack on #January6th 'reeks of an intelligence operation' done by the police. Even today he continues defending the violent mob that ransacked the Capitol. [Link](https://t.co/AyP0ipQEqW)"
+
+> "I'm committed to taking the actions necessary to confront the climate crisis. My opponent thinks climate change is a hoax invented by the Chinese government to make money. #WA03 needs a Member of Congress, not an extreme conspiracy theorist. [Link](https://t.co/BvvQu35wKN)"
+
+> "Joe Kent’s QAnon rants are desperate, weird, and do nothing to improve the lives of people in our district. Anyone who’s tired of this is welcome to join my campaign. I’m running because Congress could use someone who actually knows how to fix things. [Link](https://t.co/hrMAnVXytH)"
+
+Chris Deluzio, running against his moderate opponent with less controversial views, incorporated 'extremism' in a brilliant dual-pronged strategy. First, he highlighted Jeremy Shaffer's silence on things like January6, to imply tacit consent. Shaffer couldn't denounce the extreme views of the far right without alienating those base voters, so Deluzio's campaign used this silence to associate Shaffer with broader extremism effectively:
+
+> "Jeremy Shaffer refuses to denounce the radical right's attack on our elections. His silence speaks volumes."
+
+> "Jeremy, why do you refuse to denounce the insurrection? Why won’t you denounce the assault on our democracy???"
+
+Further, Deluzio frequently connected Shaffer to other more extreme political figures, to paint him with the same brush:
+
+> "My opponent campaigns alongside extremists like Doug Mastriano and Kevin McCarthy, who tried to overthrow our democracy."
+
+> "Jeremy Shaffer just opened a joint campaign office with Doug Mastriano. These extremists are a threat to our freedom."
+> Jeremy Shaffer is showing you exactly who he is: Campaigning with insurrectionists, courting endorsements from extremists, and begging formoney from the radical right.'
+
+This method of linking Shaffer with known extremists, despite his moderate stances, and highlighting his silence on extreme issues was a great strategy in the political context of 2022.
 
 
 
@@ -440,11 +463,6 @@ Despite the low risk of losing abortion access in Washington and Pennsylvania, n
 
 
 
-
-:
-
-Abortion:
-Comparing the proportion of tweets explicitly on the topic of abortion, each candidate talked about it basically the same amount-- 
 
 
 
