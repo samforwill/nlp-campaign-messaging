@@ -421,7 +421,7 @@ The candidates' tweets were searched for these terms along with a list of semant
 # Insights and Conclusions
 
 ## 1. Abortion
-In the wake of the *Dobbs v. Jackson Women's Health* decision, abortion rights became a huge topic in the 2022 midterms. The results above show that nearly 10% of all tweets from **both** Marie Gluesenkamp Perez (MGP) and Chris Deluzio touched on abortion rights and reproductive health, generally
+In the wake of the *Dobbs v. Jackson Women's Health* decision, abortion rights became a huge topic in the 2022 midterms. The results above show that nearly 10% of all tweets from **both** Marie Gluesenkamp Perez and Chris Deluzio touched on abortion rights and reproductive health generally.
 
 #### Messaging Differences:
 - **Marie Gluesenkamp Perez:** Her tweets on this topic usually offered a more personal perspective to connect with voters in Washington's 3rd.
@@ -429,7 +429,9 @@ In the wake of the *Dobbs v. Jackson Women's Health* decision, abortion rights b
 - **Chris Deluzio:** Deluzio's messaging on the topic focused more on the broader themes of rights and freedoms.  
   > "I think you should have the right to make your own decisions about your pregnancy and health care, and I'll vote in Congress to protect abortion rights."
 
-The emphasis on abortion by both Perez and Deluzio, despite the low risk of losing abortion access in Washington and Pennsylvania, highlights its national importance in the post-Dobbs world. It would be interesting to observe a candidate from a state which increased restrictions, but overall, whether through personal stories or broader rights discussions, abortion was a central topic to these campaigns and the 2022 midterms overall. 
+Despite the low risk of losing abortion access in Washington and Pennsylvania, nearly 1 in 10 tweets from both campaigns touched on the topic. It would be interesting to observe a candidate from a state which increased restrictions, but overall, whether through personal stories or broader rights discussions, abortion was a central topic to these campaigns and the 2022 midterms overall.
+
+## 2. 
 
 
 
