@@ -416,7 +416,7 @@ The topic-words I chose to explore were:
 
 The candidates' tweets were searched for these terms along with a list of semantically-similar terms to gauge how frequently each candidate messaged on the associated topic. The interactive graph below shows the results of these queries, the exact terms used in each list, along with example tweets from each candidate for each category:
 
-<iframe src="images/candidate_comparisons.html" width="800" height="600" style="border:none;"></iframe>
+<iframe src="https://ideas-man.com/wp-content/uploads/2025/01/candidate_comparisons.html" width="800" height="600" style="border:none;"></iframe>
 
 # Insights and Conclusions
 
