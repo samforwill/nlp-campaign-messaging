@@ -1,0 +1,33 @@
+# docs/_config.yml
+title: "NLP Campaign Messaging"
+description: "Standalone project page"
+baseurl: ""    # running at the root of this repo's Pages
+url: ""        # leave blank for local preview
+theme: minimal-mistakes-jekyll
+
+logo: "/assets/images/github_logo.png"  # Optional, replace with your logo
+
+plugins:
+  - jekyll-include-cache
+
+markdown: kramdown
+kramdown:
+  input: GFM
+  parse_block_html: true   # enable HTML blocks everywhere
+
+author:
+  name: "Forrest Williams"
+  avatar: "/assets/images/avatar1.jpg"
+  bio: "Data analyst, election nerd, and Jekyll tinkerer."
+  location: "New York, NY"
+  email: "you@example.com"       # optional
+  links:
+    - label: "GitHub"
+      icon: "fab fa-github"
+      url: "https://github.com/forrestwilliams"
+    - label: "LinkedIn"
+      icon: "fab fa-linkedin"
+      url: "https://linkedin.com/in/forrestwilliams"
+    - label: "Twitter"
+      icon: "fab fa-twitter"
+      url: "https://twitter.com/forrestwilliams"

@@ -1,0 +1,9 @@
+main:
+  - title: "Home"
+    url: https://samforwill.github.io/                     # Main site home
+  - title: "Projects"
+    url: https://samforwill.github.io/projects/            # Main site Projects index
+  - title: "About"
+    url: https://samforwill.github.io/about/               # Main site About
+  - title: "Contact"
+    url: https://samforwill.github.io/contact/             # Main site Contact

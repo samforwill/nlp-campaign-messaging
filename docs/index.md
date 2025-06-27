@@ -1,13 +1,12 @@
 ---
-title: Winning in Trump Country
-permalink: /projects/nlp-campaign-messaging/
 layout: single
+title: "Winning in Trump Country"
 author_profile: true
 toc: true
 toc_sticky: true
-kramdown:
-  parse_block_html: true
 ---
+
+
  
 
 <h2 align="center">           </h2>
@@ -15,8 +14,8 @@ kramdown:
 
 <div align="center">
   <a href="https://github.com/samforwill/2024Strategies">
-    <img src="/_pages/projects/nlp-campaign-messaging/images/MGP_For_Congress_Banner.png" alt="MGP Banner" style="width: 100%; max-width: 900px;">
-    <img src="/_pages/projects/nlp-campaign-messaging/images/Deluzio_For_Congress_Banner.png" alt="Deluzio Banner" style="width: 100%; max-width: 900px;">
+    <img src="images/MGP_For_Congress_Banner.png" alt="MGP Banner" style="width: 100%; max-width: 900px;">
+    <img src="images/Deluzio_For_Congress_Banner.png" alt="Deluzio Banner" style="width: 100%; max-width: 900px;">
   </a>
 
 <h3 align="center">Examining the Messaging Strategies of Two Democratic Newcomers Who Overcame the Red Tide in the 2022 Midterms </h3>
@@ -64,13 +63,13 @@ Of the top 18 overperforming candidates indicated in the graph above by district
 
 That left me with 6 candidates to consider, all having overperformed their districts' partisan lean by at least 5 points.  The following 4 candidates greatly overperformed in their districts, but were eliminated from consideration for various reasons:
 
-<img src="/_pages/projects/nlp-campaign-messaging/images/Candidates.png" alt="Candidates" width="600" style="display: block; margin: auto;">
+<img src="images/Candidates.png" alt="Candidates" width="600" style="display: block; margin: auto;">
 
 Emilia Sykes would have been fun to analyze (and I love her glasses), but she deleted her campaign account following the election. Adam Frisch, who just barely fell short of victory in CO-03, was initially a candidate of interest, but was excluded due to the sheer volume of his tweets, which, thanks to Elon Musk's recent termination of free API access for Twitter, made data collection too labor-intensive. 
 
 But ultimately, I found myself drawn to the candidate who arguably pulled off the biggest flip of the midterms. Her unique campaign and distinctive messaging strategy provided ample material for analysis, ultimately leading me to...
 
-<img src="/_pages/projects/nlp-campaign-messaging/images/MGP.png" alt="MGP" width="600" style="display: block; margin: auto;">
+<img src="images/MGP.png" alt="MGP" width="600" style="display: block; margin: auto;">
 
 
 Marie Gluesenkamp Pérez! She faced cuckoo-bird Joe Kent, who expressed some extreme views like supporting the arrest of Dr. Anthony Fauci and endorsing the claims of a stolen 2020 election. In fact, he became the candidate for WA-03 after successfully primarying the serving Republican Congressperson, Jaime Herrera Beutler, one of only 10 republicans who voted to impeach Donald Trump following the events of January 6th.<br />
@@ -78,7 +77,7 @@ Marie Gluesenkamp Pérez! She faced cuckoo-bird Joe Kent, who expressed some ext
 
 The next candidate I wanted to assess took a little more research to come to a decision, but I wanted to find a Democrat who overperformed in their district, while contending against an opponent who was a more mainstream Republican. I landed on...
 
-<img src="/_pages/projects/nlp-campaign-messaging/images/Deluzio.png" alt="Deluzio" width="600" style="display: block; margin: auto;">
+<img src="images/Deluzio.png" alt="Deluzio" width="600" style="display: block; margin: auto;">
 
 Chris Deluzio! He competed in a pure toss-up district and significantly outperformed against Jeremy Shaffer, who notably tried to sidestep affirming or denying the 2020 election fraud claims, and even released an ad promising to "protect women's healthcare." <br />
 
@@ -117,7 +116,7 @@ LDA uses these term frequencies to search for patterns and group things together
 
 Sorting Marie Gluesenkamp Pérez's tweetset into 5 topics created the following key word associations to each topic for MGP:
 
-<img src="/_pages/projects/nlp-campaign-messaging/images/MGP_LDA.png" alt="MPG LDA" style="border: 2px solid #101010;"/><br/>
+<img src="images/MGP_LDA.png" alt="MPG LDA" style="border: 2px solid #101010;"/><br/>
 
 
 
@@ -164,7 +163,7 @@ Once the tweets were grouped , I went through the top 50 tweets associated with 
 1. MGP Topic 1 -- "Voice for Working Class"</big></b></summary>
 
 <a href="https://twitter.com/MGPforCongress/status/1578454359788376065">
-    <img src="/_pages/projects/nlp-campaign-messaging/images/mgp_working_class_tweet.png" alt="Working Class Tweet" />
+    <img src="images/mgp_working_class_tweet.png" alt="Working Class Tweet" />
 </a>
 </details>
 
@@ -174,7 +173,7 @@ Once the tweets were grouped , I went through the top 50 tweets associated with 
 2. MGP Topic 2 -- "Digital & Community Engagement"</big></b></summary>
 
 <a href="https://twitter.com/MGPforCongress/status/1580754873540542464">
-    <img src="/_pages/projects/nlp-campaign-messaging/images/mgp_digital_tweet.png"  alt="Digital Tweet" />
+    <img src="images/mgp_digital_tweet.png"  alt="Digital Tweet" />
 </a>
 </details>
 
@@ -183,7 +182,7 @@ Once the tweets were grouped , I went through the top 50 tweets associated with 
 3. MGP Topic 3 -- "Endorsements & Policy Priorities"</big></b></summary>
 
 <a href="https://twitter.com/MGPforCongress/status/1561818273330503681">
-    <img src="/_pages/projects/nlp-campaign-messaging/images/mgp_policy_tweet.png"  alt="Policy Tweet" />
+    <img src="images/mgp_policy_tweet.png"  alt="Policy Tweet" />
 </a>
 </details>
 
@@ -192,7 +191,7 @@ Once the tweets were grouped , I went through the top 50 tweets associated with 
 4. MGP Topic 4 -- "Voter Mobilization Efforts"</big></b></summary>
 
 <a href="https://twitter.com/MGPforCongress/status/1567961466850131969">
-    <img src="/_pages/projects/nlp-campaign-messaging/images/mgp_mobilization_tweet.png"  alt="Mobilization Tweet" />
+    <img src="images/mgp_mobilization_tweet.png"  alt="Mobilization Tweet" />
 </a>
 </details>
 
@@ -201,7 +200,7 @@ Once the tweets were grouped , I went through the top 50 tweets associated with 
 5. MGP Topic 5 -- "Anti-Extremism"</big></b></summary>
 
 <a href="https://twitter.com/MGPforCongress/status/1572635581280321537">
-    <img src="/_pages/projects/nlp-campaign-messaging/images/mgp_extremism_tweet.png"  alt="Anti-Extremism Tweet" />
+    <img src="images/mgp_extremism_tweet.png"  alt="Anti-Extremism Tweet" />
 </a>
 </details>
 
@@ -211,7 +210,7 @@ Once the tweets were grouped , I went through the top 50 tweets associated with 
 6. MGP Topic 6 -- "Volunteer & Fundraising"</big></b></summary>
 
 <a href="https://twitter.com/MGPforCongress/status/1584586583763988480">
-    <img src="/_pages/projects/nlp-campaign-messaging/images/mgp_fundraising_tweet.png"  alt="Fundraising Tweet" />
+    <img src="images/mgp_fundraising_tweet.png"  alt="Fundraising Tweet" />
 </a>
 </details>
 
@@ -220,7 +219,7 @@ Once the tweets were grouped , I went through the top 50 tweets associated with 
 7. MGP Topic 7 -- "Defending Rights & Freedoms"</big></b></summary>
 
 <a href="https://twitter.com/MGPforCongress/status/1570516774558527488">
-    <img src="/_pages/projects/nlp-campaign-messaging/images/mgp_defend_tweet.png"  alt="Defending Tweet" />
+    <img src="images/mgp_defend_tweet.png"  alt="Defending Tweet" />
 </a>
 </details>
 
@@ -231,7 +230,7 @@ The interactive graph below shows the top 50 tweets associated with each categor
 
 <div style="position: relative; width: 100%; padding-bottom: 100%; height: 0; overflow: hidden;">
   <iframe
-    src="/_pages/projects/nlp-campaign-messaging/bokeh/mgp_topic_scatter1.html"
+    src="bokeh/mgp_topic_scatter1.html"
     style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0;"
     allowfullscreen
   ></iframe>
@@ -255,7 +254,7 @@ Once the tweets were grouped , I went through the top 50 tweets associated with 
 1. Deluzio Topic 1 -- "Union Solidarity & Local Empowerment"</big></b></summary>
 
 <a href="https://twitter.com/ChrisForPA/status/1544675057737269252">
-    <img src="/_pages/projects/nlp-campaign-messaging/images/deluzio_union_tweet.png"  alt="Union Tweet" />
+    <img src="images/deluzio_union_tweet.png"  alt="Union Tweet" />
 </a>
 </details>
 
@@ -264,7 +263,7 @@ Once the tweets were grouped , I went through the top 50 tweets associated with 
 2. Deluzio Topic 2 -- "Reproductive Rights & Fighting Extremism"</big></b></summary>
 
 <a href="https://twitter.com/ChrisForPA/status/1562466032601600001">
-    <img src="/_pages/projects/nlp-campaign-messaging/images/deluzio_abortion_tweet.png"  alt="Abortion Tweet" />
+    <img src="images/deluzio_abortion_tweet.png"  alt="Abortion Tweet" />
 </a>
 </details>
 
@@ -273,7 +272,7 @@ Once the tweets were grouped , I went through the top 50 tweets associated with 
 3. Deluzio Topic 3 -- "Community Events"</big></b></summary>
 
 <a href="https://twitter.com/ChrisForPA/status/1568669438295306241">
-    <img src="/_pages/projects/nlp-campaign-messaging/images/deluzio_community_tweet.png"  alt="Communmity Tweet" />
+    <img src="images/deluzio_community_tweet.png"  alt="Communmity Tweet" />
 </a>
 </details>
 
@@ -282,7 +281,7 @@ Once the tweets were grouped , I went through the top 50 tweets associated with 
 4. Deluzio Topic 4 -- "Jobs & Infrastructure"</big></b></summary>
 
 <a href="https://twitter.com/ChrisForPA/status/1554920539319283712">
-    <img src="/_pages/projects/nlp-campaign-messaging/images/deluzio_jobs_tweet.png"  alt="Jobs Tweet" />
+    <img src="images/deluzio_jobs_tweet.png"  alt="Jobs Tweet" />
 </a>
 </details>
 
@@ -291,7 +290,7 @@ Once the tweets were grouped , I went through the top 50 tweets associated with 
 5. Deluzio Topic 5 -- "Advocacy & Community Solidarity"</big></b></summary>
 
 <a href="https://twitter.com/ChrisForPA/status/1552026970036240389">
-    <img src="/_pages/projects/nlp-campaign-messaging/images/deluzio_advocacy_tweet.png"  alt="Advocacy Tweet" />
+    <img src="images/deluzio_advocacy_tweet.png"  alt="Advocacy Tweet" />
 </a>
 </details>
 
@@ -300,7 +299,7 @@ Once the tweets were grouped , I went through the top 50 tweets associated with 
 6. Deluzio Topic 6 -- "Corporate Greed & Economic Fairness"</big></b></summary>
 
 <a href="https://twitter.com/ChrisForPA/status/1585700173577158656">
-    <img src="/_pages/projects/nlp-campaign-messaging/images/deluzio_corporations_tweet.png"  alt="Corporations Tweet" />
+    <img src="images/deluzio_corporations_tweet.png"  alt="Corporations Tweet" />
 </a>
 </details>
 
@@ -309,7 +308,7 @@ Once the tweets were grouped , I went through the top 50 tweets associated with 
 7. Deluzio Topic 7 -- "Defending Rights & Democracy"</big></b></summary>
 
 <a href="https://twitter.com/ChrisForPA/status/1572015179990114304">
-    <img src="/_pages/projects/nlp-campaign-messaging/images/deluzio_defend_tweet.png"  alt="Defending Tweet" />
+    <img src="images/deluzio_defend_tweet.png"  alt="Defending Tweet" />
 </a>
 </details>
 
@@ -318,7 +317,7 @@ The interactive graph below shows the top 50 tweets associated with each categor
 
 <div style="position: relative; width: 100%; padding-bottom: 100%; height: 0; overflow: visible;">
   <iframe
-    src="/_pages/projects/nlp-campaign-messaging/bokeh/deluzio_topics1.html"
+    src="bokeh/deluzio_topics1.html"
     style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0;"
     allowfullscreen
   ></iframe>
@@ -349,7 +348,7 @@ The candidates' tweets were searched for these terms along with a list of semant
 
 <div style="position: relative; width: 100%; padding-bottom: 100%; height: 0; overflow: visible;">
   <iframe
-    src="/_pages/projects/nlp-campaign-messaging/bokeh/candidate_topic_barplot1.html"
+    src="bokeh/candidate_topic_barplot1.html"
     style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0;"
     allowfullscreen
   ></iframe>
@@ -406,7 +405,7 @@ Deluzio's campaign emphasized unions and criticized corporate outsourcing, align
 This strategy was creative because recently, China as a cudgel has been used mostly by Republicans. Take a similar district like IN-05, Indianapolis suburbs, where Republican Rep. Victoria Spartz is associating her Republican primary opponent as "China Chuck."
 
 
-<video controls width="100%" poster="/_pages/projects/nlp-campaign-messaging/images/china_chuck.png">
+<video controls width="100%" poster="images/china_chuck.png">
   <source src="https://s3.amazonaws.com/pdfweb/videos/da49429b-f004-4a65-bd35-48ccfd8ebe54.mp4" type="video/mp4">
   Your browser does not support the video tag.
 </video>
