@@ -4,6 +4,9 @@ description: "Standalone project page"
 baseurl: ""    # running at the root of this repo's Pages
 url: ""        # leave blank for local preview
 theme: minimal-mistakes-jekyll
+plugins:
+  - jekyll-include-cache
+
 
 logo: "/assets/images/github_logo.png"  # Optional, replace with your logo
 
