@@ -3,13 +3,14 @@ title: "NLP Campaign Messaging"
 description: "Standalone project page"
 baseurl: ""    # running at the root of this repo's Pages
 url: ""        # leave blank for local preview
-theme: "minimal-mistakes-jekyll"  # Use the Minimal Mistakes theme
+plugins:
+  - jekyll-remote-theme
+  - jekyll-include-cache
+
+remote_theme: "mmistakes/minimal-mistakes@4.27.1"
 
 
 logo: "/assets/images/github_logo.png"  # Optional, replace with your logo
-
-plugins:
-  - jekyll-include-cache
 
 markdown: kramdown
 kramdown:
