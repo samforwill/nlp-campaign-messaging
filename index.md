@@ -62,7 +62,7 @@ I applied unsupervised topic modeling techniques, beginning with Latent Dirichle
 
 To identify standout candidates, I devised a 'Performance' metric by calculating the difference between each district's Partisan Voter Index (PVI) and the candidate's electoral margin in 2022. PVI measures how partisan the district is compared to the nation as a whole, based on how the constituents of those districts voted in previous presidential elections. This approach identified those who significantly outperformed their district's typical partisan lean.
 
-![Overperformance](images/Overperformance.png)
+[![Overperformance](images/Overperformance.png)](images/Overperformance.png){:target="_blank" rel="noopener"}
 
 Of the top 18 overperforming candidates indicated in the graph above by district title, I narrowed my focus to first-time candidates to avoid any influence of incumbency effects. Mary Peltola from Alaska was also excluded due to the state's use of Ranked Choice Voting, which, while I am personally a fan of RCV, complicates direct comparison of candidates in this context. <br />
 
@@ -129,7 +129,7 @@ It seems like Topic 1 involves canvassing and GOTV messaging with terms like "vo
 
 TF-IDF scores words based on frequency and rarity, then LDA identifies topics based on these scores.  When determining topics, it assigns each word a weight indicating its importance to the topic.  To demonstrate this concept, below is a bar graph showing the importance weights for the words in MGP's first topic.
 
-![MGP LDA](images/mgp_topic1.png)
+[![MGP LDA](images/mgp_topic1.png)](images/mgp_topic1.png){:target="_blank" rel="noopener"}
 
 Now, this is all well and good, but it *is* a baseline model, so let's not dive too deep into it and see if we can go ahead and up the ante a bit with more complex modeling.
 
@@ -250,7 +250,7 @@ The interactive graph below shows the top 50 tweets associated with each categor
 
 Here is the distribution of tweet topics for Chris Deluzio that the model found to share semantic similarity.
 
-![Deluzio Topic Distribution](images/deluzio_topic_distribution.png)
+[![Deluzio Topic Distribution](images/deluzio_topic_distribution.png)](images/deluzio_topic_distribution.png){:target="_blank" rel="noopener"}
 
 Once the tweets were grouped , I went through the top 50 tweets associated with each topic, and found the tweets to be best described by the following themes: 
 
