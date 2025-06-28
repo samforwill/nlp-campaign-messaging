@@ -121,7 +121,7 @@ LDA uses these term frequencies to search for patterns and group things together
 
 Sorting Marie Gluesenkamp Pérez's tweetset into 5 topics created the following key word associations to each topic for MGP:
 
-<img src="images/MGP_LDA.png" alt="MPG LDA" style="border: 2px solid #101010;"/><br/>
+[![MGP LDA](images/MGP_LDA.png)](images/MGP_LDA.png){:target="_blank" rel="noopener"}
 
 
 
