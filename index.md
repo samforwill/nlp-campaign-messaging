@@ -1,6 +1,6 @@
 ---
-layout: single
 title: "Winning in Trump Country"
+layout: single
 author_profile: true
 toc: true
 toc_sticky: true

@@ -2,18 +2,16 @@
 title: "NLP Campaign Messaging"
 description: "Standalone project page"
 baseurl: ""    # running at the root of this repo's Pages
-url: ""        # leave blank for local preview
+url: "https://samforwill.github.io"
+permalink: /nlp-campaign-messaging/:path/
 
 plugins:
   - jekyll-include-cache
+  - jekyll-remote-theme
+
 remote_theme: "mmistakes/minimal-mistakes@4.27.1" # 
 
-plugins:
-  - jekyll-remote-theme
-  - jekyll-include-cache
-
-remote_theme: "mmistakes/minimal-mistakes"
-
+# theme: "minimal-mistakes-jekyll"
 
 logo: "/assets/images/github_logo.png"  # Optional, replace with your logo
 

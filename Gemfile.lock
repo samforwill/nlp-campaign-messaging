@@ -305,7 +305,6 @@ PLATFORMS
 DEPENDENCIES
   github-pages
   jekyll-include-cache
-  jekyll-remote-theme
 
 BUNDLED WITH
    2.6.9
