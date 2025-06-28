@@ -3,7 +3,7 @@ title: "NLP Campaign Messaging"
 description: "Standalone project page"
 baseurl: ""    # running at the root of this repo's Pages
 url: "https://samforwill.github.io"
-permalink: /nlp-campaign-messaging/:path/
+permalink: "/nlp-campaign-messaging/"
 
 plugins:
   - jekyll-include-cache
