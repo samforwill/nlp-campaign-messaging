@@ -159,7 +159,7 @@ After some limited pre-processing, each word within the tweets was converted int
 
 Here is the distribution of unlabeled tweet topics that the model found to share semantic similarity (I found 7 topics to be the best grouping parameter).
 
-![MGP Topic Distribution](images/mgp_topic_distribution.png)
+[![MGP Topic Distribution](images/mgp_topic_distribution.png)](images/mgp_topic_distribution.png){:target="_blank" rel="noopener"}
 
 Once the tweets were grouped , I went through the top 50 tweets associated with each topic, and found the tweets to be best described by the following themes: 
 
