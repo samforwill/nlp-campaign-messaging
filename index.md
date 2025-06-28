@@ -1,12 +1,17 @@
 ---
-title: "Winning in Trump Country"
+title: "Natural Language Processing for Campaign Messaging Strategy"
 layout: single
 author_profile: true
 toc: true
 toc_sticky: true
 ---
 
-
+<style>
+.page__content {
+  font-size: 0.8em;
+  line-height: 1.6;
+}
+</style>
  
 
 <h2 align="center">           </h2>
