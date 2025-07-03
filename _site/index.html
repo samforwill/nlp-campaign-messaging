@@ -128,12 +128,6 @@
                 
                 
               >About</a>
-            </li><li class="masthead__menu-item">
-              <a
-                href="https://samforwill.github.io/contact/"
-                
-                
-              >Contact</a>
             </li></ul>
         
         <button class="greedy-nav__toggle hidden" type="button">
@@ -313,6 +307,8 @@
 }
 </style>
 
+<p>The complete code notebooks, data processing scripts, and source files for this project are available in the <a href="https://github.com/samforwill/nlp-campaign-messaging">project repository</a>.</p>
+
 <h2 align="center">           </h2>
 <p><a name="readme-top"></a></p>
 
@@ -364,7 +360,7 @@
 
       <p>To identify standout candidates, I devised a ‘Performance’ metric by calculating the difference between each district’s Partisan Voter Index (PVI) and the candidate’s electoral margin in 2022. PVI measures how partisan the district is compared to the nation as a whole, based on how the constituents of those districts voted in previous presidential elections. This approach identified those who significantly outperformed their district’s typical partisan lean.</p>
 
-      <p><img src="/nlp-campaign-messaging/images/Overperformance.png" alt="Overperformance" /></p>
+      <p><a href="images/Overperformance.png" target="_blank" rel="noopener"><img src="/nlp-campaign-messaging/images/Overperformance.png" alt="Overperformance" /></a></p>
 
       <p>Of the top 18 overperforming candidates indicated in the graph above by district title, I narrowed my focus to first-time candidates to avoid any influence of incumbency effects. Mary Peltola from Alaska was also excluded due to the state’s use of Ranked Choice Voting, which, while I am personally a fan of RCV, complicates direct comparison of candidates in this context. <br /></p>
 
@@ -425,13 +421,13 @@ Balancing Volumes– Due to the different numbers of tweets from each candidate,
 
     <p>Sorting Marie Gluesenkamp Pérez’s tweetset into 5 topics created the following key word associations to each topic for MGP:</p>
 
-    <p><img src="images/MGP_LDA.png" alt="MPG LDA" style="border: 2px solid #101010;" /><br /></p>
+    <p><a href="images/MGP_LDA.png" target="_blank" rel="noopener"><img src="/nlp-campaign-messaging/images/MGP_LDA.png" alt="MGP LDA" /></a></p>
 
     <p>It seems like Topic 1 involves canvassing and GOTV messaging with terms like “volunteer”, “join”, “doors”, “Vancouver” (big population center in the district where running up turnout numbers would be important to win). The other topics’ words offer some hints at overarching themes, but they are not as easy to discern as the first topic.<br /></p>
 
     <p>TF-IDF scores words based on frequency and rarity, then LDA identifies topics based on these scores.  When determining topics, it assigns each word a weight indicating its importance to the topic.  To demonstrate this concept, below is a bar graph showing the importance weights for the words in MGP’s first topic.</p>
 
-    <p><img src="/nlp-campaign-messaging/images/mgp_topic1.png" alt="MGP LDA" /></p>
+    <p><a href="images/mgp_topic1.png" target="_blank" rel="noopener"><img src="/nlp-campaign-messaging/images/mgp_topic1.png" alt="MGP LDA" /></a></p>
 
     <p>Now, this is all well and good, but it <em>is</em> a baseline model, so let’s not dive too deep into it and see if we can go ahead and up the ante a bit with more complex modeling.</p>
 
@@ -460,7 +456,7 @@ Balancing Volumes– Due to the different numbers of tweets from each candidate,
 
     <p>Here is the distribution of unlabeled tweet topics that the model found to share semantic similarity (I found 7 topics to be the best grouping parameter).</p>
 
-    <p><img src="/nlp-campaign-messaging/images/mgp_topic_distribution.png" alt="MGP Topic Distribution" /></p>
+    <p><a href="images/mgp_topic_distribution.png" target="_blank" rel="noopener"><img src="/nlp-campaign-messaging/images/mgp_topic_distribution.png" alt="MGP Topic Distribution" /></a></p>
 
     <p>Once the tweets were grouped , I went through the top 50 tweets associated with each topic, and found the tweets to be best described by the following themes:</p>
 
@@ -541,7 +537,7 @@ Balancing Volumes– Due to the different numbers of tweets from each candidate,
 
     <p>Here is the distribution of tweet topics for Chris Deluzio that the model found to share semantic similarity.</p>
 
-    <p><img src="/nlp-campaign-messaging/images/deluzio_topic_distribution.png" alt="Deluzio Topic Distribution" /></p>
+    <p><a href="images/deluzio_topic_distribution.png" target="_blank" rel="noopener"><img src="/nlp-campaign-messaging/images/deluzio_topic_distribution.png" alt="Deluzio Topic Distribution" /></a></p>
 
     <p>Once the tweets were grouped , I went through the top 50 tweets associated with each topic, and found the tweets to be best described by the following themes:</p>
 

@@ -12,7 +12,7 @@ toc_sticky: true
   line-height: 1.6;
 }
 </style>
- 
+ The complete code notebooks, data processing scripts, and source files for this project are available in the [project repository](https://github.com/samforwill/nlp-campaign-messaging). 
 
 <h2 align="center">           </h2>
 <a name="readme-top"></a>
